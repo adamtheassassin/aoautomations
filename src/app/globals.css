@@ -1,11 +1,21 @@
+@import url('https://api.fontshare.com/v2/css?f[]=clash-display@200,300,400,500,600,700&display=swap');
 @import "tailwindcss";
 
 @theme {
-  --color-brand-dark: #780000;
-  --color-brand-red: #c1121f;
-  --color-brand-cream: #fdf0d5;
-  --color-brand-black: #212529;
-  
+  --font-display: 'Clash Display', sans-serif;
+  --font-sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+
+  --color-brand-dark: #5a0000;
+  /* Darker, richer red for contrast */
+  --color-brand-red: #d90429;
+  /* Vibrant, popping red */
+  --color-brand-cream: #fbf8f3;
+  /* Lighter, cleaner cream */
+  --color-brand-black: #1a1a1a;
+  /* Soft but deep black */
+  --color-brand-gray: #4a4a4a;
+  /* Contrast gray for subtext */
+
   --color-background: var(--color-brand-cream);
   --color-foreground: var(--color-brand-black);
 }
@@ -15,11 +25,17 @@
   bg-brand-dark
   text-brand-red
   bg-brand-cream
-  etc.
+  font-sans (will use Outfit)
 */
 
 body {
   background-color: var(--color-brand-cream);
   color: var(--color-brand-black);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+
+  /* Subtle grain texture for premium feel */
+  background-image:
+    radial-gradient(at 0% 0%, rgba(217, 4, 41, 0.03) 0px, transparent 50%),
+    radial-gradient(at 100% 100%, rgba(217, 4, 41, 0.03) 0px, transparent 50%);
+  background-attachment: fixed;
 }
