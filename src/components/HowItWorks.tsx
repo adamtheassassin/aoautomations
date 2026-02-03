@@ -21,7 +21,7 @@ export default function HowItWorks() {
 
                         <div className="mb-12 relative w-48 h-48 flex items-center justify-center">
                             <img
-                                src="/icons_&_images/Photobooth removed BG.webp"
+                                src="/icons_&_images/gbpoptimze1.webp"
                                 alt="Google Business Profile Optimization"
                                 className="w-full h-full object-contain drop-shadow-2xl scale-175"
                             />
@@ -41,18 +41,12 @@ export default function HowItWorks() {
                     <div className="group relative bg-brand-black p-8 rounded-3xl shadow-xl border border-white/5 hover:border-brand-red/20 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl overflow-hidden text-center flex flex-col items-center">
                         <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-brand-red to-brand-dark transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500"></div>
 
-                        <div className="mb-8 relative w-48 h-48 flex items-center justify-center">
-                            {/* Placeholder for Calculator/Notepad Icon - Scaled up SVG */}
-                            <svg xmlns="http://www.w3.org/2000/svg" className="w-32 h-32 text-white group-hover:text-brand-red transition-colors duration-300 scale-150" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-                                <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z" />
-                                <polyline points="14 2 14 8 20 8" />
-                                <line x1="12" y1="18" x2="12" y2="18.01" />
-                                <line x1="8" y1="18" x2="8" y2="18.01" />
-                                <line x1="16" y1="18" x2="16" y2="18.01" />
-                                <line x1="8" y1="14" x2="8" y2="14.01" />
-                                <line x1="12" y1="14" x2="12" y2="14.01" />
-                                <line x1="16" y1="14" x2="16" y2="14.01" />
-                            </svg>
+                        <div className="mb-12 relative w-48 h-48 flex items-center justify-center">
+                            <img
+                                src="/icons_&_images/websiteoptimize.webp"
+                                alt="High-Status Business Website"
+                                className="w-full h-full object-contain drop-shadow-2xl scale-175"
+                            />
                         </div>
 
                         <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-brand-red transition-colors duration-300">
@@ -69,15 +63,12 @@ export default function HowItWorks() {
                     <div className="group relative bg-brand-black p-8 rounded-3xl shadow-xl border border-white/5 hover:border-brand-red/20 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl overflow-hidden text-center flex flex-col items-center">
                         <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-brand-red to-brand-dark transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500"></div>
 
-                        <div className="mb-8 relative w-48 h-48 flex items-center justify-center">
-                            {/* Placeholder for Funnel Icon - Scaled up SVG */}
-                            <svg xmlns="http://www.w3.org/2000/svg" className="w-32 h-32 text-white group-hover:text-brand-red transition-colors duration-300 scale-150" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-                                <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3" />
-                                <circle cx="12" cy="12" r="1.5" fill="currentColor" className="opacity-0 group-hover:opacity-100 transition-opacity" />
-                                <circle cx="12" cy="7" r="1" fill="currentColor" />
-                                <circle cx="7" cy="5" r="1" fill="currentColor" />
-                                <circle cx="17" cy="5" r="1" fill="currentColor" />
-                            </svg>
+                        <div className="mb-12 relative w-48 h-48 flex items-center justify-center">
+                            <img
+                                src="/icons_&_images/localauthority.webp"
+                                alt="Local Authority Building"
+                                className="w-full h-full object-contain drop-shadow-2xl scale-175"
+                            />
                         </div>
 
                         <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-brand-red transition-colors duration-300">

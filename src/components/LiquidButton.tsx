@@ -18,22 +18,22 @@ export default function LiquidButton({ children, className = "", onClick }: Liqu
         >
             {/* Liquid Border Layer */}
             <div className="absolute inset-0 z-0 bg-brand-black">
-                <div className="absolute inset-[-50%] w-[200%] h-[200%] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-80 group-hover:opacity-100 transition-opacity duration-500">
+                <div className="absolute inset-[-50%] w-[200%] h-[200%] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-100 transition-opacity duration-500">
                     <LiquidMetal
                         width={600}
                         height={600}
                         image="https://shaders.paper.design/images/logos/diamond.svg"
-                        colorBack="#5a0000" // Brand Dark
-                        colorTint="#d90429" // Brand Red (Vibrant)
+                        colorBack="#0C2B4E" // Brand Dark (Navy)
+                        colorTint="#980404" // Brand Red (Deep)
                         shape="diamond"
                         repetition={2.5}
                         softness={0.4}
                         shiftRed={0.1}
                         shiftBlue={-0.1}
-                        distortion={0.3}
+                        distortion={0.6}
                         contour={0}
                         angle={45}
-                        speed={0.8}
+                        speed={1.0}
                         scale={1.2}
                         fit="cover"
                     />
@@ -41,7 +41,7 @@ export default function LiquidButton({ children, className = "", onClick }: Liqu
             </div>
 
             {/* Inner Mask (Creates the outline effect) */}
-            <div className="absolute inset-[3px] rounded-full bg-brand-cream z-0 transition-colors duration-300 group-hover:bg-white"></div>
+            <div className="absolute inset-[5px] rounded-full bg-brand-cream z-0 transition-colors duration-300 group-hover:bg-white"></div>
 
             {/* Content Overlay */}
             <span className="relative z-10 text-brand-black group-hover:text-brand-red transition-colors duration-300 tracking-wide px-6 py-3">

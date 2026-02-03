@@ -1,4 +1,5 @@
 import LiquidButton from './LiquidButton';
+import Marquee from './Marquee';
 
 export default function Hero() {
     return (
@@ -88,12 +89,7 @@ export default function Hero() {
                 {/* Social Proof / Logos */}
                 <div className="mt-32 border-t border-brand-black/5 pt-12">
                     <p className="text-center text-sm font-semibold text-brand-gray/60 uppercase tracking-widest mb-10">Powering Leading Local Businesses</p>
-                    <div className="flex flex-wrap justify-center gap-12 md:gap-24 opacity-40 grayscale hover:grayscale-0 transition-all duration-700">
-                        {/* Logo Placeholders */}
-                        {[1, 2, 3, 4, 5].map((i) => (
-                            <div key={i} className="h-8 w-32 bg-brand-black/20 rounded hover:bg-brand-red/30 transition-colors"></div>
-                        ))}
-                    </div>
+                    <Marquee />
                 </div>
             </div>
         </section>

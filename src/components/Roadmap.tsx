@@ -21,7 +21,7 @@ export default function Roadmap() {
                     {/* Connecting Line (Hidden on mobile) */}
                     <div className="hidden md:block absolute top-[48px] left-0 right-0 -translate-y-1/2 z-0 pointer-events-none opacity-30">
                         <svg viewBox="0 0 800 100" fill="none" preserveAspectRatio="none" className="w-full h-[100px]">
-                            <path d="M0,50 C150,80 250,20 400,50 C550,80 650,20 800,50" stroke="#1a1a1a" strokeWidth="2" strokeDasharray="8 8"></path>
+                            <path d="M0,50 C150,80 250,20 400,50 C550,80 650,20 800,50" stroke="#222222" strokeWidth="2" strokeDasharray="8 8"></path>
                         </svg>
                     </div>
 
