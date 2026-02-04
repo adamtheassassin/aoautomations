@@ -1,7 +1,6 @@
 "use client";
 
-import { LiquidMetal } from '@paper-design/shaders-react';
-import React, { useEffect, useRef, useState } from 'react';
+import React from 'react';
 
 interface LiquidButtonProps {
     children: React.ReactNode;
@@ -10,78 +9,32 @@ interface LiquidButtonProps {
 }
 
 export default function LiquidButton({ children, className = "", onClick }: LiquidButtonProps) {
-    const buttonRef = useRef<HTMLButtonElement>(null);
-    const [isVisible, setIsVisible] = useState(false);
-
-    useEffect(() => {
-        let timeoutId: NodeJS.Timeout;
-
-        const observer = new IntersectionObserver(
-            ([entry]) => {
-                // Debounce visibility changes to prevent rapid toggling
-                clearTimeout(timeoutId);
-                timeoutId = setTimeout(() => {
-                    // Only render shader when button is actually visible
-                    if (entry.isIntersecting) {
-                        setIsVisible(true);
-                    } else {
-                        setIsVisible(false);
-                    }
-                }, 100); // 100ms debounce
-            },
-            {
-                rootMargin: '200px', // Increased pre-load margin
-                threshold: 0
-            }
-        );
-
-        if (buttonRef.current) {
-            observer.observe(buttonRef.current);
-        }
-
-        return () => {
-            clearTimeout(timeoutId);
-            observer.disconnect();
-        };
-    }, []);
-
     return (
         <button
-            ref={buttonRef}
             onClick={onClick}
-            className={`relative group inline-flex items-center justify-center overflow-hidden rounded-full font-bold transition-all duration-300 hover:scale-105 active:scale-95 ${className}`}
+            className={`
+                relative group inline-flex items-center justify-center 
+                rounded-full transition-all duration-300 
+                bg-gradient-to-b from-[#D92323] via-[#B90E0E] to-[#980404]
+                border-[3px] border-[#FF6B6B] 
+                shadow-[0_0_15px_rgba(217,35,35,0.4),0_8px_15px_rgba(0,0,0,0.2)]
+                hover:shadow-[0_0_25px_rgba(217,35,35,0.6),0_8px_20px_rgba(0,0,0,0.3)]
+                hover:scale-[1.02] active:scale-95
+                hover:border-[#FF8585]
+                text-white font-bold tracking-wide
+                ${className}
+            `}
         >
-            {/* Liquid Border Layer - Only render expensive shader when visible */}
-            <div className="absolute inset-0 z-0 bg-brand-black">
-                {isVisible && (
-                    <div className="absolute inset-[-50%] w-[200%] h-[200%] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-100 transition-opacity duration-500">
-                        <LiquidMetal
-                            width={300}
-                            height={300}
-                            image="https://shaders.paper.design/images/logos/diamond.svg"
-                            colorBack="#0C2B4E" // Brand Dark (Navy)
-                            colorTint="#980404" // Brand Red (Deep)
-                            shape="diamond"
-                            repetition={2.5}
-                            softness={0.4}
-                            shiftRed={0.1}
-                            shiftBlue={-0.1}
-                            distortion={0.6}
-                            contour={0}
-                            angle={45}
-                            speed={1.0}
-                            scale={1.2}
-                            fit="cover"
-                        />
-                    </div>
-                )}
-            </div>
+            {/* Top Gloss Highlight - Creates the 'glassy' 3D look */}
+            <div className="absolute inset-x-4 top-0 h-[50%] bg-gradient-to-b from-white/30 to-transparent rounded-t-full pointer-events-none opacity-80"></div>
 
-            {/* Inner Mask (Creates the outline effect) */}
-            <div className="absolute inset-[5px] rounded-full bg-brand-cream z-0 transition-colors duration-300 group-hover:bg-white"></div>
+            {/* Inner Glow Rim */}
+            <div className="absolute inset-0 rounded-full shadow-[inset_0_2px_4px_rgba(255,255,255,0.3)] pointer-events-none"></div>
 
-            {/* Content Overlay */}
-            <span className="relative z-10 text-brand-black group-hover:text-brand-red transition-colors duration-300 tracking-wide px-6 py-3">
+            {/* Bottom Shade - Adds weight */}
+            <div className="absolute inset-x-0 bottom-0 h-[40%] bg-gradient-to-t from-black/20 to-transparent rounded-b-full pointer-events-none"></div>
+
+            <span className="relative z-10 flex items-center gap-2 drop-shadow-md text-shadow">
                 {children}
             </span>
         </button>

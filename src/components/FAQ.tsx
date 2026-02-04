@@ -54,16 +54,16 @@ export default function FAQ() {
                     {FAQ_ITEMS.map((item, idx) => (
                         <div
                             key={idx}
-                            className="bg-brand-dark rounded-xl overflow-hidden transition-all duration-300 border border-white/5"
+                            className="bg-white rounded-xl overflow-hidden transition-all duration-300 border border-brand-black/5 shadow-sm hover:shadow-md"
                         >
                             <button
                                 onClick={() => toggleFAQ(idx)}
                                 className="w-full flex items-center justify-between p-6 text-left group"
                             >
-                                <span className="font-medium text-lg text-brand-cream/90 pr-8">{item.question}</span>
-                                <div className={`w-8 h-8 rounded-md bg-white/10 flex items-center justify-center transition-transform duration-300 shrink-0 ${openIndex === idx ? 'rotate-45' : ''}`}>
+                                <span className="font-semibold text-lg text-brand-black pr-8 group-hover:text-brand-red transition-colors">{item.question}</span>
+                                <div className={`w-8 h-8 rounded-md bg-brand-black/5 flex items-center justify-center transition-transform duration-300 shrink-0 ${openIndex === idx ? 'rotate-45' : ''}`}>
                                     <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M6 1V11M1 6H11" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+                                        <path d="M6 1V11M1 6H11" stroke="#222222" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                                     </svg>
                                 </div>
                             </button>
@@ -73,7 +73,7 @@ export default function FAQ() {
                                     }`}
                             >
                                 <div className="overflow-hidden px-6">
-                                    <p className="text-brand-cream/60 leading-relaxed">
+                                    <p className="text-brand-gray leading-relaxed font-medium">
                                         {item.answer}
                                     </p>
                                 </div>

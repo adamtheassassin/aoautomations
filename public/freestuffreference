@@ -1,0 +1,113 @@
+<div class="framer-11lx4e8-container" id="cta">
+    <section class="framer-Zmabz framer-vS0iE framer-1xec173 framer-v-1xec173" data-framer-name="Desktop"
+        style="width: 100%; opacity: 1;">
+        <div class="framer-55ibxr" data-framer-name="Container" style="border-radius: 16px; opacity: 1;">
+            <div class="framer-1khjcby" data-framer-name="CTA Left"
+                style="background-color: var(--token-ade1bce3-3902-4c4c-9fc0-b5696fee36e0, rgb(247, 242, 234)); will-change: transform; border-radius: 16px; opacity: 1; transform: none;">
+                <div class="framer-1320kt6-container" style="opacity: 1;">
+                    <div class="framer-bAUEz framer-1w5292w framer-v-1o7g19p" data-framer-name="Variant 2"
+                        style="background-color: var(--token-2007957d-a074-4c0c-8a33-8d85ed1ba0fd, rgb(0, 0, 0)); height: 100%; width: 100%; border-radius: 8px; opacity: 1;">
+                        <div class="framer-4yw1jy" data-framer-name="Black"
+                            style="filter: invert(1); transform: translate(-50%, -50%); opacity: 1;">
+                            <div data-framer-background-image-wrapper="true"
+                                style="position: absolute; border-radius: inherit; corner-shape: inherit; inset: 0px;">
+                                <img decoding="auto" loading="lazy" width="146" height="100"
+                                    src="https://framerusercontent.com/images/CCWRCxPbjdaQtp6VvW3DvtyOiU.svg" alt=""
+                                    style="display: block; width: 100%; height: 100%; border-radius: inherit; corner-shape: inherit; object-position: center center; object-fit: contain;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="framer-ks90cr" data-framer-name="Heading" style="opacity: 1;">
+                    <div class="framer-198i23v" data-framer-name="Column" style="opacity: 1;">
+                        <div class="framer-1x1ic81-container" style="opacity: 1;">
+                            <div class="framer-9sYmf framer-vS0iE framer-1ae7tw8 framer-v-1ae7tw8"
+                                data-framer-name="Variant 1"
+                                style="background-color: rgba(0, 0, 0, 0.04); border-radius: 8px; opacity: 1;">
+                                <div class="framer-owz72m" data-framer-component-type="RichTextContainer"
+                                    style="--framer-link-text-color: rgb(0, 153, 255); --framer-link-text-decoration: underline; transform: none; opacity: 1;">
+                                    <p class="framer-text framer-styles-preset-1t0qbzo" data-styles-preset="zippme_qp">
+                                        Free stuff</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="framer-1kq1x9g" data-framer-component-type="RichTextContainer"
+                            style="--extracted-1of0zx5: var(--token-2007957d-a074-4c0c-8a33-8d85ed1ba0fd, rgb(0, 0, 0)); --framer-link-text-color: rgb(0, 153, 255); --framer-link-text-decoration: underline; transform: none; opacity: 1;">
+                            <h2 class="framer-text"
+                                style="--font-selector: SW50ZXItTWVkaXVt; --framer-font-size: 56px; --framer-font-weight: 500; --framer-letter-spacing: -0.06em; --framer-line-height: 110%; --framer-text-alignment: center; --framer-text-color: var(--extracted-1of0zx5, var(--token-2007957d-a074-4c0c-8a33-8d85ed1ba0fd, rgb(0, 0, 0)));">
+                                Get A <span class="framer-text"
+                                    style="--font-selector: R0Y7U291cmNlIFNlcmlmIDQtNTAwaXRhbGlj; --framer-font-family: &quot;Source Serif 4&quot;, &quot;Source Serif 4 Placeholder&quot;, serif; --framer-font-style: italic; --framer-letter-spacing: -0.08em;">free</span>
+                                <span class="framer-text"
+                                    style="--font-selector: R0Y7U291cmNlIFNlcmlmIDQtNTAwaXRhbGlj; --framer-font-family: &quot;Source Serif 4&quot;, &quot;Source Serif 4 Placeholder&quot;, serif; --framer-font-style: italic; --framer-letter-spacing: -0.08em;">analysis</span>
+                                Right Here</h2>
+                        </div>
+                    </div>
+                    <div class="framer-1whqwir" data-framer-component-type="RichTextContainer"
+                        style="--extracted-2gxw0f: var(--token-4fb42c33-113c-4a31-b240-1fbb97f47fe5, rgba(0, 0, 0, 0.48)); --extracted-r6o4lv: var(--token-4fb42c33-113c-4a31-b240-1fbb97f47fe5, rgba(0, 0, 0, 0.48)); --framer-link-text-color: rgb(0, 153, 255); --framer-link-text-decoration: underline; transform: none; opacity: 1;">
+                        <p class="framer-text framer-styles-preset-1t0qbzo" data-styles-preset="zippme_qp"
+                            style="--framer-text-alignment: center; --framer-text-color: var(--extracted-r6o4lv, var(--token-4fb42c33-113c-4a31-b240-1fbb97f47fe5, rgba(0, 0, 0, 0.48)));">
+                            Click the button below to enter your business details. Can will then go ahead and record a
+                            5-min video going over how we'll get your business into the top 3 within 90 days.</p>
+                        <p class="framer-text framer-styles-preset-1t0qbzo" data-styles-preset="zippme_qp"
+                            style="--framer-text-alignment: center; --framer-text-color: var(--extracted-2gxw0f, var(--token-4fb42c33-113c-4a31-b240-1fbb97f47fe5, rgba(0, 0, 0, 0.48)));">
+                            The video doesn't cost you anything.</p>
+                    </div>
+                </div>
+                <div class="framer-1oyvmls-container" style="opacity: 1;"><a
+                        class="framer-zYCbP framer-vS0iE framer-hK3DV framer-PqjuY framer-LX3WT framer-bfj0j9 framer-v-bfj0j9 framer-1apbug7"
+                        data-framer-name="Default" data-reset="button" href="./free-analysis"
+                        style="background-color: var(--token-2007957d-a074-4c0c-8a33-8d85ed1ba0fd, rgb(0, 0, 0)); border-radius: 50px; opacity: 1;">
+                        <div class="framer-th78n8" data-framer-name="Text 1"
+                            data-framer-component-type="RichTextContainer"
+                            style="--extracted-r6o4lv: var(--token-f8dc39cc-9b31-4d20-8063-4556a3d8afa9, rgb(255, 255, 255)); --framer-link-text-color: rgb(0, 153, 255); --framer-link-text-decoration: underline; filter: blur(5px); opacity: 0; transform: translateX(-50%);">
+                            <p class="framer-text framer-styles-preset-1t0qbzo" data-styles-preset="zippme_qp"
+                                style="--framer-text-color: var(--extracted-r6o4lv, var(--token-f8dc39cc-9b31-4d20-8063-4556a3d8afa9, rgb(255, 255, 255)));">
+                                Get The FREE Analysis</p>
+                        </div>
+                        <div class="framer-1x1zdze" data-framer-name="Text 2"
+                            data-framer-component-type="RichTextContainer"
+                            style="--extracted-r6o4lv: var(--token-f8dc39cc-9b31-4d20-8063-4556a3d8afa9, rgb(255, 255, 255)); --framer-link-text-color: rgb(0, 153, 255); --framer-link-text-decoration: underline; filter: blur(0px); opacity: 1; transform: none;">
+                            <p class="framer-text framer-styles-preset-1t0qbzo" data-styles-preset="zippme_qp"
+                                style="--framer-text-color: var(--extracted-r6o4lv, var(--token-f8dc39cc-9b31-4d20-8063-4556a3d8afa9, rgb(255, 255, 255)));">
+                                Get The FREE Analysis</p>
+                        </div>
+                    </a></div>
+            </div>
+        </div>
+    </section>
+</div>
+--one-if-corner-shape-supported: 1;
+font-family: sans-serif;
+font-size: 12px;
+--token-f8dc39cc-9b31-4d20-8063-4556a3d8afa9: #fff;
+--token-5a8c46ea-26d4-4fbb-9dba-c7522fca8089: #ffffff8f;
+--token-10d627ba-a180-41f3-bda4-3ebdfe6da0b7: #ffffff7a;
+--token-c2e2a410-6f04-4250-8cbc-525e953a716f: #ffffff3d;
+--token-4931e0a3-d9c6-44e2-8ffa-6116eb7b79e4: #ffffff1f;
+--token-2007957d-a074-4c0c-8a33-8d85ed1ba0fd: #000;
+--token-563917f7-788f-412e-bbb3-52a063ef4a82: #0000008f;
+--token-4fb42c33-113c-4a31-b240-1fbb97f47fe5: #0000007a;
+--token-5621f77f-a25c-4b6f-90f4-02bdb225a779: #0000003d;
+--token-cd4b28e8-0a42-4b18-88ca-07b7a717f0f8: #0000001f;
+--token-7513ecda-102e-44af-bcb5-cc88031ed55c: #fff0;
+--token-7325e44b-ac7a-4a00-af4e-3813bf106a76: #ffffff1a;
+--token-63ce9049-e3bd-4cfc-8a25-11c333f1f49f: #ffffff14;
+--token-8ac726e4-b1e6-42dd-9d16-34548d7cc9e7: #0000001a;
+--token-ee2dbcb5-2207-4058-b511-a98b4cfd1f67: #00000014;
+--token-a0488cff-ffde-4e55-bf18-5343b371b4d6: #f7f5f2;
+--token-7a8e3831-2440-464c-b922-6d6537eab7d0: #efebe5;
+--token-bd134076-e698-470d-b9fe-40deb4c20d4a: #ded6ca;
+--token-e27e1031-a876-439e-a06a-478d50eaa340: #0000005c;
+--token-ade1bce3-3902-4c4c-9fc0-b5696fee36e0: #f7f2ea;
+--token-57df5230-11aa-4e68-8b6b-18c3636e9783: #f3ece1;
+--token-5f5e3c8f-7d71-425c-b45c-50c8fbaf62f5: #e7d7c1;
+--token-849e124d-304f-407c-830d-356388c87cf6: #0000000a;
+--framer-will-change-override: none;
+--framer-will-change-filter-override: none;
+--framer-aspect-ratio-supported: auto;
+box-sizing: border-box;
+-webkit-font-smoothing: inherit;
+flex: none;
+width: 100%;
+height: auto;
+position: relative;
