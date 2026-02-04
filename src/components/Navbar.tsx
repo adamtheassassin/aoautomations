@@ -6,12 +6,14 @@ export default function Navbar() {
         <nav className="fixed top-0 w-full z-50 transition-all duration-300 backdrop-blur-md bg-brand-cream/80 border-b border-brand-black/5">
             <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
                 <div className="flex items-center gap-3 group cursor-pointer">
-                    {/* Placeholder Icon */}
-                    <div className="w-10 h-10 bg-brand-black text-white rounded-xl flex items-center justify-center font-bold text-xl shadow-lg group-hover:bg-brand-red group-hover:scale-105 transition-all duration-300">
-                        P
-                    </div>
+                    {/* Logo Icon */}
+                    <img
+                        src="/icons_&_images/Client Logos/ao-icon.svg"
+                        alt="aoautomations"
+                        className="w-10 h-10 object-contain drop-shadow-md group-hover:scale-110 transition-transform duration-300"
+                    />
                     <span className="text-2xl font-bold text-brand-black tracking-tight group-hover:text-brand-red transition-colors duration-300">
-                        ProfResults
+                        aoautomations
                     </span>
                 </div>
 

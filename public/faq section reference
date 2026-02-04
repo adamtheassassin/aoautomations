@@ -1,0 +1,391 @@
+<div class="framer-3a9dmg" data-framer-name="FAQ" style="opacity: 1;">
+    <div class="framer-k70dto" data-framer-name="Container"
+        style="background-color: var(--token-ade1bce3-3902-4c4c-9fc0-b5696fee36e0, rgb(247, 242, 234)); will-change: transform; border-radius: 16px; opacity: 1; transform: none;">
+        <div class="framer-gfajkz" data-framer-name="Text" style="opacity: 1;">
+            <div class="framer-18p8up6-container" style="opacity: 1;">
+                <div class="framer-9sYmf framer-vS0iE framer-1ae7tw8 framer-v-1ae7tw8" data-framer-name="Variant 1"
+                    style="background-color: rgba(0, 0, 0, 0.04); border-radius: 8px; opacity: 1;">
+                    <div class="framer-owz72m" data-framer-component-type="RichTextContainer"
+                        style="--framer-link-text-color: rgb(0, 153, 255); --framer-link-text-decoration: underline; transform: none; opacity: 1;">
+                        <p class="framer-text framer-styles-preset-1t0qbzo" data-styles-preset="zippme_qp">Questions</p>
+                    </div>
+                </div>
+            </div>
+            <div class="framer-186lrku" data-framer-name="Frequently Asked Questions"
+                data-framer-component-type="RichTextContainer"
+                style="--extracted-1of0zx5: var(--token-2007957d-a074-4c0c-8a33-8d85ed1ba0fd, rgb(0, 0, 0)); --framer-paragraph-spacing: 0px; transform: none; opacity: 1;">
+                <h2 class="framer-text"
+                    style="--font-selector: SW50ZXItTWVkaXVt; --framer-font-family: &quot;Inter&quot;, &quot;Inter Placeholder&quot;, sans-serif; --framer-font-size: 40px; --framer-font-weight: 500; --framer-letter-spacing: -0.06em; --framer-line-height: 120%; --framer-text-color: var(--extracted-1of0zx5, var(--token-2007957d-a074-4c0c-8a33-8d85ed1ba0fd, rgb(0, 0, 0)));">
+                    Frequently Asked<span class="framer-text"
+                        style="--font-selector: SW50ZXItU2VtaUJvbGQ=; --framer-font-weight: 600;"> </span><span
+                        class="framer-text"
+                        style="--font-selector: R0Y7U291cmNlIFNlcmlmIDQtNjAwaXRhbGlj; --framer-font-family: &quot;Source Serif 4&quot;, &quot;Source Serif 4 Placeholder&quot;, serif; --framer-font-style: italic; --framer-font-weight: 600; --framer-letter-spacing: -0.07em;">Questions</span>
+                </h2>
+            </div>
+        </div>
+        <div class="framer-djynpo" data-framer-name="Content" style="opacity: 1;">
+            <div class="framer-1w1n4tg-container" style="opacity: 1;">
+                <div class="framer-1MQjT framer-xnui01 framer-v-xnui01" data-framer-name="Desktop"
+                    style="max-width: 100%; width: 100%; opacity: 1;">
+                    <div class="framer-i5m67f-container" style="opacity: 1; height: 56px;">
+                        <div class="framer-s6wJF framer-nnywJ framer-hK3DV framer-12r0ylv framer-v-12r0ylv"
+                            data-framer-name="Desktop" data-highlight="true" tabindex="0"
+                            style="background-color: rgba(0, 0, 0, 0.04); width: 100%; will-change: transform; border-radius: 8px; opacity: 1; transform: none;">
+                            <div class="framer-1w1nb3l" data-framer-name="Question" style="opacity: 1;">
+                                <div class="framer-yl0qfb" data-framer-name="Title" style="opacity: 1;">
+                                    <div class="framer-1207auw" data-framer-component-type="RichTextContainer"
+                                        style="--framer-paragraph-spacing: 0px; transform: none; opacity: 1;">
+                                        <p class="framer-text framer-styles-preset-16xzgux"
+                                            data-styles-preset="Iadu_5OYJ">1. How do I know you can actually guarantee
+                                            top 3?</p>
+                                    </div>
+                                    <div class="framer-175cimr" data-framer-name="Icon"
+                                        style="background-color: var(--token-2007957d-a074-4c0c-8a33-8d85ed1ba0fd, rgb(0, 0, 0)); border-radius: 6px; opacity: 1;">
+                                        <div class="framer-on7jc4-container" style="transform: none; opacity: 1;">
+                                            <div style="display: contents;"><svg xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 256 256" focusable="false"
+                                                    color="var(--token-f8dc39cc-9b31-4d20-8063-4556a3d8afa9, rgb(255, 255, 255))"
+                                                    style="user-select: none; width: 100%; height: 100%; display: inline-block; fill: var(--token-f8dc39cc-9b31-4d20-8063-4556a3d8afa9, rgb(255, 255, 255)); color: var(--token-f8dc39cc-9b31-4d20-8063-4556a3d8afa9, rgb(255, 255, 255)); flex-shrink: 0;">
+                                                    <g color="var(--token-f8dc39cc-9b31-4d20-8063-4556a3d8afa9, rgb(255, 255, 255))"
+                                                        weight="regular">
+                                                        <path
+                                                            d="M224,128a8,8,0,0,1-8,8H136v80a8,8,0,0,1-16,0V136H40a8,8,0,0,1,0-16h80V40a8,8,0,0,1,16,0v80h80A8,8,0,0,1,224,128Z">
+                                                        </path>
+                                                    </g>
+                                                </svg></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="framer-14nddoc" data-framer-name="Answer"
+                                    style="opacity: 0; transform: translateX(-50%);">
+                                    <div class="framer-briyeh" data-framer-name="What is your typical project timeline?"
+                                        data-framer-component-type="RichTextContainer"
+                                        style="--extracted-r6o4lv: var(--token-4fb42c33-113c-4a31-b240-1fbb97f47fe5, rgba(0, 0, 0, 0.48)); --framer-paragraph-spacing: 0px; transform: none; opacity: 1;">
+                                        <p class="framer-text framer-styles-preset-l7ggan"
+                                            data-styles-preset="WSSRYTndc"
+                                            style="--framer-text-color: var(--extracted-r6o4lv, var(--token-4fb42c33-113c-4a31-b240-1fbb97f47fe5, rgba(0, 0, 0, 0.48)));">
+                                            We've done this for dozens of local UK businesses across tree surgery,
+                                            surveyors, insurance agencies, and more. We only take on businesses we know
+                                            we can rank - that's why we've never had to refund anyone (so far). Before
+                                            we take your money, we audit your market and only proceed if we're confident
+                                            we can get you there. If we can't deliver top 3 in 90 days, we'll work for
+                                            free until we do. </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="framer-av5rem-container" style="transform: translateX(-50%); opacity: 1;">
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="framer-1iipha0-container" style="opacity: 1; height: 56px;">
+                        <div class="framer-s6wJF framer-nnywJ framer-hK3DV framer-12r0ylv framer-v-12r0ylv"
+                            data-framer-name="Desktop" data-highlight="true" tabindex="0"
+                            style="background-color: rgba(0, 0, 0, 0.04); width: 100%; will-change: transform; border-radius: 8px; opacity: 1; transform: none;">
+                            <div class="framer-1w1nb3l" data-framer-name="Question" style="opacity: 1;">
+                                <div class="framer-yl0qfb" data-framer-name="Title" style="opacity: 1;">
+                                    <div class="framer-1207auw" data-framer-component-type="RichTextContainer"
+                                        style="--framer-paragraph-spacing: 0px; transform: none; opacity: 1;">
+                                        <p class="framer-text framer-styles-preset-16xzgux"
+                                            data-styles-preset="Iadu_5OYJ">2. What's this actually going to cost me
+                                            total?</p>
+                                    </div>
+                                    <div class="framer-175cimr" data-framer-name="Icon"
+                                        style="background-color: var(--token-2007957d-a074-4c0c-8a33-8d85ed1ba0fd, rgb(0, 0, 0)); border-radius: 6px; opacity: 1;">
+                                        <div class="framer-on7jc4-container" style="transform: none; opacity: 1;">
+                                            <div style="display: contents;"><svg xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 256 256" focusable="false"
+                                                    color="var(--token-f8dc39cc-9b31-4d20-8063-4556a3d8afa9, rgb(255, 255, 255))"
+                                                    style="user-select: none; width: 100%; height: 100%; display: inline-block; fill: var(--token-f8dc39cc-9b31-4d20-8063-4556a3d8afa9, rgb(255, 255, 255)); color: var(--token-f8dc39cc-9b31-4d20-8063-4556a3d8afa9, rgb(255, 255, 255)); flex-shrink: 0;">
+                                                    <g color="var(--token-f8dc39cc-9b31-4d20-8063-4556a3d8afa9, rgb(255, 255, 255))"
+                                                        weight="regular">
+                                                        <path
+                                                            d="M224,128a8,8,0,0,1-8,8H136v80a8,8,0,0,1-16,0V136H40a8,8,0,0,1,0-16h80V40a8,8,0,0,1,16,0v80h80A8,8,0,0,1,224,128Z">
+                                                        </path>
+                                                    </g>
+                                                </svg></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="framer-14nddoc" data-framer-name="Answer"
+                                    style="opacity: 0; transform: translateX(-50%);">
+                                    <div class="framer-briyeh" data-framer-name="What is your typical project timeline?"
+                                        data-framer-component-type="RichTextContainer"
+                                        style="--extracted-r6o4lv: var(--token-4fb42c33-113c-4a31-b240-1fbb97f47fe5, rgba(0, 0, 0, 0.48)); --framer-paragraph-spacing: 0px; transform: none; opacity: 1;">
+                                        <p class="framer-text framer-styles-preset-l7ggan"
+                                            data-styles-preset="WSSRYTndc"
+                                            style="--framer-text-color: var(--extracted-r6o4lv, var(--token-4fb42c33-113c-4a31-b240-1fbb97f47fe5, rgba(0, 0, 0, 0.48)));">
+                                            If and provided we can help you out, we will offer you two different payment
+                                            plans. One is monthly and the other one is a prepayment for the quarter. For
+                                            this specific package it's either 400£ / month or 1000£ / quarter.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="framer-av5rem-container" style="transform: translateX(-50%); opacity: 1;">
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="framer-n0vkdb-container" style="opacity: 1; height: 56px;">
+                        <div class="framer-s6wJF framer-nnywJ framer-hK3DV framer-12r0ylv framer-v-12r0ylv"
+                            data-framer-name="Desktop" data-highlight="true" tabindex="0"
+                            style="background-color: rgba(0, 0, 0, 0.04); width: 100%; will-change: transform; border-radius: 8px; opacity: 1; transform: none;">
+                            <div class="framer-1w1nb3l" data-framer-name="Question" style="opacity: 1;">
+                                <div class="framer-yl0qfb" data-framer-name="Title" style="opacity: 1;">
+                                    <div class="framer-1207auw" data-framer-component-type="RichTextContainer"
+                                        style="--framer-paragraph-spacing: 0px; transform: none; opacity: 1;">
+                                        <p class="framer-text framer-styles-preset-16xzgux"
+                                            data-styles-preset="Iadu_5OYJ">3. Will this work for my specific type of
+                                            business?</p>
+                                    </div>
+                                    <div class="framer-175cimr" data-framer-name="Icon"
+                                        style="background-color: var(--token-2007957d-a074-4c0c-8a33-8d85ed1ba0fd, rgb(0, 0, 0)); border-radius: 6px; opacity: 1;">
+                                        <div class="framer-on7jc4-container" style="transform: none; opacity: 1;">
+                                            <div style="display: contents;"><svg xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 256 256" focusable="false"
+                                                    color="var(--token-f8dc39cc-9b31-4d20-8063-4556a3d8afa9, rgb(255, 255, 255))"
+                                                    style="user-select: none; width: 100%; height: 100%; display: inline-block; fill: var(--token-f8dc39cc-9b31-4d20-8063-4556a3d8afa9, rgb(255, 255, 255)); color: var(--token-f8dc39cc-9b31-4d20-8063-4556a3d8afa9, rgb(255, 255, 255)); flex-shrink: 0;">
+                                                    <g color="var(--token-f8dc39cc-9b31-4d20-8063-4556a3d8afa9, rgb(255, 255, 255))"
+                                                        weight="regular">
+                                                        <path
+                                                            d="M224,128a8,8,0,0,1-8,8H136v80a8,8,0,0,1-16,0V136H40a8,8,0,0,1,0-16h80V40a8,8,0,0,1,16,0v80h80A8,8,0,0,1,224,128Z">
+                                                        </path>
+                                                    </g>
+                                                </svg></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="framer-14nddoc" data-framer-name="Answer"
+                                    style="opacity: 0; transform: translateX(-50%);">
+                                    <div class="framer-briyeh" data-framer-name="What is your typical project timeline?"
+                                        data-framer-component-type="RichTextContainer"
+                                        style="--extracted-r6o4lv: var(--token-4fb42c33-113c-4a31-b240-1fbb97f47fe5, rgba(0, 0, 0, 0.48)); --framer-paragraph-spacing: 0px; transform: none; opacity: 1;">
+                                        <p class="framer-text framer-styles-preset-l7ggan"
+                                            data-styles-preset="WSSRYTndc"
+                                            style="--framer-text-color: var(--extracted-r6o4lv, var(--token-4fb42c33-113c-4a31-b240-1fbb97f47fe5, rgba(0, 0, 0, 0.48)));">
+                                            If you're a UK local business with a physical service area, yes. We've
+                                            ranked tree surgeons, surveyors, insurance agencies, contractors - the
+                                            system works for any local service business. On our call, we'll tell you
+                                            straight up if your market is too competitive or if there's something that
+                                            would prevent us from ranking you. We don't take your money if we can't
+                                            deliver.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="framer-av5rem-container" style="transform: translateX(-50%); opacity: 1;">
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="framer-7y73qf-container" style="opacity: 1; height: 56px;">
+                        <div class="framer-s6wJF framer-nnywJ framer-hK3DV framer-12r0ylv framer-v-12r0ylv"
+                            data-framer-name="Desktop" data-highlight="true" tabindex="0"
+                            style="background-color: rgba(0, 0, 0, 0.04); width: 100%; will-change: transform; border-radius: 8px; opacity: 1; transform: none;">
+                            <div class="framer-1w1nb3l" data-framer-name="Question" style="opacity: 1;">
+                                <div class="framer-yl0qfb" data-framer-name="Title" style="opacity: 1;">
+                                    <div class="framer-1207auw" data-framer-component-type="RichTextContainer"
+                                        style="--framer-paragraph-spacing: 0px; transform: none; opacity: 1;">
+                                        <p class="framer-text framer-styles-preset-16xzgux"
+                                            data-styles-preset="Iadu_5OYJ">4. How long until I actually see results?</p>
+                                    </div>
+                                    <div class="framer-175cimr" data-framer-name="Icon"
+                                        style="background-color: var(--token-2007957d-a074-4c0c-8a33-8d85ed1ba0fd, rgb(0, 0, 0)); border-radius: 6px; opacity: 1;">
+                                        <div class="framer-on7jc4-container" style="transform: none; opacity: 1;">
+                                            <div style="display: contents;"><svg xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 256 256" focusable="false"
+                                                    color="var(--token-f8dc39cc-9b31-4d20-8063-4556a3d8afa9, rgb(255, 255, 255))"
+                                                    style="user-select: none; width: 100%; height: 100%; display: inline-block; fill: var(--token-f8dc39cc-9b31-4d20-8063-4556a3d8afa9, rgb(255, 255, 255)); color: var(--token-f8dc39cc-9b31-4d20-8063-4556a3d8afa9, rgb(255, 255, 255)); flex-shrink: 0;">
+                                                    <g color="var(--token-f8dc39cc-9b31-4d20-8063-4556a3d8afa9, rgb(255, 255, 255))"
+                                                        weight="regular">
+                                                        <path
+                                                            d="M224,128a8,8,0,0,1-8,8H136v80a8,8,0,0,1-16,0V136H40a8,8,0,0,1,0-16h80V40a8,8,0,0,1,16,0v80h80A8,8,0,0,1,224,128Z">
+                                                        </path>
+                                                    </g>
+                                                </svg></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="framer-14nddoc" data-framer-name="Answer"
+                                    style="opacity: 0; transform: translateX(-50%);">
+                                    <div class="framer-briyeh" data-framer-name="What is your typical project timeline?"
+                                        data-framer-component-type="RichTextContainer"
+                                        style="--extracted-r6o4lv: var(--token-4fb42c33-113c-4a31-b240-1fbb97f47fe5, rgba(0, 0, 0, 0.48)); --framer-paragraph-spacing: 0px; transform: none; opacity: 1;">
+                                        <p class="framer-text framer-styles-preset-l7ggan"
+                                            data-styles-preset="WSSRYTndc"
+                                            style="--framer-text-color: var(--extracted-r6o4lv, var(--token-4fb42c33-113c-4a31-b240-1fbb97f47fe5, rgba(0, 0, 0, 0.48)));">
+                                            Most businesses see ranking movement within 2-3 weeks. You'll notice you're
+                                            climbing in the maps. The guarantee is top 3 within 90 days, but many hit it
+                                            sooner. Once you're in the top 3, the phone starts ringing consistently.
+                                            That's when you see the real ROI - not from rankings, but from the actual
+                                            customers booking with you instead of your competitors.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="framer-av5rem-container" style="transform: translateX(-50%); opacity: 1;">
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="framer-jy4134-container" style="opacity: 1; height: 56px;">
+                        <div class="framer-s6wJF framer-nnywJ framer-hK3DV framer-12r0ylv framer-v-12r0ylv"
+                            data-framer-name="Desktop" data-highlight="true" tabindex="0"
+                            style="background-color: rgba(0, 0, 0, 0.04); width: 100%; will-change: transform; border-radius: 8px; opacity: 1; transform: none;">
+                            <div class="framer-1w1nb3l" data-framer-name="Question" style="opacity: 1;">
+                                <div class="framer-yl0qfb" data-framer-name="Title" style="opacity: 1;">
+                                    <div class="framer-1207auw" data-framer-component-type="RichTextContainer"
+                                        style="--framer-paragraph-spacing: 0px; transform: none; opacity: 1;">
+                                        <p class="framer-text framer-styles-preset-16xzgux"
+                                            data-styles-preset="Iadu_5OYJ">5. How much of my time does this require?</p>
+                                    </div>
+                                    <div class="framer-175cimr" data-framer-name="Icon"
+                                        style="background-color: var(--token-2007957d-a074-4c0c-8a33-8d85ed1ba0fd, rgb(0, 0, 0)); border-radius: 6px; opacity: 1;">
+                                        <div class="framer-on7jc4-container" style="transform: none; opacity: 1;">
+                                            <div style="display: contents;"><svg xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 256 256" focusable="false"
+                                                    color="var(--token-f8dc39cc-9b31-4d20-8063-4556a3d8afa9, rgb(255, 255, 255))"
+                                                    style="user-select: none; width: 100%; height: 100%; display: inline-block; fill: var(--token-f8dc39cc-9b31-4d20-8063-4556a3d8afa9, rgb(255, 255, 255)); color: var(--token-f8dc39cc-9b31-4d20-8063-4556a3d8afa9, rgb(255, 255, 255)); flex-shrink: 0;">
+                                                    <g color="var(--token-f8dc39cc-9b31-4d20-8063-4556a3d8afa9, rgb(255, 255, 255))"
+                                                        weight="regular">
+                                                        <path
+                                                            d="M224,128a8,8,0,0,1-8,8H136v80a8,8,0,0,1-16,0V136H40a8,8,0,0,1,0-16h80V40a8,8,0,0,1,16,0v80h80A8,8,0,0,1,224,128Z">
+                                                        </path>
+                                                    </g>
+                                                </svg></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="framer-14nddoc" data-framer-name="Answer"
+                                    style="opacity: 0; transform: translateX(-50%);">
+                                    <div class="framer-briyeh" data-framer-name="What is your typical project timeline?"
+                                        data-framer-component-type="RichTextContainer"
+                                        style="--extracted-r6o4lv: var(--token-4fb42c33-113c-4a31-b240-1fbb97f47fe5, rgba(0, 0, 0, 0.48)); --framer-paragraph-spacing: 0px; transform: none; opacity: 1;">
+                                        <p class="framer-text framer-styles-preset-l7ggan"
+                                            data-styles-preset="WSSRYTndc"
+                                            style="--framer-text-color: var(--extracted-r6o4lv, var(--token-4fb42c33-113c-4a31-b240-1fbb97f47fe5, rgba(0, 0, 0, 0.48)));">
+                                            About 30 minutes total. One onboarding call where we get access to your
+                                            Google Business Profile and gather some info about your business. After
+                                            that, we handle absolutely everything - optimization, reviews, posts,
+                                            citations, all of it. You won't need to touch anything or learn anything
+                                            technical. You just keep running your business while we get you ranked.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="framer-av5rem-container" style="transform: translateX(-50%); opacity: 1;">
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="framer-qx0vta-container" style="opacity: 1; height: 150px;">
+                        <div class="framer-s6wJF framer-nnywJ framer-hK3DV framer-12r0ylv framer-v-knlk4k"
+                            data-framer-name="Desktop (Open)" data-highlight="true" tabindex="0"
+                            style="background-color: rgba(0, 0, 0, 0.04); width: 100%; will-change: transform; border-radius: 8px; opacity: 1; transform: none; transform-origin: 50% 50% 0px;">
+                            <div class="framer-1w1nb3l" data-framer-name="Question"
+                                style="transform: none; transform-origin: 50% 50% 0px;">
+                                <div class="framer-yl0qfb" data-framer-name="Title"
+                                    style="transform: none; transform-origin: 50% 50% 0px;">
+                                    <div class="framer-1207auw" data-framer-component-type="RichTextContainer"
+                                        style="--framer-paragraph-spacing: 0px; transform: none; transform-origin: 50% 50% 0px;">
+                                        <p class="framer-text framer-styles-preset-16xzgux"
+                                            data-styles-preset="Iadu_5OYJ">6. What happens if you don't get the promised
+                                            result?</p>
+                                    </div>
+                                    <div class="framer-175cimr" data-framer-name="Icon"
+                                        style="background-color: var(--token-2007957d-a074-4c0c-8a33-8d85ed1ba0fd, rgb(0, 0, 0)); border-radius: 6px; transform: none; transform-origin: 50% 50% 0px;">
+                                        <div class="framer-on7jc4-container"
+                                            style="transform: rotate(135deg); will-change: transform; transform-origin: 50% 50% 0px;">
+                                            <div style="display: contents;"><svg xmlns="http://www.w3.org/2000/svg"
+                                                    viewBox="0 0 256 256" focusable="false"
+                                                    color="var(--token-f8dc39cc-9b31-4d20-8063-4556a3d8afa9, rgb(255, 255, 255))"
+                                                    style="user-select: none; width: 100%; height: 100%; display: inline-block; fill: var(--token-f8dc39cc-9b31-4d20-8063-4556a3d8afa9, rgb(255, 255, 255)); color: var(--token-f8dc39cc-9b31-4d20-8063-4556a3d8afa9, rgb(255, 255, 255)); flex-shrink: 0;">
+                                                    <g color="var(--token-f8dc39cc-9b31-4d20-8063-4556a3d8afa9, rgb(255, 255, 255))"
+                                                        weight="regular">
+                                                        <path
+                                                            d="M224,128a8,8,0,0,1-8,8H136v80a8,8,0,0,1-16,0V136H40a8,8,0,0,1,0-16h80V40a8,8,0,0,1,16,0v80h80A8,8,0,0,1,224,128Z">
+                                                        </path>
+                                                    </g>
+                                                </svg></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="framer-14nddoc" data-framer-name="Answer"
+                                    style="opacity: 1; transform: none; will-change: transform; transform-origin: 50% 50% 0px;">
+                                    <div class="framer-briyeh" data-framer-name="What is your typical project timeline?"
+                                        data-framer-component-type="RichTextContainer"
+                                        style="--extracted-r6o4lv: var(--token-4fb42c33-113c-4a31-b240-1fbb97f47fe5, rgba(0, 0, 0, 0.48)); --framer-paragraph-spacing: 0px; transform: none; transform-origin: 50% 50% 0px;">
+                                        <p class="framer-text framer-styles-preset-l7ggan"
+                                            data-styles-preset="WSSRYTndc"
+                                            style="--framer-text-color: var(--extracted-r6o4lv, var(--token-4fb42c33-113c-4a31-b240-1fbb97f47fe5, rgba(0, 0, 0, 0.48)));">
+                                            We are proactively checking and reporting your progress. If we didn't hit
+                                            the result by the day we promised to hit it, we'll stop your billing until
+                                            we actually get you there. As soon as we do, we'll start billing next month
+                                            again to then maintain your ranking.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="framer-av5rem-container"
+                                style="transform: translateX(-50%); transform-origin: 50% 50% 0px;">
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="framer-6vkn49" data-framer-name="Quote"
+            style="background-color: var(--token-2007957d-a074-4c0c-8a33-8d85ed1ba0fd, rgb(0, 0, 0)); will-change: transform; border-radius: 20px; opacity: 1; transform: none;">
+            <div class="framer-8i0977-container" data-framer-name="1-square-fill" name="1-square-fill"
+                style="transform: rotate(90deg); opacity: 1;">
+                <div aria-hidden="true"
+                    style="display: flex; max-width: 100%; max-height: 100%; align-items: center; justify-content: center; height: 100%; width: 100%;">
+                    <svg width="100%" height="100%" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M15 5.5V26.5C15 26.6326 14.9473 26.7598 14.8536 26.8536C14.7598 26.9473 14.6326 27 14.5 27H7C6.46957 27 5.96086 26.7893 5.58579 26.4142C5.21071 26.0391 5 25.5304 5 25V7C5 6.46957 5.21071 5.96086 5.58579 5.58579C5.96086 5.21071 6.46957 5 7 5H14.5C14.6326 5 14.7598 5.05268 14.8536 5.14645C14.9473 5.24021 15 5.36739 15 5.5ZM25 5H17.5C17.3674 5 17.2402 5.05268 17.1464 5.14645C17.0527 5.24021 17 5.36739 17 5.5V26.5C17 26.6326 17.0527 26.7598 17.1464 26.8536C17.2402 26.9473 17.3674 27 17.5 27H25C25.5304 27 26.0391 26.7893 26.4142 26.4142C26.7893 26.0391 27 25.5304 27 25V7C27 6.46957 26.7893 5.96086 26.4142 5.58579C26.0391 5.21071 25.5304 5 25 5Z"
+                            fill="var(--token-f8dc39cc-9b31-4d20-8063-4556a3d8afa9, rgb(255, 255, 255))"></path>
+                    </svg></div>
+            </div>
+        </div>
+    </div>
+</div>
+--one-if-corner-shape-supported: 1;
+font-family: sans-serif;
+font-size: 12px;
+--token-f8dc39cc-9b31-4d20-8063-4556a3d8afa9: #fff;
+--token-5a8c46ea-26d4-4fbb-9dba-c7522fca8089: #ffffff8f;
+--token-10d627ba-a180-41f3-bda4-3ebdfe6da0b7: #ffffff7a;
+--token-c2e2a410-6f04-4250-8cbc-525e953a716f: #ffffff3d;
+--token-4931e0a3-d9c6-44e2-8ffa-6116eb7b79e4: #ffffff1f;
+--token-2007957d-a074-4c0c-8a33-8d85ed1ba0fd: #000;
+--token-563917f7-788f-412e-bbb3-52a063ef4a82: #0000008f;
+--token-4fb42c33-113c-4a31-b240-1fbb97f47fe5: #0000007a;
+--token-5621f77f-a25c-4b6f-90f4-02bdb225a779: #0000003d;
+--token-cd4b28e8-0a42-4b18-88ca-07b7a717f0f8: #0000001f;
+--token-7513ecda-102e-44af-bcb5-cc88031ed55c: #fff0;
+--token-7325e44b-ac7a-4a00-af4e-3813bf106a76: #ffffff1a;
+--token-63ce9049-e3bd-4cfc-8a25-11c333f1f49f: #ffffff14;
+--token-8ac726e4-b1e6-42dd-9d16-34548d7cc9e7: #0000001a;
+--token-ee2dbcb5-2207-4058-b511-a98b4cfd1f67: #00000014;
+--token-a0488cff-ffde-4e55-bf18-5343b371b4d6: #f7f5f2;
+--token-7a8e3831-2440-464c-b922-6d6537eab7d0: #efebe5;
+--token-bd134076-e698-470d-b9fe-40deb4c20d4a: #ded6ca;
+--token-e27e1031-a876-439e-a06a-478d50eaa340: #0000005c;
+--token-ade1bce3-3902-4c4c-9fc0-b5696fee36e0: #f7f2ea;
+--token-57df5230-11aa-4e68-8b6b-18c3636e9783: #f3ece1;
+--token-5f5e3c8f-7d71-425c-b45c-50c8fbaf62f5: #e7d7c1;
+--token-849e124d-304f-407c-830d-356388c87cf6: #0000000a;
+--framer-will-change-override: none;
+--framer-will-change-filter-override: none;
+--framer-aspect-ratio-supported: auto;
+box-sizing: border-box;
+-webkit-font-smoothing: inherit;
+flex-flow: column;
+flex: none;
+place-content: center;
+align-items: center;
+gap: 0;
+width: 100%;
+height: min-content;
+padding: 0;
+display: flex;
+position: relative;
+overflow: visible;
+opacity: 1;

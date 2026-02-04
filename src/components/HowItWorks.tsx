@@ -16,7 +16,7 @@ export default function HowItWorks() {
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 relative z-10">
                     {/* Feature 1: Google Business Profile */}
-                    <div className="group relative bg-brand-black p-8 rounded-3xl shadow-xl border border-white/5 hover:border-brand-red/20 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl overflow-hidden text-center flex flex-col items-center">
+                    <div className="group relative bg-brand-dark p-8 rounded-3xl shadow-xl border border-white/5 hover:border-brand-red/20 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl overflow-hidden text-center flex flex-col items-center">
                         <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-brand-red to-brand-dark transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500"></div>
 
                         <div className="mb-12 relative w-48 h-48 flex items-center justify-center">
@@ -32,13 +32,13 @@ export default function HowItWorks() {
                             <br />Profile Optimization
                         </h3>
 
-                        <p className="text-gray-400 leading-relaxed">
+                        <p className="text-gray-300 leading-relaxed">
                             We rebuild your entire Google Business Profile from the ground up to match exactly what Google wants to see.
                         </p>
                     </div>
 
                     {/* Feature 2: High-Status Website */}
-                    <div className="group relative bg-brand-black p-8 rounded-3xl shadow-xl border border-white/5 hover:border-brand-red/20 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl overflow-hidden text-center flex flex-col items-center">
+                    <div className="group relative bg-brand-dark p-8 rounded-3xl shadow-xl border border-white/5 hover:border-brand-red/20 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl overflow-hidden text-center flex flex-col items-center">
                         <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-brand-red to-brand-dark transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500"></div>
 
                         <div className="mb-12 relative w-48 h-48 flex items-center justify-center">
@@ -54,13 +54,13 @@ export default function HowItWorks() {
                             <br />Website
                         </h3>
 
-                        <p className="text-gray-400 leading-relaxed">
+                        <p className="text-gray-300 leading-relaxed">
                             We make your message resonate with your ideal clients, and support it with a design that aids your copy and builds instant trust.
                         </p>
                     </div>
 
                     {/* Feature 3: Local Authority Building */}
-                    <div className="group relative bg-brand-black p-8 rounded-3xl shadow-xl border border-white/5 hover:border-brand-red/20 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl overflow-hidden text-center flex flex-col items-center">
+                    <div className="group relative bg-brand-dark p-8 rounded-3xl shadow-xl border border-white/5 hover:border-brand-red/20 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl overflow-hidden text-center flex flex-col items-center">
                         <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-brand-red to-brand-dark transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500"></div>
 
                         <div className="mb-12 relative w-48 h-48 flex items-center justify-center">
@@ -75,7 +75,7 @@ export default function HowItWorks() {
                             Local Authority Building
                         </h3>
 
-                        <p className="text-gray-400 leading-relaxed">
+                        <p className="text-gray-300 leading-relaxed">
                             We establish your business as the dominant local authority through citations, content, and signals Google actually cares about.
                         </p>
                     </div>

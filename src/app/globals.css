@@ -13,8 +13,8 @@
   /* Pure White */
   --color-brand-black: #222222;
   /* Dark Charcoal */
-  --color-brand-gray: #C9CDCF;
-  /* Light Steel Gray */
+  --color-brand-gray: #55595c;
+  /* Dark Steel Gray - Darkened for readability */
 
   --color-background: var(--color-brand-cream);
   --color-foreground: var(--color-brand-black);
