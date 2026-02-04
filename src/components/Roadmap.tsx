@@ -3,7 +3,7 @@ import LiquidButton from './LiquidButton';
 
 export default function Roadmap() {
     return (
-        <section className="w-full py-24 px-6 bg-brand-cream relative overflow-hidden">
+        <section className="w-full py-24 px-6 bg-white relative overflow-hidden">
             <div className="max-w-7xl mx-auto relative z-10">
 
                 {/* Header */}

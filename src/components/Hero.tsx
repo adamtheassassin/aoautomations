@@ -4,17 +4,17 @@ import Marquee from './Marquee';
 export default function Hero() {
     return (
         <>
-            <section className="w-full min-h-screen pt-28 md:pt-40 pb-20 relative overflow-hidden flex flex-col">
+            <section className="w-full min-h-screen pt-28 md:pt-40 pb-20 relative overflow-hidden flex flex-col bg-white">
                 {/* Background Decorative Blobs */}
                 <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-brand-red/5 rounded-full blur-3xl -z-10 translate-x-1/2 -translate-y-1/2 pointer-events-none gpu-accelerate"></div>
                 <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-brand-dark/5 rounded-full blur-3xl -z-10 -translate-x-1/3 translate-y-1/3 pointer-events-none gpu-accelerate"></div>
 
                 <div className="w-full max-w-7xl mx-auto px-6 flex-grow flex flex-col justify-center">
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
 
                         {/* Left Content */}
-                        <div className="space-y-8 relative z-10">
-                            <h1 className="text-4xl md:text-6xl font-bold leading-[1.05] text-brand-black tracking-tight">
+                        <div className="space-y-8 relative z-10 flex flex-col items-center lg:items-start text-center lg:text-left h-full justify-center">
+                            <h1 className="text-5xl sm:text-6xl md:text-6xl font-bold leading-[1.05] text-brand-black tracking-tight">
                                 Top 3 Google Maps <br />
                                 Rankings in 90 Days - <span className="text-brand-red italic font-serif">Guaranteed</span>
                             </h1>
@@ -23,8 +23,8 @@ export default function Hero() {
                                 We'll get your local business ranking in the <strong className="text-brand-black font-semibold">top 3 Google Maps results</strong> for your service area. If we don't, you don't pay.
                             </p>
 
-                            <div className="pt-4 flex flex-col sm:flex-row gap-4 items-start sm:items-center">
-                                <LiquidButton className="px-10 py-4 text-lg font-semibold shadow-xl hover:shadow-2xl hover:shadow-brand-red/20 transition-all transform hover:-translate-y-1">
+                            <div className="w-full pt-8 md:pt-4 flex flex-col sm:flex-row gap-4 items-center lg:items-start justify-center lg:justify-start pb-8 lg:pb-0">
+                                <LiquidButton className="w-full sm:w-auto px-10 py-5 text-xl font-semibold shadow-xl hover:shadow-2xl hover:shadow-brand-red/20 transition-all transform hover:-translate-y-1">
                                     Get The FREE Analysis
                                 </LiquidButton>
 

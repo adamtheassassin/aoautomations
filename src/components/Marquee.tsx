@@ -46,8 +46,8 @@ export default function Marquee() {
     return (
         <div className="w-full relative overflow-hidden group">
             {/* Side Fades */}
-            <div className="absolute left-0 top-0 bottom-0 w-24 z-10 bg-gradient-to-r from-brand-cream to-transparent pointer-events-none"></div>
-            <div className="absolute right-0 top-0 bottom-0 w-24 z-10 bg-gradient-to-l from-brand-cream to-transparent pointer-events-none"></div>
+            <div className="absolute left-0 top-0 bottom-0 w-24 z-10 bg-gradient-to-r from-white to-transparent pointer-events-none"></div>
+            <div className="absolute right-0 top-0 bottom-0 w-24 z-10 bg-gradient-to-l from-white to-transparent pointer-events-none"></div>
 
             {/* Scrolling Container - Optimized with fewer duplicates */}
             <div className="flex w-full overflow-hidden mask-image-linear-to-r">
@@ -55,7 +55,7 @@ export default function Marquee() {
                     {seamlessLogos.map((logo, idx) => (
                         <div
                             key={idx}
-                            className="h-20 w-48 flex items-center justify-center text-brand-black/40 grayscale opacity-60 hover:grayscale-0 hover:opacity-100 hover:text-brand-black transition-all duration-300 cursor-pointer gpu-accelerate"
+                            className="h-20 w-48 flex items-center justify-center text-brand-black grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300 cursor-pointer gpu-accelerate brightness-0 opacity-80"
                         >
                             {logo}
                         </div>
@@ -63,7 +63,7 @@ export default function Marquee() {
                     {seamlessLogos.map((logo, idx) => (
                         <div
                             key={`dup1-${idx}`}
-                            className="h-20 w-48 flex items-center justify-center text-brand-black/40 grayscale opacity-60 hover:grayscale-0 hover:opacity-100 hover:text-brand-black transition-all duration-300 cursor-pointer gpu-accelerate"
+                            className="h-20 w-48 flex items-center justify-center text-brand-black grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300 cursor-pointer gpu-accelerate brightness-0 opacity-80"
                         >
                             {logo}
                         </div>
@@ -73,7 +73,7 @@ export default function Marquee() {
                     {seamlessLogos.map((logo, idx) => (
                         <div
                             key={`dup2-${idx}`}
-                            className="h-20 w-48 flex items-center justify-center text-brand-black/40 grayscale opacity-60 hover:grayscale-0 hover:opacity-100 hover:text-brand-black transition-all duration-300 cursor-pointer gpu-accelerate"
+                            className="h-20 w-48 flex items-center justify-center text-brand-black grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300 cursor-pointer gpu-accelerate brightness-0 opacity-80"
                         >
                             {logo}
                         </div>
@@ -81,7 +81,7 @@ export default function Marquee() {
                     {seamlessLogos.map((logo, idx) => (
                         <div
                             key={`dup3-${idx}`}
-                            className="h-20 w-48 flex items-center justify-center text-brand-black/40 grayscale opacity-60 hover:grayscale-0 hover:opacity-100 hover:text-brand-black transition-all duration-300 cursor-pointer gpu-accelerate"
+                            className="h-20 w-48 flex items-center justify-center text-brand-black grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300 cursor-pointer gpu-accelerate brightness-0 opacity-80"
                         >
                             {logo}
                         </div>

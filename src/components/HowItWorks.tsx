@@ -21,9 +21,9 @@ export default function HowItWorks() {
 
                         <div className="mb-12 relative w-48 h-48 flex items-center justify-center">
                             <img
-                                src="/icons_&_images/gbpoptimze1.webp"
+                                src="/icons_&_images/Client Logos/gbpoptimzered.webp"
                                 alt="Google Business Profile Optimization"
-                                className="w-full h-full object-contain drop-shadow-[0_8px_16px_rgba(0,0,0,0.25)] scale-175 transition-transform duration-500 group-hover:scale-[1.8]"
+                                className="w-full h-full object-contain drop-shadow-[0_8px_16px_rgba(0,0,0,0.25)] scale-175 transition-transform duration-500 group-hover:scale-[1.8] brightness-60"
                             />
                         </div>
 
@@ -43,9 +43,9 @@ export default function HowItWorks() {
 
                         <div className="mb-12 relative w-48 h-48 flex items-center justify-center">
                             <img
-                                src="/icons_&_images/websiteoptimize.webp"
+                                src="/icons_&_images/Client Logos/websiteoptimizered.webp"
                                 alt="High-Status Business Website"
-                                className="w-full h-full object-contain drop-shadow-[0_8px_16px_rgba(0,0,0,0.25)] scale-175 transition-transform duration-500 group-hover:scale-[1.8]"
+                                className="w-full h-full object-contain drop-shadow-[0_8px_16px_rgba(0,0,0,0.25)] scale-175 transition-transform duration-500 group-hover:scale-[1.8] brightness-60"
                             />
                         </div>
 
@@ -65,9 +65,9 @@ export default function HowItWorks() {
 
                         <div className="mb-12 relative w-48 h-48 flex items-center justify-center">
                             <img
-                                src="/icons_&_images/localauthority.webp"
+                                src="/icons_&_images/Client Logos/localauthorityred.webp"
                                 alt="Local Authority Building"
-                                className="w-full h-full object-contain drop-shadow-[0_8px_16px_rgba(0,0,0,0.25)] scale-175 transition-transform duration-500 group-hover:scale-[1.8]"
+                                className="w-full h-full object-contain drop-shadow-[0_8px_16px_rgba(0,0,0,0.25)] scale-175 transition-transform duration-500 group-hover:scale-[1.8] brightness-60"
                             />
                         </div>
 
