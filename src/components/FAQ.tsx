@@ -41,8 +41,8 @@ export default function FAQ() {
             <div className="max-w-3xl mx-auto">
                 {/* Header */}
                 <div className="mb-12">
-                    <div className="inline-block px-3 py-1 bg-brand-black/5 rounded-lg mb-6">
-                        <span className="text-sm font-medium text-brand-black">Questions</span>
+                    <div className="inline-block px-4 py-1.5 bg-brand-black/5 rounded-lg mb-6">
+                        <span className="text-base font-medium text-brand-black">Questions</span>
                     </div>
                     <h2 className="text-4xl md:text-5xl font-medium text-brand-black tracking-tight leading-[1.1]">
                         Frequently Asked <span className="font-serif italic font-semibold">Questions</span>

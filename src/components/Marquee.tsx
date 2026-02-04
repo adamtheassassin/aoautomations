@@ -40,23 +40,22 @@ const LOGOS = [
 ];
 
 export default function Marquee() {
-    // Not creating a huge array here, just enough to fill
+    // Reduced duplicates for better performance
     const seamlessLogos = LOGOS;
 
     return (
         <div className="w-full relative overflow-hidden group">
             {/* Side Fades */}
-            <div className="absolute left-0 top-0 bottom-0 w-24 z-10 bg-gradient-to-r from-brand-dark to-transparent pointer-events-none"></div>
-            <div className="absolute right-0 top-0 bottom-0 w-24 z-10 bg-gradient-to-l from-brand-dark to-transparent pointer-events-none"></div>
+            <div className="absolute left-0 top-0 bottom-0 w-24 z-10 bg-gradient-to-r from-brand-cream to-transparent pointer-events-none"></div>
+            <div className="absolute right-0 top-0 bottom-0 w-24 z-10 bg-gradient-to-l from-brand-cream to-transparent pointer-events-none"></div>
 
-            {/* Scrolling Container */}
+            {/* Scrolling Container - Optimized with fewer duplicates */}
             <div className="flex w-full overflow-hidden mask-image-linear-to-r">
-                <div className="flex animate-marquee gap-16 md:gap-24 pr-16 md:pr-24 items-center min-w-full shrink-0 will-change-transform">
+                <div className="flex animate-marquee gap-16 md:gap-24 pr-16 md:pr-24 items-center min-w-full shrink-0">
                     {seamlessLogos.map((logo, idx) => (
                         <div
                             key={idx}
-                            /* Updated for dark background: text-white/40, hover:text-white */
-                            className="h-20 w-48 flex items-center justify-center text-white/40 grayscale opacity-60 hover:grayscale-0 hover:opacity-100 hover:text-brand-cream transition-all duration-300 cursor-pointer"
+                            className="h-20 w-48 flex items-center justify-center text-brand-black/40 grayscale opacity-60 hover:grayscale-0 hover:opacity-100 hover:text-brand-black transition-all duration-300 cursor-pointer gpu-accelerate"
                         >
                             {logo}
                         </div>
@@ -64,17 +63,17 @@ export default function Marquee() {
                     {seamlessLogos.map((logo, idx) => (
                         <div
                             key={`dup1-${idx}`}
-                            className="h-20 w-48 flex items-center justify-center text-white/40 grayscale opacity-60 hover:grayscale-0 hover:opacity-100 hover:text-brand-cream transition-all duration-300 cursor-pointer"
+                            className="h-20 w-48 flex items-center justify-center text-brand-black/40 grayscale opacity-60 hover:grayscale-0 hover:opacity-100 hover:text-brand-black transition-all duration-300 cursor-pointer gpu-accelerate"
                         >
                             {logo}
                         </div>
                     ))}
                 </div>
-                <div className="flex animate-marquee gap-16 md:gap-24 pr-16 md:pr-24 items-center min-w-full shrink-0 will-change-transform" aria-hidden="true">
+                <div className="flex animate-marquee gap-16 md:gap-24 pr-16 md:pr-24 items-center min-w-full shrink-0" aria-hidden="true">
                     {seamlessLogos.map((logo, idx) => (
                         <div
                             key={`dup2-${idx}`}
-                            className="h-20 w-48 flex items-center justify-center text-white/40 grayscale opacity-60 hover:grayscale-0 hover:opacity-100 hover:text-brand-cream transition-all duration-300 cursor-pointer"
+                            className="h-20 w-48 flex items-center justify-center text-brand-black/40 grayscale opacity-60 hover:grayscale-0 hover:opacity-100 hover:text-brand-black transition-all duration-300 cursor-pointer gpu-accelerate"
                         >
                             {logo}
                         </div>
@@ -82,7 +81,7 @@ export default function Marquee() {
                     {seamlessLogos.map((logo, idx) => (
                         <div
                             key={`dup3-${idx}`}
-                            className="h-20 w-48 flex items-center justify-center text-white/40 grayscale opacity-60 hover:grayscale-0 hover:opacity-100 hover:text-brand-cream transition-all duration-300 cursor-pointer"
+                            className="h-20 w-48 flex items-center justify-center text-brand-black/40 grayscale opacity-60 hover:grayscale-0 hover:opacity-100 hover:text-brand-black transition-all duration-300 cursor-pointer gpu-accelerate"
                         >
                             {logo}
                         </div>

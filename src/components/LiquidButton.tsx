@@ -14,17 +14,23 @@ export default function LiquidButton({ children, className = "", onClick }: Liqu
     const [isVisible, setIsVisible] = useState(false);
 
     useEffect(() => {
+        let timeoutId: NodeJS.Timeout;
+
         const observer = new IntersectionObserver(
             ([entry]) => {
-                // Only render shader when button is actually visible
-                if (entry.isIntersecting) {
-                    setIsVisible(true);
-                } else {
-                    setIsVisible(false);
-                }
+                // Debounce visibility changes to prevent rapid toggling
+                clearTimeout(timeoutId);
+                timeoutId = setTimeout(() => {
+                    // Only render shader when button is actually visible
+                    if (entry.isIntersecting) {
+                        setIsVisible(true);
+                    } else {
+                        setIsVisible(false);
+                    }
+                }, 100); // 100ms debounce
             },
             {
-                rootMargin: '100px', // Pre-load slightly before it comes into view
+                rootMargin: '200px', // Increased pre-load margin
                 threshold: 0
             }
         );
@@ -33,7 +39,10 @@ export default function LiquidButton({ children, className = "", onClick }: Liqu
             observer.observe(buttonRef.current);
         }
 
-        return () => observer.disconnect();
+        return () => {
+            clearTimeout(timeoutId);
+            observer.disconnect();
+        };
     }, []);
 
     return (
@@ -47,8 +56,8 @@ export default function LiquidButton({ children, className = "", onClick }: Liqu
                 {isVisible && (
                     <div className="absolute inset-[-50%] w-[200%] h-[200%] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-100 transition-opacity duration-500">
                         <LiquidMetal
-                            width={600}
-                            height={600}
+                            width={300}
+                            height={300}
                             image="https://shaders.paper.design/images/logos/diamond.svg"
                             colorBack="#0C2B4E" // Brand Dark (Navy)
                             colorTint="#980404" // Brand Red (Deep)

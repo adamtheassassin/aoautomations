@@ -6,10 +6,10 @@ export default function Hero() {
         <>
             <section className="w-full min-h-screen pt-28 md:pt-40 pb-20 relative overflow-hidden flex flex-col">
                 {/* Background Decorative Blobs */}
-                <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-brand-red/5 rounded-full blur-3xl -z-10 translate-x-1/2 -translate-y-1/2 pointer-events-none"></div>
-                <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-brand-dark/5 rounded-full blur-3xl -z-10 -translate-x-1/3 translate-y-1/3 pointer-events-none"></div>
+                <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-brand-red/5 rounded-full blur-3xl -z-10 translate-x-1/2 -translate-y-1/2 pointer-events-none gpu-accelerate"></div>
+                <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-brand-dark/5 rounded-full blur-3xl -z-10 -translate-x-1/3 translate-y-1/3 pointer-events-none gpu-accelerate"></div>
 
-                <div className="w-full max-w-7xl mx-auto px-6">
+                <div className="w-full max-w-7xl mx-auto px-6 flex-grow flex flex-col justify-center">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
                         {/* Left Content */}
@@ -36,9 +36,9 @@ export default function Hero() {
                         {/* Right Content - Video Placeholder */}
                         <div className="relative group cursor-pointer perspective-1000">
                             {/* Decorative blur/glow behind */}
-                            <div className="absolute -inset-2 bg-gradient-to-tr from-brand-red via-brand-dark to-brand-red rounded-[2rem] blur-xl opacity-20 group-hover:opacity-40 transition duration-1000 group-hover:duration-200 animate-pulse-slow"></div>
+                            <div className="absolute -inset-2 bg-gradient-to-tr from-brand-red via-brand-dark to-brand-red rounded-[2rem] blur-xl opacity-20 group-hover:opacity-40 transition duration-1000 group-hover:duration-200 animate-pulse-slow gpu-accelerate"></div>
 
-                            <div className="relative bg-white rounded-[2rem] overflow-hidden shadow-2xl aspect-video ring-1 ring-black/5 transform transition-transform duration-500 group-hover:scale-[1.02] group-hover:-rotate-1">
+                            <div className="relative bg-white rounded-[2rem] overflow-hidden shadow-2xl aspect-video ring-1 ring-black/5 transform transition-transform duration-500 group-hover:scale-[1.02] group-hover:-rotate-1 gpu-accelerate">
                                 {/* Fake Video Content */}
                                 <div className="w-full h-full bg-neutral-100 flex items-center justify-center relative overflow-hidden">
                                     {/* Abstract Background for Video */}
@@ -61,7 +61,7 @@ export default function Hero() {
 
                                     {/* Play Button */}
                                     <div className="absolute inset-0 flex items-center justify-center z-20">
-                                        <div className="w-24 h-24 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform duration-300 border border-white/50">
+                                        <div className="w-24 h-24 bg-white/90 backdrop-blur-sm rounded-full flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform duration-300 border border-white/50 gpu-accelerate">
                                             <div className="w-0 h-0 border-t-[12px] border-t-transparent border-l-[22px] border-l-brand-red border-b-[12px] border-b-transparent ml-2"></div>
                                         </div>
                                     </div>
@@ -71,15 +71,15 @@ export default function Hero() {
 
                     </div>
                 </div>
-            </section>
 
-            {/* Social Proof / Logos */}
-            <div className="w-full bg-brand-dark py-16 relative z-20">
-                <div className="max-w-7xl mx-auto px-6">
-                    <p className="text-center text-sm font-semibold text-brand-cream/60 uppercase tracking-widest mb-10">Just a few of the businesses we work with</p>
-                    <Marquee />
+                {/* Social Proof / Logos - Moved back into Hero for visibility */}
+                <div className="w-full mt-auto pt-16 pb-8 relative z-20">
+                    <div className="max-w-7xl mx-auto px-6">
+                        <p className="text-center text-sm font-semibold text-brand-black/60 uppercase tracking-widest mb-10">Just a few of the businesses we work with</p>
+                        <Marquee />
+                    </div>
                 </div>
-            </div>
+            </section>
         </>
     );
 }

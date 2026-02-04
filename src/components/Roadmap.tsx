@@ -8,8 +8,8 @@ export default function Roadmap() {
 
                 {/* Header */}
                 <div className="flex flex-col items-center text-center mb-20">
-                    <div className="inline-block py-2 px-6 mb-8 rounded-full bg-brand-red/10 border border-brand-red/20 text-sm font-bold text-brand-red tracking-[0.3em] uppercase">
-                        How We Work
+                    <div className="inline-block px-4 py-1.5 bg-brand-black/5 rounded-lg mb-6">
+                        <span className="text-base font-medium text-brand-black">How We Work</span>
                     </div>
                     <h2 className="text-4xl md:text-6xl font-bold tracking-tight text-brand-black">
                         It's <span className="text-brand-red italic font-serif">Straightforward</span>
@@ -29,9 +29,9 @@ export default function Roadmap() {
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-16 md:gap-8 relative z-10">
 
                         {/* Step 1 */}
-                        <div className="group flex flex-col items-center text-center transition-all duration-500 hover:-translate-y-2">
+                        <div className="group flex flex-col items-center text-center transition-all duration-500 hover:-translate-y-2 gpu-accelerate">
                             <div className="relative mb-8">
-                                <div className="w-24 h-24 rounded-3xl bg-brand-cream border border-brand-black/10 flex items-center justify-center text-brand-red shadow-lg relative z-20 transition-all duration-500 group-hover:border-brand-red/30 group-hover:shadow-brand-red/20 group-hover:scale-110">
+                                <div className="w-24 h-24 rounded-3xl bg-brand-cream border border-brand-black/10 flex items-center justify-center text-brand-red shadow-lg relative z-20 transition-all duration-500 group-hover:border-brand-red/30 group-hover:shadow-brand-red/20 group-hover:scale-110 gpu-accelerate">
                                     <svg xmlns="http://www.w3.org/2000/svg" className="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5">
                                         <path strokeLinecap="round" strokeLinejoin="round" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
                                     </svg>
@@ -44,9 +44,9 @@ export default function Roadmap() {
                         </div>
 
                         {/* Step 2 */}
-                        <div className="group flex flex-col items-center text-center transition-all duration-500 hover:-translate-y-2 delay-100">
+                        <div className="group flex flex-col items-center text-center transition-all duration-500 hover:-translate-y-2 delay-100 gpu-accelerate">
                             <div className="relative mb-8">
-                                <div className="w-24 h-24 rounded-3xl bg-brand-cream border border-brand-black/10 flex items-center justify-center text-brand-red shadow-lg relative z-20 transition-all duration-500 group-hover:border-brand-red/30 group-hover:shadow-brand-red/20 group-hover:scale-110">
+                                <div className="w-24 h-24 rounded-3xl bg-brand-cream border border-brand-black/10 flex items-center justify-center text-brand-red shadow-lg relative z-20 transition-all duration-500 group-hover:border-brand-red/30 group-hover:shadow-brand-red/20 group-hover:scale-110 gpu-accelerate">
                                     <svg xmlns="http://www.w3.org/2000/svg" className="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5">
                                         <path strokeLinecap="round" strokeLinejoin="round" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
                                     </svg>
@@ -59,9 +59,9 @@ export default function Roadmap() {
                         </div>
 
                         {/* Step 3 */}
-                        <div className="group flex flex-col items-center text-center transition-all duration-500 hover:-translate-y-2 delay-200">
+                        <div className="group flex flex-col items-center text-center transition-all duration-500 hover:-translate-y-2 delay-200 gpu-accelerate">
                             <div className="relative mb-8">
-                                <div className="w-24 h-24 rounded-3xl bg-brand-cream border border-brand-black/10 flex items-center justify-center text-brand-red shadow-lg relative z-20 transition-all duration-500 group-hover:border-brand-red/30 group-hover:shadow-brand-red/20 group-hover:scale-110">
+                                <div className="w-24 h-24 rounded-3xl bg-brand-cream border border-brand-black/10 flex items-center justify-center text-brand-red shadow-lg relative z-20 transition-all duration-500 group-hover:border-brand-red/30 group-hover:shadow-brand-red/20 group-hover:scale-110 gpu-accelerate">
                                     <svg xmlns="http://www.w3.org/2000/svg" className="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="1.5">
                                         <path strokeLinecap="round" strokeLinejoin="round" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
                                     </svg>

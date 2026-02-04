@@ -16,8 +16,8 @@ export default function HowItWorks() {
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 relative z-10">
                     {/* Feature 1: Google Business Profile */}
-                    <div className="group relative bg-brand-dark p-8 rounded-3xl shadow-xl border border-white/5 hover:border-brand-red/20 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl overflow-hidden text-center flex flex-col items-center">
-                        <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-brand-red to-brand-dark transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500"></div>
+                    <div className="group relative bg-brand-dark p-8 rounded-3xl shadow-xl border border-white/5 hover:border-brand-red/20 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl overflow-hidden text-center flex flex-col items-center gpu-accelerate">
+                        <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-brand-red to-brand-dark transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 gpu-accelerate"></div>
 
                         <div className="mb-12 relative w-48 h-48 flex items-center justify-center">
                             <img
@@ -38,8 +38,8 @@ export default function HowItWorks() {
                     </div>
 
                     {/* Feature 2: High-Status Website */}
-                    <div className="group relative bg-brand-dark p-8 rounded-3xl shadow-xl border border-white/5 hover:border-brand-red/20 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl overflow-hidden text-center flex flex-col items-center">
-                        <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-brand-red to-brand-dark transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500"></div>
+                    <div className="group relative bg-brand-dark p-8 rounded-3xl shadow-xl border border-white/5 hover:border-brand-red/20 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl overflow-hidden text-center flex flex-col items-center gpu-accelerate">
+                        <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-brand-red to-brand-dark transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 gpu-accelerate"></div>
 
                         <div className="mb-12 relative w-48 h-48 flex items-center justify-center">
                             <img
@@ -60,8 +60,8 @@ export default function HowItWorks() {
                     </div>
 
                     {/* Feature 3: Local Authority Building */}
-                    <div className="group relative bg-brand-dark p-8 rounded-3xl shadow-xl border border-white/5 hover:border-brand-red/20 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl overflow-hidden text-center flex flex-col items-center">
-                        <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-brand-red to-brand-dark transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500"></div>
+                    <div className="group relative bg-brand-dark p-8 rounded-3xl shadow-xl border border-white/5 hover:border-brand-red/20 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl overflow-hidden text-center flex flex-col items-center gpu-accelerate">
+                        <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-brand-red to-brand-dark transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 gpu-accelerate"></div>
 
                         <div className="mb-12 relative w-48 h-48 flex items-center justify-center">
                             <img
@@ -89,8 +89,8 @@ export default function HowItWorks() {
             </div>
 
             {/* Background elements */}
-            <div className="absolute top-1/2 left-0 w-64 h-64 bg-brand-red/5 rounded-full blur-3xl -z-0 -translate-x-1/2 -translate-y-1/2"></div>
-            <div className="absolute bottom-0 right-0 w-96 h-96 bg-brand-dark/5 rounded-full blur-3xl -z-0 translate-x-1/3 translate-y-1/3"></div>
+            <div className="absolute top-1/2 left-0 w-64 h-64 bg-brand-red/5 rounded-full blur-3xl -z-0 -translate-x-1/2 -translate-y-1/2 gpu-accelerate"></div>
+            <div className="absolute bottom-0 right-0 w-96 h-96 bg-brand-dark/5 rounded-full blur-3xl -z-0 translate-x-1/3 translate-y-1/3 gpu-accelerate"></div>
         </section>
     );
 }
