@@ -3,7 +3,7 @@ import LiquidButton from './LiquidButton';
 
 export default function Navbar() {
     return (
-        <nav className="fixed top-0 w-full z-50 transition-all duration-300 backdrop-blur-md bg-brand-cream/80 border-b border-brand-black/5">
+        <nav className="fixed top-0 w-full z-50 transition-all duration-300 backdrop-blur-md bg-white/80 border-b border-brand-black/5">
             <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
                 <div className="flex items-center gap-3 group cursor-pointer">
                     {/* Logo Icon */}
