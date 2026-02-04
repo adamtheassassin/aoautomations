@@ -21,6 +21,16 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${outfit.variable} antialiased font-sans`}>
+        {/* Fixed Background Layer for better performance */}
+        <div
+          className="fixed inset-0 z-[-1] pointer-events-none"
+          style={{
+            backgroundImage: `
+              radial-gradient(at 0% 0%, rgba(152, 4, 4, 0.03) 0px, transparent 50%),
+              radial-gradient(at 100% 100%, rgba(152, 4, 4, 0.03) 0px, transparent 50%)
+            `
+          }}
+        />
         {children}
       </body>
     </html>
