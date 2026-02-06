@@ -2,7 +2,10 @@
 
 import LiquidButton from './LiquidButton';
 
+import { useCurrency } from '@/context/CurrencyContext';
+
 export default function FreeAnalysis() {
+    const { symbol } = useCurrency();
     return (
         <section className="w-full py-24 px-6 bg-white relative overflow-hidden">
             <div className="max-w-4xl mx-auto">
@@ -37,7 +40,7 @@ export default function FreeAnalysis() {
                             Click the button below to enter your business details. <span className="text-brand-black font-semibold">We</span> will then go ahead and record a 5-min video going over how we'll get your business into the top 3 within 90 days.
                         </p>
                         <p className="text-brand-gray/60 text-base font-medium uppercase tracking-wider">
-                            The video doesn't cost you anything
+                            The video doesn't cost you a single {symbol}1
                         </p>
                     </div>
 

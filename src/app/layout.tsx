@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Outfit } from "next/font/google";
 import "./globals.css";
+import { CurrencyProvider } from "@/context/CurrencyContext";
 
 const outfit = Outfit({
   subsets: ["latin"],
@@ -31,7 +32,9 @@ export default function RootLayout({
             `
           }}
         />
-        {children}
+        <CurrencyProvider>
+          {children}
+        </CurrencyProvider>
       </body>
     </html>
   );
