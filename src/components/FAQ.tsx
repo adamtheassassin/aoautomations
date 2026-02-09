@@ -53,7 +53,7 @@ export default function FAQ() {
                         <span className="text-base font-medium text-brand-black">Questions</span>
                     </div>
                     <h2 className="text-4xl md:text-5xl font-medium text-brand-black tracking-tight leading-[1.1]">
-                        Frequently Asked <span className="font-serif italic font-semibold">Questions</span>
+                        Frequently Asked <span className="font-serif italic font-semibold text-brand-red">Questions</span>
                     </h2>
                 </div>
 
@@ -62,13 +62,15 @@ export default function FAQ() {
                     {FAQ_ITEMS.map((item, idx) => (
                         <div
                             key={idx}
-                            className="bg-white rounded-xl overflow-hidden transition-all duration-300 border border-brand-black/5 shadow-sm hover:shadow-md"
+                            className={`bg-white rounded-lg overflow-hidden transition-all duration-300 border border-brand-black/5 hover:border-brand-block/10 ${openIndex === idx ? 'shadow-md' : 'shadow-sm'}`}
                         >
                             <button
                                 onClick={() => toggleFAQ(idx)}
-                                className="w-full flex items-center justify-between p-6 group"
+                                className="w-full flex items-center justify-between px-5 py-4 text-left group"
                             >
-                                <span className="font-semibold text-lg text-brand-black flex-1 text-center group-hover:text-brand-red transition-colors">{item.question}</span>
+                                <span className={`font-semibold text-base md:text-lg flex-1 pr-8 leading-tight transition-colors ${openIndex === idx ? 'text-brand-red' : 'text-brand-black group-hover:text-brand-red'}`}>
+                                    {item.question}
+                                </span>
                                 <div className={`w-8 h-8 rounded-md bg-brand-black/5 flex items-center justify-center transition-transform duration-300 shrink-0 ${openIndex === idx ? 'rotate-45' : ''}`}>
                                     <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M6 1V11M1 6H11" stroke="#222222" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
@@ -77,11 +79,11 @@ export default function FAQ() {
                             </button>
 
                             <div
-                                className={`grid transition-all duration-300 ease-in-out ${openIndex === idx ? 'grid-rows-[1fr] opacity-100 pb-6' : 'grid-rows-[0fr] opacity-0'
+                                className={`grid transition-all duration-300 ease-in-out ${openIndex === idx ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0'
                                     }`}
                             >
-                                <div className="overflow-hidden px-6 text-center">
-                                    <p className="text-brand-gray leading-relaxed font-medium">
+                                <div className="overflow-hidden px-5 pb-5 pt-0">
+                                    <p className="text-brand-gray text-sm md:text-base leading-relaxed">
                                         {item.answer}
                                     </p>
                                 </div>

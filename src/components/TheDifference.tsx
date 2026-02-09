@@ -14,7 +14,7 @@ export default function TheDifference() {
                         <span className="text-base font-medium text-brand-black">The Difference</span>
                     </div>
                     <h2 className="text-4xl md:text-5xl font-bold text-brand-black tracking-tight leading-[1.1]">
-                        Why choose <span className="text-brand-red">AO Automations</span><br className="hidden md:block" /> over everyone else?
+                        Why choose <span className="text-brand-red font-serif italic font-medium">AO Automations</span><br className="hidden md:block" /> over everyone else?
                     </h2>
                 </div>
 

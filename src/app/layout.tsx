@@ -10,8 +10,12 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://www.aoautomation.com'),
   title: "Marketing Business",
   description: "Professional Marketing Services",
+  alternates: {
+    canonical: './',
+  },
 };
 
 export default function RootLayout({

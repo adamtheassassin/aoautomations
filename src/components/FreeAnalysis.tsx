@@ -23,19 +23,19 @@ export default function FreeAnalysis() {
                     </div>
 
                     {/* Pill Label */}
-                    <div className="relative z-10 inline-block px-5 py-2 bg-brand-black/5 border border-brand-black/5 rounded-full mb-8 backdrop-blur-sm">
-                        <span className="text-sm font-semibold text-brand-black/70 uppercase tracking-widest">Free stuff</span>
+                    <div className="relative z-10 inline-block px-4 py-1.5 bg-brand-black/5 rounded-lg mb-8 backdrop-blur-sm">
+                        <span className="text-base font-medium text-brand-black">Free stuff</span>
                     </div>
 
                     {/* Headline */}
                     <h2 className="relative z-10 text-4xl md:text-6xl font-bold text-brand-black tracking-tight mb-8 leading-[1.1]">
-                        Get A <span className="font-serif italic font-medium text-brand-red drop-shadow-sm">free analysis</span><br />Right Here
+                        Get A <span className="font-serif italic font-medium text-brand-red drop-shadow-sm">Free Analysis</span><br />Right Here
                     </h2>
 
                     {/* Body Text */}
                     <div className="relative z-10 max-w-2xl mx-auto mb-10 space-y-6">
                         <p className="text-lg md:text-xl text-brand-gray leading-relaxed font-light">
-                            Click the button below to enter your business details. <span className="text-brand-black font-semibold">We</span> will then go ahead and record a 5-min video going over how we'll get your business into the top 3 within 90 days.
+                            Click the button below to enter your business details. We will then go ahead and record a 5-min video going over how we'll get your business into the top 3 within 90 days.
                         </p>
                         <p className="text-brand-gray/60 text-base font-medium uppercase tracking-wider">
                             The video doesn't cost you anything
