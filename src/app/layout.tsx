@@ -11,8 +11,8 @@ const outfit = Outfit({
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.aoautomation.com'),
-  title: "Marketing Business",
-  description: "Professional Marketing Services",
+  title: "Rank Top 3 on Google Maps | Best Local Marketing Agency",
+  description: "Dominate your local market. We help local businesses rank in the top 3 of Google Maps and grow their revenue.",
   alternates: {
     canonical: './',
   },
