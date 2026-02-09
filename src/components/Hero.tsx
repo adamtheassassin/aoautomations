@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import LiquidButton from './LiquidButton';
 import Marquee from './Marquee';
 
@@ -33,9 +34,11 @@ export default function Hero() {
                             </p>
 
                             <div className="w-full pt-4 flex flex-col sm:flex-row gap-4 items-center lg:items-start justify-center lg:justify-start pb-8 lg:pb-0">
-                                <LiquidButton className="w-full sm:w-auto px-8 py-3 text-lg sm:px-10 sm:py-5 sm:text-xl font-semibold shadow-xl hover:shadow-2xl hover:shadow-brand-red/20 transition-all transform hover:-translate-y-1">
-                                    Get The FREE Analysis
-                                </LiquidButton>
+                                <Link href="/free-analysis">
+                                    <LiquidButton className="w-full sm:w-auto px-8 py-3 text-lg sm:px-10 sm:py-5 sm:text-xl font-semibold shadow-xl hover:shadow-2xl hover:shadow-brand-red/20 transition-all transform hover:-translate-y-1">
+                                        Get The FREE Analysis
+                                    </LiquidButton>
+                                </Link>
 
                             </div>
 

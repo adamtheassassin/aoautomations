@@ -82,9 +82,11 @@ export default function HowItWorks() {
                 </div>
 
                 <div className="mt-16 text-center">
-                    <LiquidButton className="px-10 py-4 text-lg shadow-xl">
-                        Get Your FREE Analysis
-                    </LiquidButton>
+                    <Link href="/free-analysis">
+                        <LiquidButton className="px-10 py-4 text-lg shadow-xl">
+                            Get Your FREE Analysis
+                        </LiquidButton>
+                    </Link>
                 </div>
             </div>
 

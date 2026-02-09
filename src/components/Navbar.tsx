@@ -27,7 +27,7 @@ export default function Navbar() {
     return (
         <nav className={`fixed top-0 w-full z-50 transition-transform duration-300 backdrop-blur-md bg-white/80 border-b border-brand-black/5 ${isVisible ? 'translate-y-0' : '-translate-y-full'}`}>
             <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-center md:justify-between">
-                <div className="flex items-center gap-3 group cursor-pointer">
+                <Link href="/" className="flex items-center gap-3 group cursor-pointer">
                     {/* Logo Icon */}
                     <img
                         src="/icons_&_images/Client Logos/ao-icon.svg"
@@ -37,15 +37,17 @@ export default function Navbar() {
                     <div className="text-2xl font-bold tracking-tight">
                         <span className="text-brand-black">ao</span><span className="text-brand-red">automations</span>
                     </div>
-                </div>
+                </Link>
 
                 <div className="hidden md:flex items-center gap-8">
                     {/* Navigation links removed as requested */}
 
                     <div className="hidden md:block">
-                        <LiquidButton className="px-6 py-2.5 text-sm font-semibold shadow-lg hover:shadow-brand-red/20 transition-all">
-                            Get Your FREE Analysis
-                        </LiquidButton>
+                        <Link href="/free-analysis">
+                            <LiquidButton className="px-6 py-2.5 text-sm font-semibold shadow-lg hover:shadow-brand-red/20 transition-all">
+                                Get Your FREE Analysis
+                            </LiquidButton>
+                        </Link>
                     </div>
                 </div>
             </div>

@@ -45,10 +45,10 @@ export default function FAQ() {
     };
 
     return (
-        <section className="w-full py-24 px-6 bg-brand-cream relative overflow-hidden">
+        <section className="w-full py-24 px-6 bg-white relative overflow-hidden">
             <div className="max-w-3xl mx-auto">
                 {/* Header */}
-                <div className="mb-12">
+                <div className="mb-12 flex flex-col items-center text-center">
                     <div className="inline-block px-4 py-1.5 bg-brand-black/5 rounded-lg mb-6">
                         <span className="text-base font-medium text-brand-black">Questions</span>
                     </div>
@@ -66,9 +66,9 @@ export default function FAQ() {
                         >
                             <button
                                 onClick={() => toggleFAQ(idx)}
-                                className="w-full flex items-center justify-between p-6 text-left group"
+                                className="w-full flex items-center justify-between p-6 group"
                             >
-                                <span className="font-semibold text-lg text-brand-black pr-8 group-hover:text-brand-red transition-colors">{item.question}</span>
+                                <span className="font-semibold text-lg text-brand-black flex-1 text-center group-hover:text-brand-red transition-colors">{item.question}</span>
                                 <div className={`w-8 h-8 rounded-md bg-brand-black/5 flex items-center justify-center transition-transform duration-300 shrink-0 ${openIndex === idx ? 'rotate-45' : ''}`}>
                                     <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M6 1V11M1 6H11" stroke="#222222" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
@@ -80,7 +80,7 @@ export default function FAQ() {
                                 className={`grid transition-all duration-300 ease-in-out ${openIndex === idx ? 'grid-rows-[1fr] opacity-100 pb-6' : 'grid-rows-[0fr] opacity-0'
                                     }`}
                             >
-                                <div className="overflow-hidden px-6">
+                                <div className="overflow-hidden px-6 text-center">
                                     <p className="text-brand-gray leading-relaxed font-medium">
                                         {item.answer}
                                     </p>
