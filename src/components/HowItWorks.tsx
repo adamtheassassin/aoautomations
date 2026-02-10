@@ -37,25 +37,24 @@ export default function HowItWorks() {
                         </p>
                     </div>
 
-                    {/* Feature 2: High-Status Website */}
+                    {/* Feature 2: Website Backend Fixes */}
                     <div className="group relative bg-white p-8 rounded-3xl shadow-lg border border-brand-black/5 hover:border-brand-red/10 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl overflow-hidden text-center flex flex-col items-center gpu-accelerate">
                         <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-brand-red/10 via-brand-red to-brand-red/10 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 gpu-accelerate"></div>
 
                         <div className="mb-12 relative w-48 h-48 flex items-center justify-center">
                             <img
                                 src="/icons_&_images/Client Logos/websiteoptimizered.webp"
-                                alt="High-Status Business Website"
+                                alt="Website Backend Fixes"
                                 className="w-full h-full object-contain drop-shadow-[0_8px_16px_rgba(0,0,0,0.25)] scale-175 transition-transform duration-500 group-hover:scale-[1.8] brightness-60"
                             />
                         </div>
 
                         <h3 className="text-2xl font-bold text-brand-black mb-4 transition-all duration-300 group-hover:text-brand-red">
-                            High-Status Business
-                            <br />Website
+                            Website Backend Fixes
                         </h3>
 
                         <p className="text-brand-gray leading-relaxed font-medium">
-                            We make your message resonate with your ideal clients, and support it with a design that aids your copy and builds instant trust.
+                            We implement proven systems that get you authentic 5-star reviews from real customers consistently.
                         </p>
                     </div>
 
