@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
+import StatsSection from "@/components/StatsSection";
 import HowItWorks from "@/components/HowItWorks";
 import Roadmap from "@/components/Roadmap";
 import TheDifference from "@/components/TheDifference";
@@ -12,6 +13,7 @@ export default function Home() {
     <main className="min-h-screen">
       <Navbar />
       <Hero />
+      <StatsSection />
       <HowItWorks />
       <Roadmap />
       <TheDifference />

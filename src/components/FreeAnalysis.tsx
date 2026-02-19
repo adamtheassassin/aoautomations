@@ -5,7 +5,7 @@ import LiquidButton from './LiquidButton';
 
 export default function FreeAnalysis() {
     return (
-        <section className="w-full py-24 px-6 bg-brand-cream relative overflow-hidden">
+        <section className="w-full py-24 px-6 bg-white relative overflow-hidden">
             <div className="max-w-4xl mx-auto">
                 <div className="relative bg-white rounded-[2rem] p-8 md:p-16 text-center shadow-2xl overflow-hidden gpu-accelerate ring-1 ring-brand-black/5 group hover:-translate-y-1 transition-transform duration-500">
                     {/* Background Gradient/Sheen */}

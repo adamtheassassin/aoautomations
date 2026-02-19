@@ -9,6 +9,7 @@ export default function ContactPage() {
     const [formData, setFormData] = useState({
         name: "",
         email: "",
+        phone: "",
         business: "",
         message: ""
     });
@@ -33,11 +34,42 @@ export default function ContactPage() {
         checkLocation();
     }, []);
 
-    const handleSubmit = (e: React.FormEvent) => {
+    const [loading, setLoading] = useState(false);
+
+    const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
-        // Handle form submission logic here
-        console.log("Form submitted:", formData);
-        alert("Thank you! Your message has been sent. We'll be in touch soon.");
+        setLoading(true);
+
+        try {
+            const response = await fetch('https://hook.eu1.make.com/p3uvqprbij5cj4ysbnbth89vrk5u60pa', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    type: 'contact-form',
+                    ...formData
+                }),
+            });
+
+            if (response.ok) {
+                alert("Thank you! Your message has been sent. We'll be in touch soon.");
+                setFormData({
+                    name: "",
+                    email: "",
+                    phone: "",
+                    business: "",
+                    message: ""
+                });
+            } else {
+                alert("Something went wrong. Please try again.");
+            }
+        } catch (error) {
+            console.error("Error submitting form:", error);
+            alert("Something went wrong. Please try again.");
+        } finally {
+            setLoading(false);
+        }
     };
 
     return (
@@ -126,6 +158,18 @@ export default function ContactPage() {
                                 </div>
 
                                 <div className="space-y-2 mb-8">
+                                    <label htmlFor="phone" className="text-sm font-bold text-brand-black/70 ml-1">Phone Number *</label>
+                                    <input
+                                        type="tel"
+                                        id="phone"
+                                        required
+                                        className="w-full bg-brand-cream/50 border border-brand-black/10 rounded-2xl px-6 py-4 outline-none focus:border-brand-red/30 focus:ring-4 focus:ring-brand-red/5 transition-all font-medium text-brand-black"
+                                        value={formData.phone}
+                                        onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                                    />
+                                </div>
+
+                                <div className="space-y-2 mb-8">
                                     <label htmlFor="business" className="text-sm font-bold text-brand-black/70 ml-1">Business Name</label>
                                     <input
                                         type="text"
@@ -150,8 +194,11 @@ export default function ContactPage() {
                                     ></textarea>
                                 </div>
 
-                                <LiquidButton className="w-full py-5 text-lg font-bold shadow-xl hover:shadow-2xl hover:shadow-brand-red/20 transition-all">
-                                    Send Message
+                                <LiquidButton
+                                    className="w-full py-5 text-lg font-bold shadow-xl hover:shadow-2xl hover:shadow-brand-red/20 transition-all opacity-100 disabled:opacity-70 disabled:cursor-not-allowed"
+                                    disabled={loading}
+                                >
+                                    {loading ? "Sending..." : "Send Message"}
                                 </LiquidButton>
 
                                 <p className="text-center text-xs text-brand-gray/50 mt-6 font-medium">

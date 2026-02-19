@@ -5,7 +5,7 @@ import LiquidButton from './LiquidButton';
 
 export default function TheDifference() {
     return (
-        <section className="w-full py-24 px-6 bg-brand-cream relative overflow-hidden">
+        <section className="w-full py-24 px-6 bg-white relative overflow-hidden">
             <div className="max-w-7xl mx-auto">
 
                 {/* Header */}
@@ -21,7 +21,7 @@ export default function TheDifference() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 max-w-5xl mx-auto">
 
                     {/* Other Agencies Card */}
-                    <div className="bg-white/50 border border-brand-black/5 rounded-3xl p-8 md:p-10 flex flex-col">
+                    <div className="bg-brand-cream/40 border border-brand-black/5 rounded-3xl p-8 md:p-10 flex flex-col">
                         <h3 className="text-2xl font-bold text-brand-black/60 mb-8 text-center">Other Agencies</h3>
                         <ul className="space-y-6 flex-1">
                             {[

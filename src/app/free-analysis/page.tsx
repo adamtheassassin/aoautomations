@@ -13,15 +13,46 @@ export default function FreeAnalysisPage() {
         phone: "",
         website: "",
         companyName: "",
-        mapsUrl: "",
         urgency: "Today"
     });
 
-    const handleSubmit = (e: React.FormEvent) => {
+    const [loading, setLoading] = useState(false);
+
+    const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
-        // Handle form submission logic here
-        console.log("Form submitted:", formData);
-        alert("Thanks! We'll start your analysis immediately.");
+        setLoading(true);
+
+        try {
+            const response = await fetch('https://hook.eu1.make.com/p3uvqprbij5cj4ysbnbth89vrk5u60pa', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    type: 'free-analysis',
+                    ...formData
+                }),
+            });
+
+            if (response.ok) {
+                alert("Thanks! We'll start your analysis immediately.");
+                setFormData({
+                    fullName: "",
+                    email: "",
+                    phone: "",
+                    website: "",
+                    companyName: "",
+                    urgency: "Today"
+                });
+            } else {
+                alert("Something went wrong. Please try again.");
+            }
+        } catch (error) {
+            console.error("Error submitting form:", error);
+            alert("Something went wrong. Please try again.");
+        } finally {
+            setLoading(false);
+        }
     };
 
     return (
@@ -69,7 +100,7 @@ export default function FreeAnalysisPage() {
                                         />
                                     </div>
                                     <div className="space-y-2">
-                                        <label htmlFor="email" className="text-sm font-bold text-brand-black/70 ml-1">Business Email *</label>
+                                        <label htmlFor="email" className="text-sm font-bold text-brand-black/70 ml-1">Email *</label>
                                         <input
                                             type="email"
                                             id="email"
@@ -95,11 +126,10 @@ export default function FreeAnalysisPage() {
                                         />
                                     </div>
                                     <div className="space-y-2">
-                                        <label htmlFor="website" className="text-sm font-bold text-brand-black/70 ml-1">Website *</label>
+                                        <label htmlFor="website" className="text-sm font-bold text-brand-black/70 ml-1">Website</label>
                                         <input
                                             type="url"
                                             id="website"
-                                            required
                                             className="w-full bg-white border border-brand-black/10 rounded-xl px-4 py-3 outline-none focus:border-brand-red/30 focus:ring-4 focus:ring-brand-red/5 transition-all text-base text-brand-black"
                                             placeholder="https://"
                                             value={formData.website}
@@ -108,8 +138,8 @@ export default function FreeAnalysisPage() {
                                     </div>
                                 </div>
 
-                                {/* Row 3: Company & Maps */}
-                                <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+                                {/* Row 3: Company */}
+                                <div className="grid grid-cols-1 gap-5">
                                     <div className="space-y-2">
                                         <label htmlFor="companyName" className="text-sm font-bold text-brand-black/70 ml-1">Company Name *</label>
                                         <input
@@ -119,18 +149,6 @@ export default function FreeAnalysisPage() {
                                             className="w-full bg-white border border-brand-black/10 rounded-xl px-4 py-3 outline-none focus:border-brand-red/30 focus:ring-4 focus:ring-brand-red/5 transition-all text-base text-brand-black"
                                             value={formData.companyName}
                                             onChange={(e) => setFormData({ ...formData, companyName: e.target.value })}
-                                        />
-                                    </div>
-                                    <div className="space-y-2">
-                                        <label htmlFor="mapsUrl" className="text-sm font-bold text-brand-black/70 ml-1">Google Maps URL *</label>
-                                        <input
-                                            type="url"
-                                            id="mapsUrl"
-                                            required
-                                            className="w-full bg-white border border-brand-black/10 rounded-xl px-4 py-3 outline-none focus:border-brand-red/30 focus:ring-4 focus:ring-brand-red/5 transition-all text-base text-brand-black"
-                                            placeholder="https://maps.google.com/..."
-                                            value={formData.mapsUrl}
-                                            onChange={(e) => setFormData({ ...formData, mapsUrl: e.target.value })}
                                         />
                                     </div>
                                 </div>
@@ -145,8 +163,8 @@ export default function FreeAnalysisPage() {
                                                 key={option}
                                                 onClick={() => setFormData({ ...formData, urgency: option })}
                                                 className={`px-5 py-2.5 rounded-full text-sm font-medium transition-all duration-200 border ${formData.urgency === option
-                                                        ? "bg-brand-black text-white border-brand-black"
-                                                        : "bg-white text-brand-gray border-brand-black/10 hover:border-brand-black/30"
+                                                    ? "bg-brand-black text-white border-brand-black"
+                                                    : "bg-white text-brand-gray border-brand-black/10 hover:border-brand-black/30"
                                                     }`}
                                             >
                                                 <div className="flex items-center gap-2">
@@ -159,8 +177,11 @@ export default function FreeAnalysisPage() {
                                 </div>
 
                                 <div className="pt-6">
-                                    <LiquidButton className="w-full py-5 text-lg font-bold shadow-xl hover:shadow-2xl hover:shadow-brand-red/20 transition-all">
-                                        Submit Analysis Request
+                                    <LiquidButton
+                                        className="w-full py-5 text-lg font-bold shadow-xl hover:shadow-2xl hover:shadow-brand-red/20 transition-all opacity-100 disabled:opacity-70 disabled:cursor-not-allowed"
+                                        disabled={loading}
+                                    >
+                                        {loading ? "Submitting..." : "Submit Analysis Request"}
                                     </LiquidButton>
                                 </div>
 

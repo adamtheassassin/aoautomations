@@ -3,7 +3,7 @@ import LiquidButton from './LiquidButton';
 
 export default function HowItWorks() {
     return (
-        <section className="w-full py-20 px-6 bg-brand-cream relative overflow-hidden">
+        <section className="w-full py-20 px-6 bg-white relative overflow-hidden">
             <div className="max-w-7xl mx-auto">
                 <div className="text-center mb-16 space-y-4">
                     <h2 className="text-4xl md:text-5xl font-bold text-brand-black tracking-tight">
@@ -16,7 +16,7 @@ export default function HowItWorks() {
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 relative z-10">
                     {/* Feature 1: Google Business Profile */}
-                    <div className="group relative bg-white p-8 rounded-3xl shadow-lg border border-brand-black/5 hover:border-brand-red/10 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl overflow-hidden text-center flex flex-col items-center gpu-accelerate">
+                    <div className="group relative bg-brand-cream/30 p-8 rounded-3xl shadow-lg border border-brand-black/5 hover:border-brand-red/10 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl overflow-hidden text-center flex flex-col items-center gpu-accelerate">
                         <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-brand-red/10 via-brand-red to-brand-red/10 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 gpu-accelerate"></div>
 
                         <div className="mb-12 relative w-48 h-48 flex items-center justify-center">
@@ -38,7 +38,7 @@ export default function HowItWorks() {
                     </div>
 
                     {/* Feature 2: Website Backend Fixes */}
-                    <div className="group relative bg-white p-8 rounded-3xl shadow-lg border border-brand-black/5 hover:border-brand-red/10 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl overflow-hidden text-center flex flex-col items-center gpu-accelerate">
+                    <div className="group relative bg-brand-cream/30 p-8 rounded-3xl shadow-lg border border-brand-black/5 hover:border-brand-red/10 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl overflow-hidden text-center flex flex-col items-center gpu-accelerate">
                         <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-brand-red/10 via-brand-red to-brand-red/10 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 gpu-accelerate"></div>
 
                         <div className="mb-12 relative w-48 h-48 flex items-center justify-center">
@@ -59,7 +59,7 @@ export default function HowItWorks() {
                     </div>
 
                     {/* Feature 3: Local Authority Building */}
-                    <div className="group relative bg-white p-8 rounded-3xl shadow-lg border border-brand-black/5 hover:border-brand-red/10 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl overflow-hidden text-center flex flex-col items-center gpu-accelerate">
+                    <div className="group relative bg-brand-cream/30 p-8 rounded-3xl shadow-lg border border-brand-black/5 hover:border-brand-red/10 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl overflow-hidden text-center flex flex-col items-center gpu-accelerate">
                         <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-brand-red/10 via-brand-red to-brand-red/10 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 gpu-accelerate"></div>
 
                         <div className="mb-12 relative w-48 h-48 flex items-center justify-center">

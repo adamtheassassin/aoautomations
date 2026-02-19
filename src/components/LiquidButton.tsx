@@ -6,12 +6,14 @@ interface LiquidButtonProps {
     children: React.ReactNode;
     className?: string;
     onClick?: () => void;
+    disabled?: boolean;
 }
 
-export default function LiquidButton({ children, className = "", onClick }: LiquidButtonProps) {
+export default function LiquidButton({ children, className = "", onClick, disabled }: LiquidButtonProps) {
     return (
         <button
             onClick={onClick}
+            disabled={disabled}
             className={`
                 relative group inline-flex items-center justify-center 
                 rounded-full transition-all duration-300 

@@ -1,11 +1,12 @@
 import Link from 'next/link';
 import LiquidButton from './LiquidButton';
 import Marquee from './Marquee';
+import LocationIndicator from './LocationIndicator';
 
 export default function Hero() {
     return (
         <>
-            <section className="w-full min-h-screen pt-20 md:pt-40 pb-12 relative overflow-hidden flex flex-col bg-white">
+            <section className="w-full min-h-screen pt-32 md:pt-40 pb-12 relative overflow-hidden flex flex-col bg-white">
                 {/* Background Decorative Blobs */}
                 <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-brand-red/5 rounded-full blur-3xl -z-10 translate-x-1/2 -translate-y-1/2 pointer-events-none gpu-accelerate"></div>
                 <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-brand-dark/5 rounded-full blur-3xl -z-10 -translate-x-1/3 translate-y-1/3 pointer-events-none gpu-accelerate"></div>
@@ -15,6 +16,7 @@ export default function Hero() {
 
                         {/* Left Content */}
                         <div className="space-y-4 sm:space-y-8 relative z-10 flex flex-col items-center lg:items-start text-center lg:text-left h-full justify-center">
+                            <LocationIndicator />
                             <h1 className="text-4xl sm:text-6xl md:text-6xl font-bold leading-tight text-brand-black tracking-tight">
                                 Top 3 Google Maps <br />
                                 Rankings in 90 Days - <span className="text-brand-red italic font-serif">Guaranteed</span>
