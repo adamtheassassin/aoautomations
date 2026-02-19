@@ -19,6 +19,7 @@ const afterStats = [
 
 export default function TheDifference() {
     const [activeTab, setActiveTab] = useState<'before' | 'after'>('before');
+    const [infoOpen, setInfoOpen] = useState(false);
 
     const stats = activeTab === 'before' ? beforeStats : afterStats;
     const imageSrc = activeTab === 'before'
@@ -40,13 +41,16 @@ export default function TheDifference() {
                     <h2 className="text-4xl md:text-5xl font-bold text-brand-black tracking-tight leading-[1.1]">
                         The <span className="text-brand-red font-serif italic font-medium">Difference</span>
                     </h2>
+                    <p className="text-lg md:text-xl text-brand-gray font-medium max-w-2xl mx-auto mt-5">
+                        This is where you&apos;re probably ranking right now - and where we&apos;ll have you in 90 days.
+                    </p>
                 </div>
 
                 {/* Main Content Card */}
                 <div className="max-w-5xl mx-auto bg-white rounded-3xl shadow-xl border border-brand-black/5 overflow-hidden">
 
                     {/* Mobile: Toggle at top, visible without scrolling */}
-                    <div className="p-6 pb-0 lg:hidden">
+                    <div className="p-6 pb-0 lg:hidden flex justify-center">
                         <div className="inline-flex bg-[#f5f5f5] rounded-xl p-1.5">
                             <button
                                 onClick={() => setActiveTab('before')}
@@ -71,12 +75,16 @@ export default function TheDifference() {
 
                     {/* Mobile: Image right after toggle */}
                     <div className="lg:hidden bg-[#f5f5f5] mx-6 mt-4 rounded-2xl overflow-hidden relative">
-                        {/* Info hover tooltip */}
-                        <div className="absolute top-3 right-3 z-20 group">
-                            <div className="w-9 h-9 rounded-full bg-brand-black/80 backdrop-blur-sm border-2 border-white/30 flex items-center justify-center cursor-help shadow-lg hover:shadow-xl hover:bg-brand-black transition-all duration-200">
+                        {/* Info click tooltip (mobile) */}
+                        <div className="absolute top-3 right-3 z-20">
+                            <button
+                                onClick={() => setInfoOpen(!infoOpen)}
+                                className="w-10 h-10 rounded-full bg-brand-black/80 backdrop-blur-sm border-2 border-white/30 flex items-center justify-center shadow-lg active:scale-95 transition-all duration-200 cursor-pointer"
+                                aria-label="Map info"
+                            >
                                 <span className="text-sm font-bold text-white select-none" style={{ fontStyle: 'italic', fontFamily: 'Georgia, serif' }}>i</span>
-                            </div>
-                            <div className="absolute top-full right-0 mt-2 w-64 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 translate-y-1 group-hover:translate-y-0">
+                            </button>
+                            <div className={`absolute top-full right-0 mt-2 w-64 transition-all duration-200 ${infoOpen ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible translate-y-1'}`}>
                                 <div className="bg-brand-black text-white text-xs leading-relaxed rounded-xl p-4 shadow-xl border border-white/10">
                                     <p className="font-semibold mb-1.5">How to read this map:</p>
                                     <p className="text-white/80 mb-2">Each dot shows your Google ranking for that area. The number is your position in search results.</p>
