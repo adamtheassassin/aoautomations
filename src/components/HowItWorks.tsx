@@ -3,7 +3,7 @@ import LiquidButton from './LiquidButton';
 
 export default function HowItWorks() {
     return (
-        <section className="w-full py-20 px-6 bg-white relative overflow-hidden">
+        <section id="the-process" className="w-full py-20 px-6 bg-white relative overflow-hidden">
             <div className="max-w-7xl mx-auto">
                 <div className="text-center mb-16 space-y-4">
                     <h2 className="text-4xl md:text-5xl font-bold text-brand-black tracking-tight">

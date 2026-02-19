@@ -51,7 +51,7 @@ export default function Marquee() {
 
             {/* Scrolling Container - Optimized with fewer duplicates */}
             <div className="flex w-full overflow-hidden mask-image-linear-to-r">
-                <div className="flex animate-marquee gap-16 md:gap-24 pr-16 md:pr-24 items-center min-w-full shrink-0">
+                <div className="flex animate-marquee gap-10 md:gap-24 pr-10 md:pr-24 items-center min-w-full shrink-0">
                     {seamlessLogos.map((logo, idx) => (
                         <div
                             key={idx}
@@ -69,7 +69,7 @@ export default function Marquee() {
                         </div>
                     ))}
                 </div>
-                <div className="flex animate-marquee gap-16 md:gap-24 pr-16 md:pr-24 items-center min-w-full shrink-0" aria-hidden="true">
+                <div className="flex animate-marquee gap-10 md:gap-24 pr-10 md:pr-24 items-center min-w-full shrink-0" aria-hidden="true">
                     {seamlessLogos.map((logo, idx) => (
                         <div
                             key={`dup2-${idx}`}

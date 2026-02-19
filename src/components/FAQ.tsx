@@ -45,7 +45,7 @@ export default function FAQ() {
     };
 
     return (
-        <section className="w-full py-24 px-6 bg-brand-cream relative overflow-hidden">
+        <section id="questions" className="w-full py-24 px-6 bg-white relative overflow-hidden">
             <div className="max-w-3xl mx-auto">
                 {/* Header */}
                 <div className="mb-12 flex flex-col items-center text-center">

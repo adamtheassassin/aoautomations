@@ -1,0 +1,208 @@
+<div class="framer-1wn0bn2">
+    <div class="framer-17b9xie-container">
+        <div class="framer-LadpT framer-1ckdluc framer-v-1ckdluc" data-framer-name="Vorher"
+            style="background-color: rgb(255, 255, 255); border-radius: 15px; opacity: 1;">
+            <div class="framer-dn7iep" data-framer-name="2 Columns" style="opacity: 1;">
+                <div class="framer-1edilu7" data-framer-name="Left"
+                    style="background-color: rgb(255, 255, 255); opacity: 1;">
+                    <div class="framer-pi3nv4" data-framer-name="Switch"
+                        style="background-color: rgb(245, 245, 245); border-radius: 10px; opacity: 1;">
+                        <div class="framer-xwh2cb"
+                            style="background-color: rgb(255, 255, 255); border-radius: 8px; opacity: 1; will-change: auto;">
+                            <div class="framer-liy7p1" data-framer-component-type="RichTextContainer"
+                                style="--framer-link-text-color: rgb(0, 153, 255); --framer-link-text-decoration: underline; transform: none; opacity: 1;">
+                                <p dir="auto" class="framer-text"
+                                    style="--font-selector: RlM7UG9wcGlucy1yZWd1bGFy; --framer-font-family: &quot;Poppins&quot;, &quot;Poppins Placeholder&quot;, sans-serif;">
+                                    Before</p>
+                            </div>
+                        </div>
+                        <div class="framer-136yhki" data-highlight="true" tabindex="0"
+                            style="background-color: rgba(255, 255, 255, 0); border-radius: 8px; opacity: 1; will-change: auto;">
+                            <div class="framer-bo8bou" data-framer-name="After"
+                                data-framer-component-type="RichTextContainer"
+                                style="--framer-link-text-color: rgb(0, 153, 255); --framer-link-text-decoration: underline; transform: none; opacity: 1;">
+                                <p dir="auto" class="framer-text"
+                                    style="--font-selector: RlM7UG9wcGlucy1yZWd1bGFy; --framer-font-family: &quot;Poppins&quot;, &quot;Poppins Placeholder&quot;, sans-serif;">
+                                    After</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="framer-ef4snd" data-framer-name="Profile"
+                        style="background-color: rgb(245, 245, 245); border-radius: 15px; opacity: 1;">
+                        <div class="framer-1o2viba-container" style="opacity: 1;">
+                            <div class="framer-bAUEz framer-1w5292w framer-v-1w5292w" data-framer-name="Variant 1"
+                                style="background-color: var(--token-2007957d-a074-4c0c-8a33-8d85ed1ba0fd, rgb(0, 0, 0)); height: 100%; width: 100%; border-radius: 8px; opacity: 1;">
+                                <div class="framer-4yw1jy" data-framer-name="Black"
+                                    style="filter: invert(1); transform: translate(-50%, -50%); opacity: 1;">
+                                    <div data-framer-background-image-wrapper="true"
+                                        style="position: absolute; border-radius: inherit; corner-shape: inherit; inset: 0px;">
+                                        <img decoding="auto" loading="lazy" width="146" height="100"
+                                            src="https://framerusercontent.com/images/CCWRCxPbjdaQtp6VvW3DvtyOiU.svg"
+                                            alt=""
+                                            style="display: block; width: 100%; height: 100%; border-radius: inherit; corner-shape: inherit; object-position: center center; object-fit: contain;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="framer-oqmtu7" style="opacity: 1;">
+                            <div class="framer-9peru9" data-framer-component-type="RichTextContainer"
+                                style="--framer-link-text-color: rgb(0, 153, 255); --framer-link-text-decoration: underline; transform: none; opacity: 1;">
+                                <p dir="auto" class="framer-text"
+                                    style="--font-selector: RlM7UG9wcGlucy1zZW1pYm9sZA==; --framer-font-family: &quot;Poppins&quot;, &quot;Poppins Placeholder&quot;, sans-serif; --framer-font-size: 18px; --framer-font-weight: 600;">
+                                    Your Company</p>
+                            </div>
+                            <div class="framer-1hst8zg" data-framer-component-type="RichTextContainer"
+                                style="--extracted-r6o4lv: var(--token-bbfa781e-bec9-4f41-8ada-bbb555497798, rgb(80, 80, 80)); --framer-link-text-color: rgb(0, 153, 255); --framer-link-text-decoration: underline; transform: none; opacity: 1;">
+                                <p dir="auto" class="framer-text"
+                                    style="--font-selector: RlM7UG9wcGlucy1yZWd1bGFy; --framer-font-family: &quot;Poppins&quot;, &quot;Poppins Placeholder&quot;, sans-serif; --framer-text-color: var(--extracted-r6o4lv, var(--token-bbfa781e-bec9-4f41-8ada-bbb555497798, rgb(80, 80, 80)));">
+                                    Example Address 12, 12101 NYC</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="framer-rj14se" style="opacity: 1;">
+                        <div class="framer-4jw02f" data-framer-name="Profile"
+                            style="background-color: rgb(245, 245, 245); border-radius: 15px; transform: none; transform-origin: 50% 50% 0px; opacity: 1;">
+                            <div class="framer-v81gah"
+                                style="transform: none; transform-origin: 50% 50% 0px; opacity: 1;">
+                                <div class="framer-m908ch" data-framer-component-type="RichTextContainer"
+                                    style="--framer-link-text-color: rgb(0, 153, 255); --framer-link-text-decoration: underline; transform: none; transform-origin: 50% 50% 0px; opacity: 1;">
+                                    <p dir="auto" class="framer-text"
+                                        style="--font-selector: RlM7UG9wcGlucy1tZWRpdW0=; --framer-font-family: &quot;Poppins&quot;, &quot;Poppins Placeholder&quot;, sans-serif; --framer-font-weight: 500;">
+                                        Average Ranking</p>
+                                </div>
+                                <div class="framer-p5yof6"
+                                    style="background-color: rgb(150, 36, 36); border-radius: 5px; transform: none; transform-origin: 50% 50% 0px; will-change: auto; opacity: 1;">
+                                    <div class="framer-1ud7cd3" data-framer-component-type="RichTextContainer"
+                                        style="--extracted-r6o4lv: rgb(255, 255, 255); --framer-link-text-color: rgb(0, 153, 255); --framer-link-text-decoration: underline; transform: none; transform-origin: 50% 50% 0px; opacity: 1;">
+                                        <p dir="auto" class="framer-text"
+                                            style="--font-selector: RlM7UG9wcGlucy1zZW1pYm9sZA==; --framer-font-family: &quot;Poppins&quot;, &quot;Poppins Placeholder&quot;, sans-serif; --framer-font-weight: 600; --framer-text-color: var(--extracted-r6o4lv, rgb(255, 255, 255));">
+                                            86</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="framer-ch1767" data-framer-name="Profile"
+                            style="background-color: rgb(245, 245, 245); border-radius: 15px; transform: none; transform-origin: 50% 50% 0px; opacity: 1;">
+                            <div class="framer-5wmtm0"
+                                style="transform: none; transform-origin: 50% 50% 0px; opacity: 1;">
+                                <div class="framer-8489kg" data-framer-component-type="RichTextContainer"
+                                    style="--framer-link-text-color: rgb(0, 153, 255); --framer-link-text-decoration: underline; transform: none; transform-origin: 50% 50% 0px; opacity: 1;">
+                                    <p dir="auto" class="framer-text"
+                                        style="--font-selector: RlM7UG9wcGlucy1tZWRpdW0=; --framer-font-family: &quot;Poppins&quot;, &quot;Poppins Placeholder&quot;, sans-serif; --framer-font-weight: 500;">
+                                        Marketshare</p>
+                                </div>
+                                <div class="framer-1sx53gi"
+                                    style="background-color: rgb(150, 36, 36); border-radius: 5px; transform: none; transform-origin: 50% 50% 0px; will-change: auto; opacity: 1;">
+                                    <div class="framer-11v8c30" data-framer-component-type="RichTextContainer"
+                                        style="--extracted-r6o4lv: rgb(255, 255, 255); --framer-link-text-color: rgb(0, 153, 255); --framer-link-text-decoration: underline; transform: none; transform-origin: 50% 50% 0px; opacity: 1;">
+                                        <p dir="auto" class="framer-text"
+                                            style="--font-selector: RlM7UG9wcGlucy1zZW1pYm9sZA==; --framer-font-family: &quot;Poppins&quot;, &quot;Poppins Placeholder&quot;, sans-serif; --framer-font-weight: 600; --framer-text-color: var(--extracted-r6o4lv, rgb(255, 255, 255));">
+                                            1%</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="framer-1j2v70" data-framer-name="Profile"
+                            style="background-color: rgb(245, 245, 245); border-radius: 15px; transform: none; transform-origin: 50% 50% 0px; opacity: 1;">
+                            <div class="framer-1rvrlxy"
+                                style="transform: none; transform-origin: 50% 50% 0px; opacity: 1;">
+                                <div class="framer-b8nzt6" data-framer-component-type="RichTextContainer"
+                                    style="--framer-link-text-color: rgb(0, 153, 255); --framer-link-text-decoration: underline; transform: none; transform-origin: 50% 50% 0px; opacity: 1;">
+                                    <p dir="auto" class="framer-text"
+                                        style="--font-selector: RlM7UG9wcGlucy1tZWRpdW0=; --framer-font-family: &quot;Poppins&quot;, &quot;Poppins Placeholder&quot;, sans-serif; --framer-font-weight: 500;">
+                                        Clicks per Month</p>
+                                </div>
+                                <div class="framer-17qixx3"
+                                    style="background-color: rgb(150, 36, 36); border-radius: 5px; transform: none; transform-origin: 50% 50% 0px; will-change: auto; opacity: 1;">
+                                    <div class="framer-rzp3ph" data-framer-component-type="RichTextContainer"
+                                        style="--extracted-r6o4lv: rgb(255, 255, 255); --framer-link-text-color: rgb(0, 153, 255); --framer-link-text-decoration: underline; transform: none; transform-origin: 50% 50% 0px; opacity: 1;">
+                                        <p dir="auto" class="framer-text"
+                                            style="--font-selector: RlM7UG9wcGlucy1zZW1pYm9sZA==; --framer-font-family: &quot;Poppins&quot;, &quot;Poppins Placeholder&quot;, sans-serif; --framer-font-weight: 600; --framer-text-color: var(--extracted-r6o4lv, rgb(255, 255, 255));">
+                                            5</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="framer-1llkqcp" data-framer-name="Profile"
+                            style="background-color: rgb(245, 245, 245); border-radius: 15px; transform: none; transform-origin: 50% 50% 0px; opacity: 1;">
+                            <div class="framer-btjc2l"
+                                style="transform: none; transform-origin: 50% 50% 0px; opacity: 1;">
+                                <div class="framer-1dc9fdt" data-framer-component-type="RichTextContainer"
+                                    style="--framer-link-text-color: rgb(0, 153, 255); --framer-link-text-decoration: underline; transform: none; transform-origin: 50% 50% 0px; opacity: 1;">
+                                    <p dir="auto" class="framer-text"
+                                        style="--font-selector: RlM7UG9wcGlucy1tZWRpdW0=; --framer-font-family: &quot;Poppins&quot;, &quot;Poppins Placeholder&quot;, sans-serif; --framer-font-weight: 500;">
+                                        Customers per Month</p>
+                                </div>
+                                <div class="framer-1id3tic"
+                                    style="background-color: rgb(212, 28, 28); border-radius: 5px; transform: none; transform-origin: 50% 50% 0px; will-change: auto; opacity: 1;">
+                                    <div class="framer-g7efx2" data-framer-component-type="RichTextContainer"
+                                        style="--extracted-r6o4lv: rgb(255, 255, 255); --framer-link-text-color: rgb(0, 153, 255); --framer-link-text-decoration: underline; transform: none; transform-origin: 50% 50% 0px; opacity: 1;">
+                                        <p dir="auto" class="framer-text"
+                                            style="--font-selector: RlM7UG9wcGlucy1zZW1pYm9sZA==; --framer-font-family: &quot;Poppins&quot;, &quot;Poppins Placeholder&quot;, sans-serif; --framer-font-weight: 600; --framer-text-color: var(--extracted-r6o4lv, rgb(255, 255, 255));">
+                                            1-2</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="framer-1pyn6c2" data-framer-name="Right"
+                    style="background-color: rgb(245, 245, 245); border-radius: 15px; opacity: 1;">
+                    <div class="framer-1ubc6" style="border-radius: 15px; opacity: 1;">
+                        <div data-framer-background-image-wrapper="true"
+                            style="position: absolute; border-radius: inherit; corner-shape: inherit; inset: 0px;"><img
+                                decoding="auto" loading="lazy" width="760" height="760" sizes="460px"
+                                srcset="https://framerusercontent.com/images/Ch1NIUyeiky7KlRTUEpFLmuReI.png?scale-down-to=512&amp;width=760&amp;height=760 512w,https://framerusercontent.com/images/Ch1NIUyeiky7KlRTUEpFLmuReI.png?width=760&amp;height=760 760w"
+                                src="https://framerusercontent.com/images/Ch1NIUyeiky7KlRTUEpFLmuReI.png?width=760&amp;height=760"
+                                alt=""
+                                style="display: block; width: 100%; height: 100%; border-radius: inherit; corner-shape: inherit; object-position: center center; object-fit: cover;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+--one-if-corner-shape-supported: 1;
+font-family: sans-serif;
+font-size: 12px;
+--token-f8dc39cc-9b31-4d20-8063-4556a3d8afa9: #fff;
+--token-5a8c46ea-26d4-4fbb-9dba-c7522fca8089: #ffffff8f;
+--token-10d627ba-a180-41f3-bda4-3ebdfe6da0b7: #ffffff7a;
+--token-c2e2a410-6f04-4250-8cbc-525e953a716f: #ffffff3d;
+--token-4931e0a3-d9c6-44e2-8ffa-6116eb7b79e4: #ffffff1f;
+--token-2007957d-a074-4c0c-8a33-8d85ed1ba0fd: #000;
+--token-563917f7-788f-412e-bbb3-52a063ef4a82: #0000008f;
+--token-4fb42c33-113c-4a31-b240-1fbb97f47fe5: #0000007a;
+--token-5621f77f-a25c-4b6f-90f4-02bdb225a779: #0000003d;
+--token-cd4b28e8-0a42-4b18-88ca-07b7a717f0f8: #0000001f;
+--token-7513ecda-102e-44af-bcb5-cc88031ed55c: #fff0;
+--token-7325e44b-ac7a-4a00-af4e-3813bf106a76: #ffffff1a;
+--token-63ce9049-e3bd-4cfc-8a25-11c333f1f49f: #ffffff14;
+--token-8ac726e4-b1e6-42dd-9d16-34548d7cc9e7: #0000001a;
+--token-ee2dbcb5-2207-4058-b511-a98b4cfd1f67: #00000014;
+--token-a0488cff-ffde-4e55-bf18-5343b371b4d6: #f7f5f2;
+--token-7a8e3831-2440-464c-b922-6d6537eab7d0: #efebe5;
+--token-bd134076-e698-470d-b9fe-40deb4c20d4a: #ded6ca;
+--token-e27e1031-a876-439e-a06a-478d50eaa340: #0000005c;
+--token-ade1bce3-3902-4c4c-9fc0-b5696fee36e0: #f7f2ea;
+--token-57df5230-11aa-4e68-8b6b-18c3636e9783: #f3ece1;
+--token-5f5e3c8f-7d71-425c-b45c-50c8fbaf62f5: #e7d7c1;
+--token-849e124d-304f-407c-830d-356388c87cf6: #0000000a;
+--token-bbfa781e-bec9-4f41-8ada-bbb555497798: #505050;
+--framer-will-change-override: none;
+--framer-will-change-filter-override: none;
+--framer-aspect-ratio-supported: auto;
+box-sizing: border-box;
+-webkit-font-smoothing: inherit;
+flex-flow: column;
+flex: none;
+place-content: center;
+align-items: center;
+gap: 10px;
+width: min-content;
+height: min-content;
+padding: 0;
+display: flex;
+position: relative;
+overflow: visible;

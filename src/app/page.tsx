@@ -2,7 +2,7 @@ import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import StatsSection from "@/components/StatsSection";
 import HowItWorks from "@/components/HowItWorks";
-import Roadmap from "@/components/Roadmap";
+
 import TheDifference from "@/components/TheDifference";
 import Footer from "@/components/Footer";
 import FAQ from "@/components/FAQ";
@@ -15,8 +15,8 @@ export default function Home() {
       <Hero />
       <StatsSection />
       <HowItWorks />
-      <Roadmap />
       <TheDifference />
+
       <FAQ />
       <FreeAnalysis />
       <Footer />
