@@ -4,6 +4,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import LiquidButton from "@/components/LiquidButton";
 import FAQ from "@/components/FAQ";
+import SubmissionSuccessModal from "@/components/SubmissionSuccessModal";
 import { useState } from "react";
 
 export default function FreeAnalysisPage() {
@@ -15,6 +16,8 @@ export default function FreeAnalysisPage() {
         companyName: "",
         urgency: "Today"
     });
+
+    const [isModalOpen, setIsModalOpen] = useState(false);
 
     const [loading, setLoading] = useState(false);
 
@@ -35,7 +38,7 @@ export default function FreeAnalysisPage() {
             });
 
             if (response.ok) {
-                alert("Thanks! We'll start your analysis immediately.");
+                setIsModalOpen(true);
                 setFormData({
                     fullName: "",
                     email: "",
@@ -128,10 +131,9 @@ export default function FreeAnalysisPage() {
                                     <div className="space-y-2">
                                         <label htmlFor="website" className="text-sm font-bold text-brand-black/70 ml-1">Website</label>
                                         <input
-                                            type="url"
+                                            type="text"
                                             id="website"
                                             className="w-full bg-white border border-brand-black/10 rounded-xl px-4 py-3 outline-none focus:border-brand-red/30 focus:ring-4 focus:ring-brand-red/5 transition-all text-base text-brand-black"
-                                            placeholder="https://"
                                             value={formData.website}
                                             onChange={(e) => setFormData({ ...formData, website: e.target.value })}
                                         />
@@ -194,6 +196,13 @@ export default function FreeAnalysisPage() {
 
             <FAQ />
             <Footer />
+
+            <SubmissionSuccessModal
+                isOpen={isModalOpen}
+                onClose={() => setIsModalOpen(false)}
+                title="Analysis Requested!"
+                message="We'll start working on your personalized video analysis right away. Check your inbox soon!"
+            />
         </main>
     );
 }

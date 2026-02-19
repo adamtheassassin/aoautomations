@@ -3,6 +3,7 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import LiquidButton from "@/components/LiquidButton";
+import SubmissionSuccessModal from "@/components/SubmissionSuccessModal";
 import { useState, useEffect } from "react";
 
 export default function ContactPage() {
@@ -13,6 +14,8 @@ export default function ContactPage() {
         business: "",
         message: ""
     });
+
+    const [isModalOpen, setIsModalOpen] = useState(false);
 
     const [isSA, setIsSA] = useState(false);
 
@@ -53,7 +56,7 @@ export default function ContactPage() {
             });
 
             if (response.ok) {
-                alert("Thank you! Your message has been sent. We'll be in touch soon.");
+                setIsModalOpen(true);
                 setFormData({
                     name: "",
                     email: "",
@@ -212,6 +215,13 @@ export default function ContactPage() {
             </section>
 
             <Footer />
+
+            <SubmissionSuccessModal
+                isOpen={isModalOpen}
+                onClose={() => setIsModalOpen(false)}
+                title="Message Sent!"
+                message="Thanks for reaching out. We'll get back to you shortly."
+            />
         </main>
     );
 }
