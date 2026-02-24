@@ -9,15 +9,12 @@ export default function Footer() {
                 <div className="grid grid-cols-1 md:grid-cols-12 gap-12 mb-16">
                     {/* Brand Column */}
                     <div className="md:col-span-5 space-y-6">
-                        <Link href="/" className="flex items-center gap-3">
+                        <Link href="/" className="flex items-center">
                             <img
-                                src="/icons_&_images/Client Logos/ao-icon.svg"
+                                src="/icons_&_images/Client Logos/aoautomations.svg"
                                 alt="aoautomations"
-                                className="w-8 h-8 object-contain"
+                                className="h-8 md:h-10 w-auto object-contain"
                             />
-                            <div className="text-2xl font-bold tracking-tight">
-                                <span className="text-brand-black">ao</span><span className="text-brand-red">automations</span>
-                            </div>
                         </Link>
                         <p className="text-brand-gray/80 text-xl leading-relaxed max-w-sm font-medium">
                             <span className="text-brand-black font-bold block mb-1">Dominate your market.</span>

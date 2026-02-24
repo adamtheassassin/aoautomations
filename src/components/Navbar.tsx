@@ -59,15 +59,12 @@ export default function Navbar() {
             <nav className={`fixed top-0 w-full z-50 transition-transform duration-300 backdrop-blur-md bg-white/80 border-b border-brand-black/5 ${isVisible ? 'translate-y-0' : '-translate-y-full'}`}>
                 <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
                     {/* Logo */}
-                    <Link href="/" className="flex items-center gap-3 group cursor-pointer">
+                    <Link href="/" className="flex items-center group cursor-pointer">
                         <img
-                            src="/icons_&_images/Client Logos/ao-icon.svg"
+                            src="/icons_&_images/Client Logos/aoautomations.svg"
                             alt="aoautomations"
-                            className="w-10 h-10 object-contain drop-shadow-md group-hover:scale-110 transition-transform duration-300"
+                            className="h-8 md:h-10 w-auto object-contain drop-shadow-md group-hover:scale-105 transition-transform duration-300"
                         />
-                        <div className="text-2xl font-bold tracking-tight">
-                            <span className="text-brand-black">ao</span><span className="text-brand-red">automations</span>
-                        </div>
                     </Link>
 
                     {/* Desktop nav links */}
