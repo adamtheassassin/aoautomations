@@ -16,6 +16,15 @@ export const metadata: Metadata = {
   alternates: {
     canonical: './',
   },
+  icons: {
+    icon: [
+      { url: '/icons_&_images/Client%20Logos/ao-icon.png' },
+      { url: '/icons_&_images/Client%20Logos/ao-icon.svg', type: 'image/svg+xml' },
+    ],
+    apple: [
+      { url: '/icons_&_images/Client%20Logos/ao-icon.png' },
+    ],
+  },
 };
 
 export default function RootLayout({
