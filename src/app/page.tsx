@@ -7,6 +7,13 @@ import TheDifference from "@/components/TheDifference";
 import Footer from "@/components/Footer";
 import FAQ from "@/components/FAQ";
 import FreeAnalysis from "@/components/FreeAnalysis";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: "/",
+  },
+};
 
 export default function Home() {
   return (

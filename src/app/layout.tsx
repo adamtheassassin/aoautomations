@@ -10,12 +10,9 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://www.ao-automation.com'),
+  metadataBase: new URL('https://ao-automations.com'),
   title: "Rank Top 3 on Google Maps | Best Local Marketing Agency",
   description: "Dominate your local market. We help local businesses rank in the top 3 of Google Maps and grow their revenue.",
-  alternates: {
-    canonical: '/',
-  },
   icons: {
     icon: [
       { url: '/icons_&_images/Client%20Logos/ao-icon.png' },
