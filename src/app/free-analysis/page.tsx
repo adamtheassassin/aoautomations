@@ -156,9 +156,9 @@ export default function FreeAnalysisPage() {
                                 </div>
 
                                 {/* Urgency Radio Buttons */}
-                                <div className="space-y-3 pt-3">
-                                    <label className="text-sm font-bold text-brand-black/70 ml-1">By when do you want to solve this problem? *</label>
-                                    <div className="flex flex-wrap gap-3">
+                                <div className="pt-2">
+                                    <label className="text-sm font-bold text-brand-black/70 ml-1 block">By when do you want to solve this problem? *</label>
+                                    <div className="flex flex-wrap gap-3 mt-8 mb-2">
                                         {["Today", "Tomorrow", "In a few weeks"].map((option) => (
                                             <button
                                                 type="button"
@@ -178,7 +178,7 @@ export default function FreeAnalysisPage() {
                                     </div>
                                 </div>
 
-                                <div className="pt-6">
+                                <div className="pt-2">
                                     <LiquidButton
                                         className="w-full py-5 text-lg font-bold shadow-xl hover:shadow-2xl hover:shadow-brand-red/20 transition-all opacity-100 disabled:opacity-70 disabled:cursor-not-allowed"
                                         disabled={loading}

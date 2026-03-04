@@ -51,21 +51,21 @@ export default function TheDifference() {
 
                     {/* Mobile: Toggle at top, visible without scrolling */}
                     <div className="p-6 pb-0 lg:hidden flex justify-center">
-                        <div className="inline-flex bg-[#f5f5f5] rounded-xl p-1.5">
+                        <div className="inline-flex bg-white rounded-2xl p-2 shadow-lg border border-brand-black/5 relative z-10 w-full max-w-sm">
                             <button
                                 onClick={() => setActiveTab('before')}
-                                className={`px-5 py-2.5 rounded-lg text-sm font-semibold transition-all duration-300 cursor-pointer ${activeTab === 'before'
-                                    ? 'bg-white text-brand-black shadow-[0_2px_8px_rgba(0,0,0,0.12),0_1px_3px_rgba(0,0,0,0.08)] translate-y-[-1px]'
-                                    : 'text-brand-black/50 hover:text-brand-black/70 hover:bg-white/40'
+                                className={`flex-1 py-3.5 rounded-xl text-base font-bold transition-all duration-300 cursor-pointer flex items-center justify-center gap-2 ${activeTab === 'before'
+                                    ? 'bg-[#962424] text-white shadow-md scale-[1.02]'
+                                    : 'bg-transparent text-brand-black/60 hover:text-brand-black hover:bg-gray-50'
                                     }`}
                             >
                                 Before
                             </button>
                             <button
                                 onClick={() => setActiveTab('after')}
-                                className={`px-5 py-2.5 rounded-lg text-sm font-semibold transition-all duration-300 cursor-pointer ${activeTab === 'after'
-                                    ? 'bg-white text-brand-black shadow-[0_2px_8px_rgba(0,0,0,0.12),0_1px_3px_rgba(0,0,0,0.08)] translate-y-[-1px]'
-                                    : 'text-brand-black/50 hover:text-brand-black/70 hover:bg-white/40'
+                                className={`flex-1 py-3.5 rounded-xl text-base font-bold transition-all duration-300 cursor-pointer flex items-center justify-center gap-2 ${activeTab === 'after'
+                                    ? 'bg-[#1a7a2e] text-white shadow-md scale-[1.02]'
+                                    : 'bg-transparent text-brand-black/60 hover:text-brand-black hover:bg-gray-50'
                                     }`}
                             >
                                 After
@@ -76,13 +76,13 @@ export default function TheDifference() {
                     {/* Mobile: Image right after toggle */}
                     <div className="lg:hidden bg-[#f5f5f5] mx-6 mt-4 rounded-2xl overflow-hidden relative">
                         {/* Info click tooltip (mobile) */}
-                        <div className="absolute top-3 right-3 z-20">
+                        <div className="absolute top-4 right-4 z-20">
                             <button
                                 onClick={() => setInfoOpen(!infoOpen)}
-                                className="w-10 h-10 rounded-full bg-brand-black/80 backdrop-blur-sm border-2 border-white/30 flex items-center justify-center shadow-lg active:scale-95 transition-all duration-200 cursor-pointer"
+                                className="w-12 h-12 rounded-full bg-brand-black backdrop-blur-md border-[3px] border-white shadow-[0_0_20px_rgba(0,0,0,0.5)] flex items-center justify-center active:scale-95 transition-all duration-300 cursor-pointer animate-pulse-slow"
                                 aria-label="Map info"
                             >
-                                <span className="text-sm font-bold text-white select-none" style={{ fontStyle: 'italic', fontFamily: 'Georgia, serif' }}>i</span>
+                                <span className="text-xl font-bold text-white select-none" style={{ fontStyle: 'italic', fontFamily: 'Georgia, serif' }}>i</span>
                             </button>
                             <div className={`absolute top-full right-0 mt-2 w-64 transition-all duration-200 ${infoOpen ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible translate-y-1'}`}>
                                 <div className="bg-brand-black text-white text-xs leading-relaxed rounded-xl p-4 shadow-xl border border-white/10">
@@ -159,21 +159,21 @@ export default function TheDifference() {
                         <div className="p-8 md:p-10 flex flex-col">
 
                             {/* Toggle Buttons */}
-                            <div className="inline-flex bg-[#f5f5f5] rounded-xl p-1.5 mb-8 self-start">
+                            <div className="inline-flex bg-white rounded-2xl p-2 shadow-lg border border-brand-black/5 mb-8 self-start relative z-10 w-full max-w-[320px]">
                                 <button
                                     onClick={() => setActiveTab('before')}
-                                    className={`px-5 py-2.5 rounded-lg text-sm font-semibold transition-all duration-300 cursor-pointer ${activeTab === 'before'
-                                        ? 'bg-white text-brand-black shadow-[0_2px_8px_rgba(0,0,0,0.12),0_1px_3px_rgba(0,0,0,0.08)] translate-y-[-1px]'
-                                        : 'text-brand-black/50 hover:text-brand-black/70 hover:bg-white/40'
+                                    className={`flex-1 py-3.5 rounded-xl text-base font-bold transition-all duration-300 cursor-pointer flex items-center justify-center gap-2 ${activeTab === 'before'
+                                        ? 'bg-[#962424] text-white shadow-md scale-[1.02]'
+                                        : 'bg-transparent text-brand-black/60 hover:text-brand-black hover:bg-gray-50'
                                         }`}
                                 >
                                     Before
                                 </button>
                                 <button
                                     onClick={() => setActiveTab('after')}
-                                    className={`px-5 py-2.5 rounded-lg text-sm font-semibold transition-all duration-300 cursor-pointer ${activeTab === 'after'
-                                        ? 'bg-white text-brand-black shadow-[0_2px_8px_rgba(0,0,0,0.12),0_1px_3px_rgba(0,0,0,0.08)] translate-y-[-1px]'
-                                        : 'text-brand-black/50 hover:text-brand-black/70 hover:bg-white/40'
+                                    className={`flex-1 py-3.5 rounded-xl text-base font-bold transition-all duration-300 cursor-pointer flex items-center justify-center gap-2 ${activeTab === 'after'
+                                        ? 'bg-[#1a7a2e] text-white shadow-md scale-[1.02]'
+                                        : 'bg-transparent text-brand-black/60 hover:text-brand-black hover:bg-gray-50'
                                         }`}
                                 >
                                     After
@@ -218,9 +218,9 @@ export default function TheDifference() {
                         <div className="bg-[#f5f5f5] lg:rounded-r-3xl overflow-hidden flex items-center justify-center p-4 min-h-[400px] relative">
 
                             {/* Info hover tooltip */}
-                            <div className="absolute top-4 right-4 z-20 group">
-                                <div className="w-9 h-9 rounded-full bg-brand-black/80 backdrop-blur-sm border-2 border-white/30 flex items-center justify-center cursor-help shadow-lg hover:shadow-xl hover:bg-brand-black transition-all duration-200">
-                                    <span className="text-sm font-bold text-white select-none" style={{ fontStyle: 'italic', fontFamily: 'Georgia, serif' }}>i</span>
+                            <div className="absolute top-6 right-6 z-20 group">
+                                <div className="w-12 h-12 rounded-full bg-brand-black backdrop-blur-md border-[3px] border-white shadow-[0_0_20px_rgba(0,0,0,0.5)] flex items-center justify-center cursor-help group-hover:scale-110 transition-all duration-300 animate-pulse-slow">
+                                    <span className="text-xl font-bold text-white select-none" style={{ fontStyle: 'italic', fontFamily: 'Georgia, serif' }}>i</span>
                                 </div>
                                 <div className="absolute top-full right-0 mt-2 w-64 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 translate-y-1 group-hover:translate-y-0">
                                     <div className="bg-brand-black text-white text-xs leading-relaxed rounded-xl p-4 shadow-xl border border-white/10">
@@ -263,6 +263,17 @@ export default function TheDifference() {
 
             {/* CSS Animations */}
             <style jsx>{`
+                @keyframes pulse-slow {
+                    0%, 100% {
+                        box-shadow: 0 0 15px rgba(0,0,0,0.2), 0 0 0 0 rgba(255,255,255,0.8);
+                    }
+                    50% {
+                        box-shadow: 0 0 25px rgba(0,0,0,0.4), 0 0 0 8px rgba(255,255,255,0);
+                    }
+                }
+                .animate-pulse-slow {
+                    animation: pulse-slow 3s infinite;
+                }
                 @keyframes fadeSlideIn {
                     from {
                         opacity: 0;

@@ -1,17 +1,24 @@
 import React from "react";
 
 const LOGOS = [
+    // EAR Logo
+    <img
+        key="ear"
+        src="/icons_&_images/Client Logos/ear logo menu bar.png"
+        alt="EAR Engineering"
+        className="h-full w-auto object-contain scale-[1.2]"
+    />,
     // Naturelle Logo
     <img
         key="naturelle"
-        src="/icons_&_images/Client Logos/Naturelle-Logo@x2-300x84.svg"
+        src="/icons_&_images/Client Logos/Naturelle-Logo.png"
         alt="Naturelle"
         className="h-full w-auto object-contain"
     />,
     // Xternal Shine Logo
     <img
         key="xternalshine"
-        src="/icons_&_images/Client Logos/xternalshine-logo.svg"
+        src="/icons_&_images/Client Logos/xternalshine-logo.png"
         alt="Xternal Shine"
         className="h-full w-auto object-contain"
     />,
