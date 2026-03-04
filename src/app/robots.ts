@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
             userAgent: '*',
             allow: '/',
         },
-        sitemap: 'https://www.aoautomation.com/sitemap.xml',
+        sitemap: 'https://ao-automations.com/sitemap.xml',
     }
 }
