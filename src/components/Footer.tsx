@@ -74,7 +74,7 @@ export default function Footer() {
 
                 <div className="pt-8 border-t border-brand-black/5 flex flex-col md:flex-row items-center justify-between gap-4">
                     <p className="text-brand-gray/60 text-xs font-medium">
-                        © 2026 AO Automations. All rights reserved.
+                        © 2026 aoautomations. All rights reserved.
                     </p>
                 </div>
             </div>

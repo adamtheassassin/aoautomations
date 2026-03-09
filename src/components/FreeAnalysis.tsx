@@ -16,7 +16,7 @@ export default function FreeAnalysis() {
                     <div className="relative z-10 mx-auto w-14 h-14 md:w-20 md:h-20 bg-black rounded-xl md:rounded-2xl flex items-center justify-center mb-6 md:mb-10 shadow-lg shadow-black/10 transform rotate-3 transition-transform duration-500 group-hover:rotate-6 group-hover:scale-105 gpu-accelerate">
                         <img
                             src="/icons_&_images/Client Logos/ao-icon.svg"
-                            alt="AO Automations"
+                            alt="aoautomations"
                             className="w-7 h-7 md:w-10 md:h-10 object-contain brightness-0 invert"
                         />
                     </div>

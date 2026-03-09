@@ -23,7 +23,7 @@ export default function TermsOfService() {
                     <section className="mb-10">
                         <h2 className="text-2xl font-bold text-brand-black mb-4">Agreement</h2>
                         <p className="leading-relaxed">
-                            By accessing or using AO Automations, you agree to these Terms of Service. If you do not agree, do not use the website or services.
+                            By accessing or using aoautomations, you agree to these Terms of Service. If you do not agree, do not use the website or services.
                         </p>
                     </section>
 
@@ -47,7 +47,7 @@ export default function TermsOfService() {
                     <section className="mb-10">
                         <h2 className="text-2xl font-bold text-brand-black mb-4">Intellectual Property</h2>
                         <p className="leading-relaxed">
-                            The website content, branding, and design are owned by AO Automations or licensors and are protected by intellectual property laws. You may not copy, modify, or distribute content without permission.
+                            The website content, branding, and design are owned by aoautomations or licensors and are protected by intellectual property laws. You may not copy, modify, or distribute content without permission.
                         </p>
                     </section>
 
@@ -61,7 +61,7 @@ export default function TermsOfService() {
                     <section className="mb-10">
                         <h2 className="text-2xl font-bold text-brand-black mb-4">Limitation of Liability</h2>
                         <p className="leading-relaxed">
-                            To the maximum extent permitted by law, AO Automations will not be liable for indirect, incidental, special, consequential, or punitive damages arising out of your use of the website.
+                            To the maximum extent permitted by law, aoautomations will not be liable for indirect, incidental, special, consequential, or punitive damages arising out of your use of the website.
                         </p>
                     </section>
 

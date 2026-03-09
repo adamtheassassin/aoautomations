@@ -20,7 +20,7 @@ export default function PrivacyPolicy() {
                     <section className="mb-10">
                         <h2 className="text-2xl font-bold text-brand-black mb-4">Overview</h2>
                         <p className="leading-relaxed">
-                            This Privacy Policy explains how AO Automations collects, uses, and protects information when you visit our website or interact with our services.
+                            This Privacy Policy explains how aoautomations collects, uses, and protects information when you visit our website or interact with our services.
                         </p>
                     </section>
 
