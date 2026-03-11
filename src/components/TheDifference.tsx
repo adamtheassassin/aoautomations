@@ -22,12 +22,7 @@ export default function TheDifference() {
     const [infoOpen, setInfoOpen] = useState(false);
 
     const stats = activeTab === 'before' ? beforeStats : afterStats;
-    const imageSrc = activeTab === 'before'
-        ? '/icons_&_images/background images/Bad Ranking.webp'
-        : '/icons_&_images/background images/Good Ranking.webp';
-    const imageAlt = activeTab === 'before'
-        ? 'Bad ranking heatmap showing mostly 20+ positions'
-        : 'Good ranking heatmap showing mostly #1 positions';
+
 
     return (
         <section id="before-after" className="w-full py-24 px-6 bg-brand-cream relative overflow-hidden">
@@ -54,21 +49,35 @@ export default function TheDifference() {
                         <div className="inline-flex bg-white rounded-2xl p-2 shadow-lg border border-brand-black/5 relative z-10 w-full max-w-sm">
                             <button
                                 onClick={() => setActiveTab('before')}
-                                className={`flex-1 py-3.5 rounded-xl text-base font-bold transition-all duration-300 cursor-pointer flex items-center justify-center gap-2 ${activeTab === 'before'
-                                    ? 'bg-[#962424] text-white shadow-md scale-[1.02]'
-                                    : 'bg-transparent text-brand-black/60 hover:text-brand-black hover:bg-gray-50'
+                                className={`flex-1 py-3.5 rounded-xl text-base font-bold transition-all duration-300 cursor-pointer flex items-center justify-center gap-2 relative overflow-hidden ${activeTab === 'before'
+                                    ? 'bg-gradient-to-b from-[#D92323] via-[#B90E0E] to-[#980404] border-[2px] border-[#FF6B6B] text-white shadow-[0_0_15px_rgba(217,35,35,0.4),0_8px_15px_rgba(0,0,0,0.2)] scale-[1.02] z-10'
+                                    : 'bg-transparent border-[2px] border-transparent text-brand-black/60 hover:text-brand-black hover:bg-gray-50'
                                     }`}
                             >
-                                Before
+                                {activeTab === 'before' && (
+                                    <>
+                                        <div className="absolute inset-x-2 top-0 h-[50%] bg-gradient-to-b from-white/30 to-transparent rounded-t-xl pointer-events-none opacity-80"></div>
+                                        <div className="absolute inset-0 rounded-xl shadow-[inset_0_2px_4px_rgba(255,255,255,0.3)] pointer-events-none"></div>
+                                        <div className="absolute inset-x-0 bottom-0 h-[40%] bg-gradient-to-t from-black/20 to-transparent rounded-b-xl pointer-events-none"></div>
+                                    </>
+                                )}
+                                <span className={activeTab === 'before' ? 'relative z-10 drop-shadow-md' : ''}>Before</span>
                             </button>
                             <button
                                 onClick={() => setActiveTab('after')}
-                                className={`flex-1 py-3.5 rounded-xl text-base font-bold transition-all duration-300 cursor-pointer flex items-center justify-center gap-2 ${activeTab === 'after'
-                                    ? 'bg-[#1a7a2e] text-white shadow-md scale-[1.02]'
-                                    : 'bg-transparent text-brand-black/60 hover:text-brand-black hover:bg-gray-50'
+                                className={`flex-1 py-3.5 rounded-xl text-base font-bold transition-all duration-300 cursor-pointer flex items-center justify-center gap-2 relative overflow-hidden ${activeTab === 'after'
+                                    ? 'bg-gradient-to-b from-[#22c55e] via-[#16a34a] to-[#15803d] border-[2px] border-[#4ade80] text-white shadow-[0_0_15px_rgba(34,197,94,0.4),0_8px_15px_rgba(0,0,0,0.2)] scale-[1.02] z-10'
+                                    : 'bg-transparent border-[2px] border-transparent text-brand-black/60 hover:text-brand-black hover:bg-gray-50'
                                     }`}
                             >
-                                After
+                                {activeTab === 'after' && (
+                                    <>
+                                        <div className="absolute inset-x-2 top-0 h-[50%] bg-gradient-to-b from-white/30 to-transparent rounded-t-xl pointer-events-none opacity-80"></div>
+                                        <div className="absolute inset-0 rounded-xl shadow-[inset_0_2px_4px_rgba(255,255,255,0.3)] pointer-events-none"></div>
+                                        <div className="absolute inset-x-0 bottom-0 h-[40%] bg-gradient-to-t from-black/20 to-transparent rounded-b-xl pointer-events-none"></div>
+                                    </>
+                                )}
+                                <span className={activeTab === 'after' ? 'relative z-10 drop-shadow-md' : ''}>After</span>
                             </button>
                         </div>
                     </div>
@@ -100,16 +109,20 @@ export default function TheDifference() {
                             </div>
                         </div>
 
-                        <div
-                            key={`mobile-${activeTab}`}
-                            className="relative w-full aspect-square rounded-2xl overflow-hidden"
-                            style={{ animation: 'fadeIn 0.5s ease-out forwards' }}
-                        >
+                        <div className="relative w-full aspect-square rounded-2xl overflow-hidden">
                             <Image
-                                src={imageSrc}
-                                alt={imageAlt}
+                                src="/icons_&_images/background images/Bad Ranking.webp"
+                                alt="Bad ranking heatmap showing mostly 20+ positions"
                                 fill
-                                className="object-cover"
+                                className={`object-cover transition-opacity duration-500 ease-in-out ${activeTab === 'before' ? 'opacity-100 z-10' : 'opacity-0 z-0'}`}
+                                sizes="100vw"
+                                priority
+                            />
+                            <Image
+                                src="/icons_&_images/background images/Good Ranking.webp"
+                                alt="Good ranking heatmap showing mostly #1 positions"
+                                fill
+                                className={`object-cover transition-opacity duration-500 ease-in-out ${activeTab === 'after' ? 'opacity-100 z-10' : 'opacity-0 z-0'}`}
                                 sizes="100vw"
                                 priority
                             />
@@ -127,7 +140,7 @@ export default function TheDifference() {
                             </div>
                             <div>
                                 <p className="font-semibold text-brand-black text-lg leading-tight">Your Company</p>
-                                <p className="text-brand-gray text-sm">Example Address 12, 12101 NYC</p>
+                                <p className="text-brand-gray text-sm">Example Address 12, 12101 CPT</p>
                             </div>
                         </div>
 
@@ -162,21 +175,35 @@ export default function TheDifference() {
                             <div className="inline-flex bg-white rounded-2xl p-2 shadow-lg border border-brand-black/5 mb-8 self-start relative z-10 w-full max-w-[320px]">
                                 <button
                                     onClick={() => setActiveTab('before')}
-                                    className={`flex-1 py-3.5 rounded-xl text-base font-bold transition-all duration-300 cursor-pointer flex items-center justify-center gap-2 ${activeTab === 'before'
-                                        ? 'bg-[#962424] text-white shadow-md scale-[1.02]'
-                                        : 'bg-transparent text-brand-black/60 hover:text-brand-black hover:bg-gray-50'
+                                    className={`flex-1 py-3.5 rounded-xl text-base font-bold transition-all duration-300 cursor-pointer flex items-center justify-center gap-2 relative overflow-hidden ${activeTab === 'before'
+                                        ? 'bg-gradient-to-b from-[#D92323] via-[#B90E0E] to-[#980404] border-[2px] border-[#FF6B6B] text-white shadow-[0_0_15px_rgba(217,35,35,0.4),0_8px_15px_rgba(0,0,0,0.2)] scale-[1.02] z-10'
+                                        : 'bg-transparent border-[2px] border-transparent text-brand-black/60 hover:text-brand-black hover:bg-gray-50'
                                         }`}
                                 >
-                                    Before
+                                    {activeTab === 'before' && (
+                                        <>
+                                            <div className="absolute inset-x-2 top-0 h-[50%] bg-gradient-to-b from-white/30 to-transparent rounded-t-xl pointer-events-none opacity-80"></div>
+                                            <div className="absolute inset-0 rounded-xl shadow-[inset_0_2px_4px_rgba(255,255,255,0.3)] pointer-events-none"></div>
+                                            <div className="absolute inset-x-0 bottom-0 h-[40%] bg-gradient-to-t from-black/20 to-transparent rounded-b-xl pointer-events-none"></div>
+                                        </>
+                                    )}
+                                    <span className={activeTab === 'before' ? 'relative z-10 drop-shadow-md' : ''}>Before</span>
                                 </button>
                                 <button
                                     onClick={() => setActiveTab('after')}
-                                    className={`flex-1 py-3.5 rounded-xl text-base font-bold transition-all duration-300 cursor-pointer flex items-center justify-center gap-2 ${activeTab === 'after'
-                                        ? 'bg-[#1a7a2e] text-white shadow-md scale-[1.02]'
-                                        : 'bg-transparent text-brand-black/60 hover:text-brand-black hover:bg-gray-50'
+                                    className={`flex-1 py-3.5 rounded-xl text-base font-bold transition-all duration-300 cursor-pointer flex items-center justify-center gap-2 relative overflow-hidden ${activeTab === 'after'
+                                        ? 'bg-gradient-to-b from-[#22c55e] via-[#16a34a] to-[#15803d] border-[2px] border-[#4ade80] text-white shadow-[0_0_15px_rgba(34,197,94,0.4),0_8px_15px_rgba(0,0,0,0.2)] scale-[1.02] z-10'
+                                        : 'bg-transparent border-[2px] border-transparent text-brand-black/60 hover:text-brand-black hover:bg-gray-50'
                                         }`}
                                 >
-                                    After
+                                    {activeTab === 'after' && (
+                                        <>
+                                            <div className="absolute inset-x-2 top-0 h-[50%] bg-gradient-to-b from-white/30 to-transparent rounded-t-xl pointer-events-none opacity-80"></div>
+                                            <div className="absolute inset-0 rounded-xl shadow-[inset_0_2px_4px_rgba(255,255,255,0.3)] pointer-events-none"></div>
+                                            <div className="absolute inset-x-0 bottom-0 h-[40%] bg-gradient-to-t from-black/20 to-transparent rounded-b-xl pointer-events-none"></div>
+                                        </>
+                                    )}
+                                    <span className={activeTab === 'after' ? 'relative z-10 drop-shadow-md' : ''}>After</span>
                                 </button>
                             </div>
 
@@ -238,18 +265,20 @@ export default function TheDifference() {
                                 </div>
                             </div>
 
-                            <div
-                                key={`desktop-${activeTab}`}
-                                className="relative w-full h-full min-h-[380px] rounded-2xl overflow-hidden shadow-lg"
-                                style={{
-                                    animation: 'fadeIn 0.5s ease-out forwards',
-                                }}
-                            >
+                            <div className="relative w-full h-full min-h-[380px] rounded-2xl overflow-hidden shadow-lg">
                                 <Image
-                                    src={imageSrc}
-                                    alt={imageAlt}
+                                    src="/icons_&_images/background images/Bad Ranking.webp"
+                                    alt="Bad ranking heatmap showing mostly 20+ positions"
                                     fill
-                                    className="object-cover"
+                                    className={`object-cover transition-opacity duration-500 ease-in-out ${activeTab === 'before' ? 'opacity-100 z-10' : 'opacity-0 z-0'}`}
+                                    sizes="50vw"
+                                    priority
+                                />
+                                <Image
+                                    src="/icons_&_images/background images/Good Ranking.webp"
+                                    alt="Good ranking heatmap showing mostly #1 positions"
+                                    fill
+                                    className={`object-cover transition-opacity duration-500 ease-in-out ${activeTab === 'after' ? 'opacity-100 z-10' : 'opacity-0 z-0'}`}
                                     sizes="50vw"
                                     priority
                                 />
