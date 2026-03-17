@@ -1,4 +1,6 @@
+"use client";
 import Link from 'next/link';
+import Script from 'next/script';
 import LiquidButton from './LiquidButton';
 import Marquee from './Marquee';
 import LocationIndicator from './LocationIndicator';
@@ -12,6 +14,15 @@ export default function Hero() {
                 <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-brand-dark/5 rounded-full blur-3xl -z-10 -translate-x-1/3 translate-y-1/3 pointer-events-none gpu-accelerate"></div>
 
                 <div className="w-full max-w-7xl mx-auto px-6 flex-grow flex flex-col justify-center">
+                    <style dangerouslySetInnerHTML={{
+                        __html: `
+                        wistia-player[media-id='sxfxma40q5']:not(:defined) { 
+                            background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/sxfxma40q5/swatch'); 
+                            display: block; 
+                            filter: blur(5px); 
+                            padding-top:56.25%; 
+                        }`
+                    }} />
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
 
                         {/* Left Content */}
@@ -22,13 +33,11 @@ export default function Hero() {
                                 Rankings in 90 Days - <span className="text-brand-red italic font-serif">Guaranteed</span>
                             </h1>
 
-                            {/* Mobile Feature Image */}
-                            <div className="relative w-full flex justify-center items-center my-4 lg:hidden">
-                                <img
-                                    src="/icons_&_images/background%20images/SearchResultsHero.webp"
-                                    alt="Search Results Hero"
-                                    className="w-full h-auto rounded-[2rem] shadow-2xl border border-black/5"
-                                />
+                            {/* Mobile Feature Video */}
+                             <div className="relative w-full flex justify-center items-center my-4 lg:hidden">
+                                <div className="w-full h-auto rounded-xl shadow-2xl border border-black/5 overflow-hidden bg-black/5 aspect-video">
+                                    <wistia-player media-id="sxfxma40q5" aspect="1.7777777777777777"></wistia-player>
+                                </div>
                             </div>
 
                             <p className="text-base sm:text-xl md:text-2xl text-brand-gray leading-relaxed max-w-lg font-light">
@@ -47,14 +56,16 @@ export default function Hero() {
 
                         </div>
 
-                        {/* Right Content - Feature Image */}
+                        {/* Right Content - Feature Video */}
                         <div className="relative w-full hidden lg:flex justify-center items-center -mt-8 md:-mt-12">
-                            <img
-                                src="/icons_&_images/background%20images/SearchResultsHero.webp"
-                                alt="Search Results Hero"
-                                className="w-full h-auto rounded-[2rem] shadow-2xl border border-black/5"
-                            />
+                            <div className="w-full h-auto rounded-xl shadow-2xl border border-black/5 overflow-hidden bg-black/5 aspect-video">
+                                <wistia-player media-id="sxfxma40q5" aspect="1.7777777777777777"></wistia-player>
+                            </div>
                         </div>
+
+                        {/* Wistia Scripts */}
+                        <Script src="https://fast.wistia.com/player.js" strategy="afterInteractive" />
+                        <Script src="https://fast.wistia.com/embed/sxfxma40q5.js" strategy="afterInteractive" type="module" />
 
                     </div>
                 </div>
