@@ -36,7 +36,7 @@ export default function Hero() {
                             {/* Mobile Feature Video */}
                              <div className="relative w-full flex justify-center items-center my-4 lg:hidden">
                                 <div className="w-full h-auto rounded-xl shadow-2xl border border-black/5 overflow-hidden bg-black/5 aspect-video">
-                                    <wistia-player media-id="sxfxma40q5" aspect="1.7777777777777777"></wistia-player>
+                                    <wistia-player suppressHydrationWarning media-id="sxfxma40q5" aspect="1.7777777777777777"></wistia-player>
                                 </div>
                             </div>
 
@@ -59,7 +59,7 @@ export default function Hero() {
                         {/* Right Content - Feature Video */}
                         <div className="relative w-full hidden lg:flex justify-center items-center -mt-8 md:-mt-12">
                             <div className="w-full h-auto rounded-xl shadow-2xl border border-black/5 overflow-hidden bg-black/5 aspect-video">
-                                <wistia-player media-id="sxfxma40q5" aspect="1.7777777777777777"></wistia-player>
+                                <wistia-player suppressHydrationWarning media-id="sxfxma40q5" aspect="1.7777777777777777"></wistia-player>
                             </div>
                         </div>
 
