@@ -4,10 +4,11 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import LiquidButton from "@/components/LiquidButton";
 import FAQ from "@/components/FAQ";
-import SubmissionSuccessModal from "@/components/SubmissionSuccessModal";
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 
 export default function FreeAnalysisPage() {
+    const router = useRouter();
     const [formData, setFormData] = useState({
         fullName: "",
         email: "",
@@ -16,8 +17,6 @@ export default function FreeAnalysisPage() {
         companyName: "",
         urgency: "Today"
     });
-
-    const [isModalOpen, setIsModalOpen] = useState(false);
 
     const [loading, setLoading] = useState(false);
 
@@ -38,7 +37,7 @@ export default function FreeAnalysisPage() {
             });
 
             if (response.ok) {
-                setIsModalOpen(true);
+                router.push("/thank-you");
                 setFormData({
                     fullName: "",
                     email: "",
@@ -196,13 +195,6 @@ export default function FreeAnalysisPage() {
 
             <FAQ />
             <Footer />
-
-            <SubmissionSuccessModal
-                isOpen={isModalOpen}
-                onClose={() => setIsModalOpen(false)}
-                title="Analysis Requested!"
-                message="We'll start working on your personalized video analysis right away. Check your inbox soon!"
-            />
         </main>
     );
 }
