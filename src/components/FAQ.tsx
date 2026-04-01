@@ -9,8 +9,8 @@ export default function FAQ() {
     const [openIndex, setOpenIndex] = useState<number | null>(null);
 
     const prices = {
-        monthly: currency === 'ZAR' ? 'R4,250' : '$350',
-        quarterly: currency === 'ZAR' ? 'R11,000' : '$900'
+        monthly: currency === 'ZAR' ? 'R4,250' : '$400',
+        quarterly: currency === 'ZAR' ? 'R11,000' : '$1,100'
     };
 
     const FAQ_ITEMS = [
