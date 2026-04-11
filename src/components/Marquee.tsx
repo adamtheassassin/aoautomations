@@ -44,6 +44,13 @@ const LOGOS = [
         alt="Baboo"
         className="h-full w-auto object-contain scale-[1.6]"
     />,
+    // Kebabish Logo
+    <img
+        key="kebabish"
+        src="/icons_&_images/Client Logos/Kebabish_Logo-removebg-preview.webp"
+        alt="Kebabish"
+        className="h-[85%] w-auto object-contain"
+    />,
 ];
 
 export default function Marquee() {

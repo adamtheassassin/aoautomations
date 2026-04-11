@@ -5,6 +5,7 @@ import HowItWorks from "@/components/HowItWorks";
 
 import TheDifference from "@/components/TheDifference";
 import ROICalculator from "@/components/ROICalculator";
+import Pricing from "@/components/Pricing";
 import Footer from "@/components/Footer";
 import FAQ from "@/components/FAQ";
 import FreeAnalysis from "@/components/FreeAnalysis";
@@ -25,6 +26,7 @@ export default function Home() {
       <HowItWorks />
       <TheDifference />
       <ROICalculator />
+      <Pricing />
 
       <FAQ />
       <FreeAnalysis />

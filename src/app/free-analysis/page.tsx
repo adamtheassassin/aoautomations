@@ -18,6 +18,9 @@ export default function FreeAnalysisPage() {
         urgency: "Today"
     });
 
+    const [budgetIndex, setBudgetIndex] = useState(0);
+    const budgetMarks = ["R4,000", "R8,000", "R12,000", "R15,000+"];
+
     const [loading, setLoading] = useState(false);
 
     const handleSubmit = async (e: React.FormEvent) => {
@@ -32,6 +35,7 @@ export default function FreeAnalysisPage() {
                 },
                 body: JSON.stringify({
                     type: 'free-analysis',
+                    budget: budgetMarks[budgetIndex],
                     ...formData
                 }),
             });
@@ -46,6 +50,7 @@ export default function FreeAnalysisPage() {
                     companyName: "",
                     urgency: "Today"
                 });
+                setBudgetIndex(0);
             } else {
                 alert("Something went wrong. Please try again.");
             }
@@ -78,6 +83,19 @@ export default function FreeAnalysisPage() {
                                 <p className="text-xl text-brand-gray leading-relaxed max-w-lg mb-8">
                                     Fill out the form and we will record your personalized analysis with the exact things that need to happen so you can <strong className="text-brand-black">rank in the top 3 within your area</strong>.
                                 </p>
+
+                                <div className="flex items-center gap-4 mb-8 p-4 rounded-2xl bg-white/60 border border-brand-black/5 shadow-sm">
+                                    <div className="w-12 h-12 rounded-full bg-brand-red/10 flex items-center justify-center shrink-0">
+                                        <svg className="w-6 h-6 text-brand-red" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <p className="text-brand-black font-bold text-sm">100% Positive ROI Track Record</p>
+                                        <p className="text-brand-gray text-sm mt-0.5">Every single client we&apos;ve ranked in the top 3 has seen a positive return on investment.</p>
+                                    </div>
+                                </div>
+
                                 <p className="text-brand-gray/60 font-medium text-sm max-w-xs">
                                     No costs, no obligations, no annoying sales pitch. Guaranteed.
                                 </p>
@@ -154,11 +172,41 @@ export default function FreeAnalysisPage() {
                                     </div>
                                 </div>
 
+                                {/* Marketing Budget Slider */}
+                                <div className="pt-2">
+                                    <div className="flex justify-between items-baseline mb-4">
+                                        <label className="text-sm font-bold text-brand-black/70 ml-1">Current Monthly Marketing Budget *</label>
+                                        <span className="text-brand-red font-bold text-lg">{budgetMarks[budgetIndex]}</span>
+                                    </div>
+                                    <div className="relative px-2">
+                                        <input
+                                            type="range"
+                                            min="0"
+                                            max="3"
+                                            step="1"
+                                            value={budgetIndex}
+                                            onChange={(e) => setBudgetIndex(parseInt(e.target.value))}
+                                            className="w-full h-2 bg-brand-black/10 rounded-lg appearance-none cursor-pointer accent-brand-red focus:outline-none focus:ring-2 focus:ring-brand-red/20"
+                                        />
+                                        <div className="flex justify-between text-xs font-medium text-brand-black/50 mt-3 px-1">
+                                            {budgetMarks.map((mark, i) => (
+                                                <span
+                                                    key={i}
+                                                    className={`cursor-pointer transition-colors ${budgetIndex === i ? 'text-brand-red font-bold' : 'hover:text-brand-black/70'}`}
+                                                    onClick={() => setBudgetIndex(i)}
+                                                >
+                                                    {mark}
+                                                </span>
+                                            ))}
+                                        </div>
+                                    </div>
+                                </div>
+
                                 {/* Urgency Radio Buttons */}
                                 <div className="pt-2">
-                                    <label className="text-sm font-bold text-brand-black/70 ml-1 block">By when do you want to solve this problem? *</label>
+                                    <label className="text-sm font-bold text-brand-black/70 ml-1 block">How soon are you looking to start the ranking process? *</label>
                                     <div className="flex flex-wrap gap-3 mt-8 mb-2">
-                                        {["Today", "Tomorrow", "In a few weeks"].map((option) => (
+                                        {["Today", "Tomorrow", "A few weeks"].map((option) => (
                                             <button
                                                 type="button"
                                                 key={option}
