@@ -14,7 +14,7 @@ export default function Pricing() {
             zar: 4250
         },
         quarterly: {
-            usd: 1100,
+            usd: 1000,
             zar: 11000
         }
     };
@@ -72,7 +72,7 @@ export default function Pricing() {
                     <div className="bg-white rounded-[2.5rem] p-8 shadow-xl border-2 border-brand-red flex flex-col h-full transform transition-transform duration-300 hover:-translate-y-2 relative">
                         {/* Badge */}
                         <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-brand-red text-white px-4 py-1.5 rounded-full text-sm font-bold shadow-lg whitespace-nowrap">
-                            Save {symbol}{isZA ? '2,000' : '100'}
+                            Save {symbol}{isZA ? '1,750' : '200'}
                         </div>
 
                         <div className="mb-8">
