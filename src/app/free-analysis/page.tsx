@@ -15,11 +15,9 @@ export default function FreeAnalysisPage() {
         phone: "",
         website: "",
         companyName: "",
+        budget: "",
         urgency: "Today"
     });
-
-    const [budgetIndex, setBudgetIndex] = useState(0);
-    const budgetMarks = ["R4,000", "R8,000", "R12,000", "R15,000+"];
 
     const [loading, setLoading] = useState(false);
 
@@ -35,7 +33,6 @@ export default function FreeAnalysisPage() {
                 },
                 body: JSON.stringify({
                     type: 'free-analysis',
-                    budget: budgetMarks[budgetIndex],
                     ...formData
                 }),
             });
@@ -48,9 +45,9 @@ export default function FreeAnalysisPage() {
                     phone: "",
                     website: "",
                     companyName: "",
+                    budget: "",
                     urgency: "Today"
                 });
-                setBudgetIndex(0);
             } else {
                 alert("Something went wrong. Please try again.");
             }
@@ -172,33 +169,18 @@ export default function FreeAnalysisPage() {
                                     </div>
                                 </div>
 
-                                {/* Marketing Budget Slider */}
-                                <div className="pt-2">
-                                    <div className="flex justify-between items-baseline mb-4">
-                                        <label className="text-sm font-bold text-brand-black/70 ml-1">Current Monthly Marketing Budget *</label>
-                                        <span className="text-brand-red font-bold text-lg">{budgetMarks[budgetIndex]}</span>
-                                    </div>
-                                    <div className="relative px-2">
+                                {/* Marketing Budget Input */}
+                                <div className="grid grid-cols-1 gap-5 pt-2">
+                                    <div className="space-y-2">
+                                        <label htmlFor="budget" className="text-sm font-bold text-brand-black/70 ml-1">Current Monthly Marketing Budget *</label>
                                         <input
-                                            type="range"
-                                            min="0"
-                                            max="3"
-                                            step="1"
-                                            value={budgetIndex}
-                                            onChange={(e) => setBudgetIndex(parseInt(e.target.value))}
-                                            className="w-full h-2 bg-brand-black/10 rounded-lg appearance-none cursor-pointer accent-brand-red focus:outline-none focus:ring-2 focus:ring-brand-red/20"
+                                            type="text"
+                                            id="budget"
+                                            required
+                                            className="w-full bg-white border border-brand-black/10 rounded-xl px-4 py-3 outline-none focus:border-brand-red/30 focus:ring-4 focus:ring-brand-red/5 transition-all text-base text-brand-black"
+                                            value={formData.budget}
+                                            onChange={(e) => setFormData({ ...formData, budget: e.target.value })}
                                         />
-                                        <div className="flex justify-between text-xs font-medium text-brand-black/50 mt-3 px-1">
-                                            {budgetMarks.map((mark, i) => (
-                                                <span
-                                                    key={i}
-                                                    className={`cursor-pointer transition-colors ${budgetIndex === i ? 'text-brand-red font-bold' : 'hover:text-brand-black/70'}`}
-                                                    onClick={() => setBudgetIndex(i)}
-                                                >
-                                                    {mark}
-                                                </span>
-                                            ))}
-                                        </div>
                                     </div>
                                 </div>
 

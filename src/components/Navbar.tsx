@@ -3,14 +3,23 @@
 import Link from 'next/link';
 import LiquidButton from './LiquidButton';
 import { useState, useEffect, useCallback } from 'react';
-
-const navLinks = [
-    { label: 'Before / After', href: '#before-after' },
-    { label: 'The Process', href: '#the-process' },
-    { label: 'Questions', href: '#questions' },
-];
+import { usePathname } from 'next/navigation';
 
 export default function Navbar() {
+    const pathname = usePathname();
+    const isFreeAnalysisPage = pathname === '/free-analysis';
+
+    const navLinks = isFreeAnalysisPage
+        ? [
+            { label: 'Home', href: '/' },
+            { label: 'Questions', href: '#questions' },
+        ]
+        : [
+            { label: 'Before / After', href: pathname === '/' ? '#before-after' : '/#before-after' },
+            { label: 'The Process', href: pathname === '/' ? '#the-process' : '/#the-process' },
+            { label: 'Questions', href: pathname === '/' ? '#questions' : '/#questions' },
+        ];
+
     const [isVisible, setIsVisible] = useState(true);
     const [lastScrollY, setLastScrollY] = useState(0);
     const [mobileOpen, setMobileOpen] = useState(false);
@@ -18,19 +27,33 @@ export default function Navbar() {
     useEffect(() => {
         const controlNavbar = () => {
             if (typeof window !== 'undefined') {
-                if (window.scrollY > lastScrollY && window.scrollY > 100) {
-                    setIsVisible(false);
-                    setMobileOpen(false);
+                const currentScrollY = window.scrollY;
+                const isMobile = window.innerWidth < 768;
+
+                if (isFreeAnalysisPage && isMobile) {
+                    // Only show at the top on mobile for free-analysis page
+                    if (currentScrollY > 50) {
+                        setIsVisible(false);
+                        setMobileOpen(false);
+                    } else {
+                        setIsVisible(true);
+                    }
                 } else {
-                    setIsVisible(true);
+                    // Default behavior: hide on scroll down, show on scroll up
+                    if (currentScrollY > lastScrollY && currentScrollY > 100) {
+                        setIsVisible(false);
+                        setMobileOpen(false);
+                    } else {
+                        setIsVisible(true);
+                    }
                 }
-                setLastScrollY(window.scrollY);
+                setLastScrollY(currentScrollY);
             }
         };
 
         window.addEventListener('scroll', controlNavbar);
         return () => window.removeEventListener('scroll', controlNavbar);
-    }, [lastScrollY]);
+    }, [lastScrollY, isFreeAnalysisPage]);
 
     // Lock body scroll when mobile menu is open
     useEffect(() => {
@@ -43,14 +66,16 @@ export default function Navbar() {
     }, [mobileOpen]);
 
     const handleNavClick = useCallback((e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
-        e.preventDefault();
         setMobileOpen(false);
-        const id = href.replace('#', '');
-        const el = document.getElementById(id);
-        if (el) {
-            const offset = 80;
-            const y = el.getBoundingClientRect().top + window.scrollY - offset;
-            window.scrollTo({ top: y, behavior: 'smooth' });
+        if (href.startsWith('#')) {
+            e.preventDefault();
+            const id = href.replace('#', '');
+            const el = document.getElementById(id);
+            if (el) {
+                const offset = 80;
+                const y = el.getBoundingClientRect().top + window.scrollY - offset;
+                window.scrollTo({ top: y, behavior: 'smooth' });
+            }
         }
     }, []);
 
@@ -70,14 +95,14 @@ export default function Navbar() {
                     {/* Desktop nav links */}
                     <div className="hidden md:flex items-center gap-8">
                         {navLinks.map((link) => (
-                            <a
-                                key={link.href}
+                            <Link
+                                key={link.label}
                                 href={link.href}
-                                onClick={(e) => handleNavClick(e, link.href)}
+                                onClick={(e) => handleNavClick(e as any, link.href)}
                                 className="text-sm font-medium text-brand-black/60 hover:text-brand-black transition-colors duration-300 relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[2px] after:bg-brand-red after:transition-all after:duration-300 hover:after:w-full"
                             >
                                 {link.label}
-                            </a>
+                            </Link>
                         ))}
 
                         <Link href="/free-analysis">
@@ -116,10 +141,10 @@ export default function Navbar() {
                 <div className="flex flex-col h-full pt-24 px-8 pb-8">
                     <div className="flex flex-col gap-2">
                         {navLinks.map((link, index) => (
-                            <a
-                                key={link.href}
+                            <Link
+                                key={link.label}
                                 href={link.href}
-                                onClick={(e) => handleNavClick(e, link.href)}
+                                onClick={(e) => handleNavClick(e as any, link.href)}
                                 className="text-lg font-semibold text-brand-black py-3 px-4 rounded-xl hover:bg-brand-black/5 transition-all duration-300"
                                 style={{
                                     opacity: mobileOpen ? 1 : 0,
@@ -128,7 +153,7 @@ export default function Navbar() {
                                 }}
                             >
                                 {link.label}
-                            </a>
+                            </Link>
                         ))}
                     </div>
 
