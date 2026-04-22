@@ -38,7 +38,7 @@ export const CurrencyProvider = ({ children }: { children: React.ReactNode }) =>
                     setSymbol("$");
                 }
             } catch (error) {
-                console.error("Failed to fetch location for currency:", error);
+                // Silently ignore fetch errors (often caused by adblockers)
                 // Default to USD on error
                 setCurrency("USD");
                 setSymbol("$");
