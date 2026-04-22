@@ -9,6 +9,7 @@ import Pricing from "@/components/Pricing";
 import Footer from "@/components/Footer";
 import FAQ from "@/components/FAQ";
 import FreeAnalysis from "@/components/FreeAnalysis";
+import PopupAnalysis from "@/components/PopupAnalysis";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -31,6 +32,7 @@ export default function Home() {
       <FAQ />
       <FreeAnalysis />
       <Footer />
+      <PopupAnalysis />
     </main>
   );
 }

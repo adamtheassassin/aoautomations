@@ -14,7 +14,7 @@ export default function LocationIndicator() {
                     setLocation(`${data.city}, ${data.country_name}`);
                 }
             } catch (error) {
-                console.error("Error fetching location:", error);
+                // Silently ignore fetch errors (often caused by adblockers)
             }
         };
 
