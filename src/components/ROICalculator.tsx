@@ -78,11 +78,14 @@ export default function ROICalculator() {
     const isZA = currency === 'ZAR';
 
     const [services, setServices] = useState<ServiceData[]>(SERVICES_US);
-    const [serviceIndex, setServiceIndex] = useState(0);
+    
+    // Default to Plumbing if it exists
+    const defaultServiceIndex = Math.max(0, SERVICES_US.findIndex(s => s.label === "Plumbing"));
+    const [serviceIndex, setServiceIndex] = useState(defaultServiceIndex);
 
     const [citySize, setCitySize] = useState(CITY_SIZES[1]); // Default to Medium City
     const [conversionRate, setConversionRate] = useState(CONVERSION_RATES[1]); // Default to 1/3 calls
-    const [jobValue, setJobValue] = useState<number>(SERVICES_US[0].value);
+    const [jobValue, setJobValue] = useState<number>(SERVICES_US[defaultServiceIndex].value);
 
     // Update services when location/currency is determined by context
     useEffect(() => {
