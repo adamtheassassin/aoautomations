@@ -26,7 +26,7 @@ export const CurrencyProvider = ({ children }: { children: React.ReactNode }) =>
     useEffect(() => {
         const fetchLocation = async () => {
             try {
-                const response = await fetch("https://ipapi.co/json/");
+                const response = await fetch("https://get.geojs.io/v1/ip/geo.json");
                 const data = await response.json();
 
                 // Check if country is South Africa (ZA)

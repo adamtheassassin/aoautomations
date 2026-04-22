@@ -8,10 +8,10 @@ export default function LocationIndicator() {
     useEffect(() => {
         const fetchLocation = async () => {
             try {
-                const response = await fetch('https://ipapi.co/json/');
+                const response = await fetch('https://get.geojs.io/v1/ip/geo.json');
                 const data = await response.json();
-                if (data.city && data.country_name) {
-                    setLocation(`${data.city}, ${data.country_name}`);
+                if (data.city && data.country) {
+                    setLocation(`${data.city}, ${data.country}`);
                 }
             } catch (error) {
                 // Silently ignore fetch errors (often caused by adblockers)
