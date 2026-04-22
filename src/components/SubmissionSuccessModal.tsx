@@ -46,13 +46,13 @@ export default function SubmissionSuccessModal({
             <div
                 className={`
                     relative w-full max-w-md bg-white rounded-[2rem] p-8 md:p-10 text-center 
-                    shadow-2xl border border-brand-red/10 overflow-hidden
+                    shadow-2xl border border-brand-green/10 overflow-hidden
                     transform transition-all duration-300 ease-out
                     ${isOpen ? 'scale-100 translate-y-0' : 'scale-95 translate-y-4'}
                 `}
             >
                 {/* Decorative Background Blob */}
-                <div className="absolute -top-20 -right-20 w-64 h-64 bg-brand-red/5 rounded-full blur-3xl pointer-events-none"></div>
+                <div className="absolute -top-20 -right-20 w-64 h-64 bg-brand-green/5 rounded-full blur-3xl pointer-events-none"></div>
                 <div className="absolute -bottom-20 -left-20 w-64 h-64 bg-brand-cream rounded-full blur-3xl pointer-events-none"></div>
 
                 {/* Animated Checkmark Icon */}

@@ -10,12 +10,12 @@ export default function FreeAnalysis() {
                 <div className="relative bg-white rounded-2xl md:rounded-[2rem] p-6 md:p-16 text-center shadow-2xl overflow-hidden gpu-accelerate ring-1 ring-brand-black/5 group hover:-translate-y-1 transition-transform duration-500">
                     {/* Background Gradient/Sheen */}
                     <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-brand-cream/50 to-transparent pointer-events-none"></div>
-                    <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-brand-red/10 via-brand-red/40 to-brand-red/10 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 gpu-accelerate"></div>
+                    <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-brand-green/10 via-brand-green/40 to-brand-green/10 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 gpu-accelerate"></div>
 
                     {/* Icon Container */}
                     <div className="relative z-10 mx-auto w-14 h-14 md:w-20 md:h-20 bg-black rounded-xl md:rounded-2xl flex items-center justify-center mb-6 md:mb-10 shadow-lg shadow-black/10 transform rotate-3 transition-transform duration-500 group-hover:rotate-6 group-hover:scale-105 gpu-accelerate">
                         <img
-                            src="/icons_&_images/Client Logos/ao-icon.svg"
+                            src="/icons_&_images/ao-icon green.png"
                             alt="aoautomations"
                             className="w-7 h-7 md:w-10 md:h-10 object-contain brightness-0 invert"
                         />
@@ -28,7 +28,7 @@ export default function FreeAnalysis() {
 
                     {/* Headline */}
                     <h2 className="relative z-10 text-3xl md:text-6xl font-bold text-brand-black tracking-tight mb-5 md:mb-8 leading-[1.1]">
-                        Get A <span className="font-serif italic font-medium text-brand-red drop-shadow-sm">Free Analysis</span><br />Right Here
+                        Get A <span className="font-serif italic font-bold text-brand-green drop-shadow-sm">Free Analysis</span><br />Right Here
                     </h2>
 
                     {/* Body Text */}

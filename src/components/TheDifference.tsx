@@ -25,8 +25,10 @@ export default function TheDifference() {
 
 
     return (
-        <section id="before-after" className="w-full py-24 px-6 bg-brand-cream relative overflow-hidden">
-            <div className="max-w-7xl mx-auto">
+        <section id="before-after" className="w-full py-24 px-6 bg-white relative overflow-hidden">
+            {/* Background Gradient/Sheen */}
+            <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-transparent to-brand-cream/50 pointer-events-none"></div>
+            <div className="max-w-7xl mx-auto relative z-10">
 
                 {/* Header */}
                 <div className="flex flex-col items-center text-center mb-16">
@@ -34,7 +36,7 @@ export default function TheDifference() {
                         <span className="text-base font-medium text-brand-black">Before / After</span>
                     </div>
                     <h2 className="text-4xl md:text-5xl font-bold text-brand-black tracking-tight leading-[1.1]">
-                        The <span className="text-brand-red font-serif italic font-medium">Difference</span>
+                        The <span className="text-brand-green font-serif italic font-bold">Difference</span>
                     </h2>
                     <p className="text-lg md:text-xl text-brand-gray font-medium max-w-2xl mx-auto mt-5">
                         This is where you&apos;re probably ranking right now - and where we&apos;ll have you in 90 days.

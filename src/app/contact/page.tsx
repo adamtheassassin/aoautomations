@@ -86,12 +86,12 @@ export default function ContactPage() {
                         {/* Left Side: Content */}
                         <div className="space-y-8">
                             <div>
-                                <div className="inline-block px-4 py-1.5 bg-brand-red/10 rounded-lg mb-6">
-                                    <span className="text-sm font-bold uppercase tracking-widest text-brand-red">Contact Us</span>
+                                <div className="inline-block px-4 py-1.5 bg-brand-green/10 rounded-lg mb-6">
+                                    <span className="text-sm font-bold uppercase tracking-widest text-brand-green">Contact Us</span>
                                 </div>
                                 <h1 className="text-5xl md:text-7xl font-bold text-brand-black tracking-tight leading-[1.1] mb-6">
                                     Let's build your <br />
-                                    <span className="text-brand-red italic font-serif">local authority</span>
+                                    <span className="text-brand-green italic font-serif font-bold">local authority</span>
                                 </h1>
                                 <p className="text-xl text-brand-gray leading-relaxed max-w-md">
                                     Ready to dominate your local market? Reach out and we'll show you exactly how we'll get you into the <strong className="text-brand-black">Top 3 within 90 days</strong>.
@@ -102,8 +102,8 @@ export default function ContactPage() {
                                 {/* Conditionally Render Phone Block */}
                                 {isSA && (
                                     <div className="flex items-center gap-4 group">
-                                        <div className="w-12 h-12 rounded-2xl bg-white flex items-center justify-center shadow-sm border border-brand-black/5 group-hover:border-brand-red/20 transition-all">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-brand-red"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 18.92z"></path></svg>
+                                        <div className="w-12 h-12 rounded-2xl bg-white flex items-center justify-center shadow-sm border border-brand-black/5 group-hover:border-brand-green/20 transition-all">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-brand-green"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 18.92z"></path></svg>
                                         </div>
                                         <div>
                                             <p className="text-xs uppercase tracking-widest text-brand-gray/60 font-bold">Call us</p>
@@ -113,8 +113,8 @@ export default function ContactPage() {
                                 )}
 
                                 <div className="flex items-center gap-4 group">
-                                    <div className="w-12 h-12 rounded-2xl bg-white flex items-center justify-center shadow-sm border border-brand-black/5 group-hover:border-brand-red/20 transition-all">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-brand-red"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                                    <div className="w-12 h-12 rounded-2xl bg-white flex items-center justify-center shadow-sm border border-brand-black/5 group-hover:border-brand-green/20 transition-all">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-brand-green"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
                                     </div>
                                     <div>
                                         <p className="text-xs uppercase tracking-widest text-brand-gray/60 font-bold">Email us</p>
@@ -127,7 +127,7 @@ export default function ContactPage() {
                         {/* Right Side: Form */}
                         <div className="relative">
                             {/* Decorative background for form */}
-                            <div className="absolute inset-0 bg-brand-red/5 blur-3xl rounded-[3rem] -z-10 transform translate-x-4 translate-y-4"></div>
+                            <div className="absolute inset-0 bg-brand-green/5 blur-3xl rounded-[3rem] -z-10 transform translate-x-4 translate-y-4"></div>
 
                             <form
                                 onSubmit={handleSubmit}
@@ -140,7 +140,7 @@ export default function ContactPage() {
                                             type="text"
                                             id="name"
                                             required
-                                            className="w-full bg-brand-cream/50 border border-brand-black/10 rounded-2xl px-6 py-4 outline-none focus:border-brand-red/30 focus:ring-4 focus:ring-brand-red/5 transition-all font-medium text-brand-black"
+                                            className="w-full bg-brand-cream/50 border border-brand-black/10 rounded-2xl px-6 py-4 outline-none focus:border-brand-green/30 focus:ring-4 focus:ring-brand-green/5 transition-all font-medium text-brand-black"
                                             placeholder="John Doe"
                                             value={formData.name}
                                             onChange={(e) => setFormData({ ...formData, name: e.target.value })}
@@ -152,7 +152,7 @@ export default function ContactPage() {
                                             type="email"
                                             id="email"
                                             required
-                                            className="w-full bg-brand-cream/50 border border-brand-black/10 rounded-2xl px-6 py-4 outline-none focus:border-brand-red/30 focus:ring-4 focus:ring-brand-red/5 transition-all font-medium text-brand-black"
+                                            className="w-full bg-brand-cream/50 border border-brand-black/10 rounded-2xl px-6 py-4 outline-none focus:border-brand-green/30 focus:ring-4 focus:ring-brand-green/5 transition-all font-medium text-brand-black"
                                             placeholder="john@example.com"
                                             value={formData.email}
                                             onChange={(e) => setFormData({ ...formData, email: e.target.value })}
@@ -166,7 +166,7 @@ export default function ContactPage() {
                                         type="tel"
                                         id="phone"
                                         required
-                                        className="w-full bg-brand-cream/50 border border-brand-black/10 rounded-2xl px-6 py-4 outline-none focus:border-brand-red/30 focus:ring-4 focus:ring-brand-red/5 transition-all font-medium text-brand-black"
+                                        className="w-full bg-brand-cream/50 border border-brand-black/10 rounded-2xl px-6 py-4 outline-none focus:border-brand-green/30 focus:ring-4 focus:ring-brand-green/5 transition-all font-medium text-brand-black"
                                         value={formData.phone}
                                         onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                                     />
@@ -177,7 +177,7 @@ export default function ContactPage() {
                                     <input
                                         type="text"
                                         id="business"
-                                        className="w-full bg-brand-cream/50 border border-brand-black/10 rounded-2xl px-6 py-4 outline-none focus:border-brand-red/30 focus:ring-4 focus:ring-brand-red/5 transition-all font-medium text-brand-black"
+                                        className="w-full bg-brand-cream/50 border border-brand-black/10 rounded-2xl px-6 py-4 outline-none focus:border-brand-green/30 focus:ring-4 focus:ring-brand-green/5 transition-all font-medium text-brand-black"
                                         placeholder="Your Local Business"
                                         value={formData.business}
                                         onChange={(e) => setFormData({ ...formData, business: e.target.value })}
@@ -190,7 +190,7 @@ export default function ContactPage() {
                                         id="message"
                                         required
                                         rows={4}
-                                        className="w-full bg-brand-cream/50 border border-brand-black/10 rounded-2xl px-6 py-4 outline-none focus:border-brand-red/30 focus:ring-4 focus:ring-brand-red/5 transition-all font-medium text-brand-black resize-none"
+                                        className="w-full bg-brand-cream/50 border border-brand-black/10 rounded-2xl px-6 py-4 outline-none focus:border-brand-green/30 focus:ring-4 focus:ring-brand-green/5 transition-all font-medium text-brand-black resize-none"
                                         placeholder="Tell us about your goals..."
                                         value={formData.message}
                                         onChange={(e) => setFormData({ ...formData, message: e.target.value })}
@@ -198,7 +198,7 @@ export default function ContactPage() {
                                 </div>
 
                                 <LiquidButton
-                                    className="w-full py-5 text-lg font-bold shadow-xl hover:shadow-2xl hover:shadow-brand-red/20 transition-all opacity-100 disabled:opacity-70 disabled:cursor-not-allowed"
+                                    className="w-full py-5 text-lg font-bold shadow-xl hover:shadow-2xl hover:shadow-brand-green/20 transition-all opacity-100 disabled:opacity-70 disabled:cursor-not-allowed"
                                     disabled={loading}
                                 >
                                     {loading ? "Sending..." : "Send Message"}

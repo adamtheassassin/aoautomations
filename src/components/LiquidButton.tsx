@@ -17,12 +17,12 @@ export default function LiquidButton({ children, className = "", onClick, disabl
             className={`
                 relative group inline-flex items-center justify-center 
                 rounded-full transition-all duration-300 
-                bg-gradient-to-b from-[#D92323] via-[#B90E0E] to-[#980404]
-                border-[3px] border-[#FF6B6B] 
-                shadow-[0_0_15px_rgba(217,35,35,0.4),0_8px_15px_rgba(0,0,0,0.2)]
-                hover:shadow-[0_0_25px_rgba(217,35,35,0.6),0_8px_20px_rgba(0,0,0,0.3)]
+                bg-gradient-to-b from-[#22c55e] via-[#16a34a] to-[#15803d]
+                border-[3px] border-[#4ade80] 
+                shadow-[0_0_15px_rgba(34,197,94,0.4),0_8px_15px_rgba(0,0,0,0.2)]
+                hover:shadow-[0_0_25px_rgba(34,197,94,0.6),0_8px_20px_rgba(0,0,0,0.3)]
                 hover:scale-[1.02] active:scale-95
-                hover:border-[#FF8585]
+                hover:border-[#66ee99]
                 text-white font-bold tracking-wide
                 ${className}
             `}

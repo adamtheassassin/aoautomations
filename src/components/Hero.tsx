@@ -10,7 +10,7 @@ export default function Hero() {
         <>
             <section className="w-full min-h-screen pt-32 md:pt-40 pb-12 relative overflow-hidden flex flex-col bg-white">
                 {/* Background Decorative Blobs */}
-                <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-brand-red/5 rounded-full blur-3xl -z-10 translate-x-1/2 -translate-y-1/2 pointer-events-none gpu-accelerate"></div>
+                <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-brand-green/5 rounded-full blur-3xl -z-10 translate-x-1/2 -translate-y-1/2 pointer-events-none gpu-accelerate"></div>
                 <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-brand-dark/5 rounded-full blur-3xl -z-10 -translate-x-1/3 translate-y-1/3 pointer-events-none gpu-accelerate"></div>
 
                 <div className="w-full max-w-7xl mx-auto px-6 flex-grow flex flex-col justify-center">
@@ -30,7 +30,7 @@ export default function Hero() {
                             <LocationIndicator />
                             <h1 className="text-4xl sm:text-6xl md:text-6xl font-bold leading-tight text-brand-black tracking-tight">
                                 Top 3 Google Maps <br />
-                                Rankings in 90 Days - <span className="text-brand-red italic font-serif">Guaranteed</span>
+                                Rankings in 90 Days - <span className="text-brand-green italic font-serif font-bold">Guaranteed</span>
                             </h1>
 
                             {/* Mobile Feature Video */}
@@ -46,7 +46,7 @@ export default function Hero() {
 
                             <div className="w-full pt-4 flex flex-col sm:flex-row gap-4 items-center lg:items-start justify-center lg:justify-start pb-8 lg:pb-0">
                                 <Link href="/free-analysis">
-                                    <LiquidButton className="w-full sm:w-auto px-8 py-3 text-lg sm:px-10 sm:py-5 sm:text-xl font-semibold shadow-xl hover:shadow-2xl hover:shadow-brand-red/20 transition-all transform hover:-translate-y-1">
+                                    <LiquidButton className="w-full sm:w-auto px-8 py-3 text-lg sm:px-10 sm:py-5 sm:text-xl font-semibold shadow-xl hover:shadow-2xl hover:shadow-brand-green/20 transition-all transform hover:-translate-y-1">
                                         Get The FREE Analysis
                                     </LiquidButton>
                                 </Link>

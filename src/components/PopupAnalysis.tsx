@@ -85,7 +85,7 @@ export default function PopupAnalysis() {
                 {/* Header */}
                 <div className="text-center mb-2 sm:mb-6 mt-0 sm:mt-2">
                     <h2 className="text-2xl sm:text-4xl font-bold text-brand-black tracking-tight mb-0.5 sm:mb-2 leading-tight">
-                        Get Your Profile <span className="font-serif italic font-medium text-brand-red">Analyzed</span>
+                        Get Your Profile <span className="font-serif italic font-bold text-brand-green">Analyzed</span>
                     </h2>
                     <p className="text-brand-gray/80 text-[11px] sm:text-sm font-medium leading-snug">
                         No costs, no obligations, no annoying sales pitch. Guaranteed.
@@ -102,7 +102,7 @@ export default function PopupAnalysis() {
                                 type="text"
                                 id="popup-fullName"
                                 required
-                                className="w-full bg-white border border-brand-black/10 rounded-lg sm:rounded-xl px-3 sm:px-4 py-1.5 sm:py-2.5 outline-none focus:border-brand-red/30 focus:ring-4 focus:ring-brand-red/5 transition-all text-base text-brand-black"
+                                className="w-full bg-white border border-brand-black/10 rounded-lg sm:rounded-xl px-3 sm:px-4 py-1.5 sm:py-2.5 outline-none focus:border-brand-green/30 focus:ring-4 focus:ring-brand-green/5 transition-all text-base text-brand-black"
                                 value={formData.fullName}
                                 onChange={(e) => setFormData({ ...formData, fullName: e.target.value })}
                             />
@@ -117,7 +117,7 @@ export default function PopupAnalysis() {
                                 type="email"
                                 id="popup-email"
                                 required
-                                className="w-full bg-white border border-brand-black/10 rounded-lg sm:rounded-xl px-3 sm:px-4 py-1.5 sm:py-2.5 outline-none focus:border-brand-red/30 focus:ring-4 focus:ring-brand-red/5 transition-all text-base text-brand-black"
+                                className="w-full bg-white border border-brand-black/10 rounded-lg sm:rounded-xl px-3 sm:px-4 py-1.5 sm:py-2.5 outline-none focus:border-brand-green/30 focus:ring-4 focus:ring-brand-green/5 transition-all text-base text-brand-black"
                                 value={formData.email}
                                 onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                             />
@@ -132,7 +132,7 @@ export default function PopupAnalysis() {
                                 type="tel"
                                 id="popup-phone"
                                 required
-                                className="w-full bg-white border border-brand-black/10 rounded-lg sm:rounded-xl px-3 sm:px-4 py-1.5 sm:py-2.5 outline-none focus:border-brand-red/30 focus:ring-4 focus:ring-brand-red/5 transition-all text-base text-brand-black"
+                                className="w-full bg-white border border-brand-black/10 rounded-lg sm:rounded-xl px-3 sm:px-4 py-1.5 sm:py-2.5 outline-none focus:border-brand-green/30 focus:ring-4 focus:ring-brand-green/5 transition-all text-base text-brand-black"
                                 value={formData.phone}
                                 onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                             />
@@ -146,7 +146,7 @@ export default function PopupAnalysis() {
                             <input
                                 type="text"
                                 id="popup-website"
-                                className="w-full bg-white border border-brand-black/10 rounded-lg sm:rounded-xl px-3 sm:px-4 py-1.5 sm:py-2.5 outline-none focus:border-brand-red/30 focus:ring-4 focus:ring-brand-red/5 transition-all text-base text-brand-black"
+                                className="w-full bg-white border border-brand-black/10 rounded-lg sm:rounded-xl px-3 sm:px-4 py-1.5 sm:py-2.5 outline-none focus:border-brand-green/30 focus:ring-4 focus:ring-brand-green/5 transition-all text-base text-brand-black"
                                 value={formData.website}
                                 onChange={(e) => setFormData({ ...formData, website: e.target.value })}
                             />
@@ -161,7 +161,7 @@ export default function PopupAnalysis() {
                                 type="text"
                                 id="popup-companyName"
                                 required
-                                className="w-full bg-white border border-brand-black/10 rounded-lg sm:rounded-xl px-3 sm:px-4 py-1.5 sm:py-2.5 outline-none focus:border-brand-red/30 focus:ring-4 focus:ring-brand-red/5 transition-all text-base text-brand-black"
+                                className="w-full bg-white border border-brand-black/10 rounded-lg sm:rounded-xl px-3 sm:px-4 py-1.5 sm:py-2.5 outline-none focus:border-brand-green/30 focus:ring-4 focus:ring-brand-green/5 transition-all text-base text-brand-black"
                                 value={formData.companyName}
                                 onChange={(e) => setFormData({ ...formData, companyName: e.target.value })}
                             />
@@ -176,7 +176,7 @@ export default function PopupAnalysis() {
                                 type="text"
                                 id="popup-budget"
                                 required
-                                className="w-full bg-white border border-brand-black/10 rounded-lg sm:rounded-xl px-3 sm:px-4 py-1.5 sm:py-2.5 outline-none focus:border-brand-red/30 focus:ring-4 focus:ring-brand-red/5 transition-all text-base text-brand-black"
+                                className="w-full bg-white border border-brand-black/10 rounded-lg sm:rounded-xl px-3 sm:px-4 py-1.5 sm:py-2.5 outline-none focus:border-brand-green/30 focus:ring-4 focus:ring-brand-green/5 transition-all text-base text-brand-black"
                                 value={formData.budget}
                                 onChange={(e) => setFormData({ ...formData, budget: e.target.value })}
                             />
@@ -208,7 +208,7 @@ export default function PopupAnalysis() {
 
                     <div className="pt-1 sm:pt-2">
                         <LiquidButton
-                            className="w-full py-2.5 sm:py-4 text-[15px] sm:text-lg font-bold shadow-xl hover:shadow-2xl hover:shadow-brand-red/20 transition-all opacity-100 disabled:opacity-70 disabled:cursor-not-allowed"
+                            className="w-full py-2.5 sm:py-4 text-[15px] sm:text-lg font-bold shadow-xl hover:shadow-2xl hover:shadow-brand-green/20 transition-all opacity-100 disabled:opacity-70 disabled:cursor-not-allowed"
                             disabled={loading}
                         >
                             {loading ? "Submitting..." : "Submit Analysis Request"}

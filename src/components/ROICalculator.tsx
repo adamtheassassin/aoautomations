@@ -128,8 +128,10 @@ export default function ROICalculator() {
     }, [currentService, citySize, conversionRate, jobValue]);
 
     return (
-        <section id="roi-calculator" className="w-full py-12 md:py-16 px-6 bg-white">
-            <div className="max-w-7xl mx-auto">
+        <section id="roi-calculator" className="w-full py-12 md:py-16 px-6 bg-white relative overflow-hidden">
+            {/* Background Gradient/Sheen */}
+            <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-brand-cream/50 to-transparent pointer-events-none"></div>
+            <div className="max-w-7xl mx-auto relative z-10">
                 <div className="flex flex-col items-center text-center mb-10 px-4">
                     <div className="inline-flex items-center gap-2 px-4 py-1.5 bg-brand-black/5 rounded-lg mb-4">
                         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -142,7 +144,7 @@ export default function ROICalculator() {
                     </div>
                     <h2 className="text-4xl md:text-5xl font-bold text-brand-black tracking-tight leading-[1.1]">
                         But, is this even{" "}
-                        <span className="text-brand-red font-serif italic font-medium">worth it?</span>
+                        <span className="text-brand-green font-serif italic font-bold">worth it?</span>
                     </h2>
                 </div>
 
@@ -219,38 +221,38 @@ export default function ROICalculator() {
                         <div className="flex flex-col h-full justify-between gap-3">
                             <div className="flex items-center justify-between bg-[#efefef] rounded-xl p-3 sm:p-4 gap-2">
                                 <span className="text-brand-black font-medium text-sm sm:text-base leading-tight">Estimated Monthly Searches</span>
-                                <div className="bg-brand-red text-white font-bold py-1.5 px-3 sm:py-2 sm:px-6 rounded-lg text-sm sm:text-lg min-w-[70px] sm:min-w-[100px] text-center whitespace-nowrap shrink-0">
+                                <div className="bg-brand-green text-white font-bold py-1.5 px-3 sm:py-2 sm:px-6 rounded-lg text-sm sm:text-lg min-w-[70px] sm:min-w-[100px] text-center whitespace-nowrap shrink-0">
                                     {results.searches.toLocaleString('en-US')}
                                 </div>
                             </div>
                             <div className="flex items-center justify-between bg-[#efefef] rounded-xl p-3 sm:p-4 gap-2">
                                 <span className="text-brand-black font-medium text-sm sm:text-base leading-tight">Estimated Monthly Clicks</span>
-                                <div className="bg-brand-red text-white font-bold py-1.5 px-3 sm:py-2 sm:px-6 rounded-lg text-sm sm:text-lg min-w-[70px] sm:min-w-[100px] text-center whitespace-nowrap shrink-0">
+                                <div className="bg-brand-green text-white font-bold py-1.5 px-3 sm:py-2 sm:px-6 rounded-lg text-sm sm:text-lg min-w-[70px] sm:min-w-[100px] text-center whitespace-nowrap shrink-0">
                                     {results.clicks.toLocaleString('en-US')}
                                 </div>
                             </div>
                             <div className="flex items-center justify-between bg-[#efefef] rounded-xl p-3 sm:p-4 gap-2">
                                 <span className="text-brand-black font-medium text-sm sm:text-base leading-tight">Estimated Monthly Calls</span>
-                                <div className="bg-brand-red text-white font-bold py-1.5 px-3 sm:py-2 sm:px-6 rounded-lg text-sm sm:text-lg min-w-[70px] sm:min-w-[100px] text-center whitespace-nowrap shrink-0">
+                                <div className="bg-brand-green text-white font-bold py-1.5 px-3 sm:py-2 sm:px-6 rounded-lg text-sm sm:text-lg min-w-[70px] sm:min-w-[100px] text-center whitespace-nowrap shrink-0">
                                     {results.calls.toLocaleString('en-US')}
                                 </div>
                             </div>
                             <div className="flex items-center justify-between bg-[#efefef] rounded-xl p-3 sm:p-4 gap-2">
                                 <span className="text-brand-black font-medium text-sm sm:text-base leading-tight">Estimated Monthly Jobs</span>
-                                <div className="bg-brand-red text-white font-bold py-1.5 px-3 sm:py-2 sm:px-6 rounded-lg text-sm sm:text-lg min-w-[70px] sm:min-w-[100px] text-center whitespace-nowrap shrink-0">
+                                <div className="bg-brand-green text-white font-bold py-1.5 px-3 sm:py-2 sm:px-6 rounded-lg text-sm sm:text-lg min-w-[70px] sm:min-w-[100px] text-center whitespace-nowrap shrink-0">
                                     {results.jobs.toLocaleString('en-US')}
                                 </div>
                             </div>
 
-                            <div className="flex items-center justify-between bg-white border border-brand-red rounded-xl p-3 sm:p-4 gap-2">
+                            <div className="flex items-center justify-between bg-white border border-brand-green rounded-xl p-3 sm:p-4 gap-2">
                                 <span className="text-brand-black font-medium text-sm sm:text-base leading-tight">Estimated Monthly Revenue</span>
-                                <div className="bg-brand-red text-white font-bold py-1.5 px-3 sm:py-2 sm:px-6 rounded-lg text-sm sm:text-lg min-w-[70px] sm:min-w-[100px] text-center whitespace-nowrap shrink-0">
+                                <div className="bg-brand-green text-white font-bold py-1.5 px-3 sm:py-2 sm:px-6 rounded-lg text-sm sm:text-lg min-w-[70px] sm:min-w-[100px] text-center whitespace-nowrap shrink-0">
                                     {currencySymbol}{results.monthlyRevenue.toLocaleString('en-US')}
                                 </div>
                             </div>
-                            <div className="flex items-center justify-between bg-white border border-brand-red rounded-xl p-3 sm:p-4 gap-2">
+                            <div className="flex items-center justify-between bg-white border border-brand-green rounded-xl p-3 sm:p-4 gap-2">
                                 <span className="text-brand-black font-medium text-sm sm:text-base leading-tight">Estimated Yearly Missed Revenue</span>
-                                <div className="bg-brand-red text-white font-bold py-1.5 px-3 sm:py-2 sm:px-6 rounded-lg text-sm sm:text-lg min-w-[70px] sm:min-w-[100px] text-center whitespace-nowrap shrink-0">
+                                <div className="bg-brand-green text-white font-bold py-1.5 px-3 sm:py-2 sm:px-6 rounded-lg text-sm sm:text-lg min-w-[70px] sm:min-w-[100px] text-center whitespace-nowrap shrink-0">
                                     {currencySymbol}{results.yearlyRevenue.toLocaleString('en-US')}
                                 </div>
                             </div>
@@ -272,7 +274,7 @@ export default function ROICalculator() {
                     </p>
                     <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
                         <Link href="/free-analysis">
-                            <LiquidButton className="w-full sm:w-auto px-8 py-3 text-lg sm:px-10 sm:py-5 sm:text-xl font-semibold shadow-xl hover:shadow-2xl hover:shadow-brand-red/20 transition-all transform hover:-translate-y-1">
+                            <LiquidButton className="w-full sm:w-auto px-8 py-3 text-lg sm:px-10 sm:py-5 sm:text-xl font-semibold shadow-xl hover:shadow-2xl hover:shadow-brand-green/20 transition-all transform hover:-translate-y-1">
                                 Get The FREE Analysis
                             </LiquidButton>
                         </Link>

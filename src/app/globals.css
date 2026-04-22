@@ -1,14 +1,14 @@
-@import url('https://api.fontshare.com/v2/css?f[]=clash-display@200,300,400,500,600,700&display=swap');
 @import "tailwindcss";
 
 @theme {
-  --font-display: 'Clash Display', sans-serif;
-  --font-sans: var(--font-sans), system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  --font-display: var(--font-poppins), sans-serif;
+  --font-sans: var(--font-poppins), system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  --font-serif: var(--font-poppins), sans-serif;
 
   --color-brand-dark: #0C2B4E;
   /* Deep Navy */
-  --color-brand-red: #980404;
-  /* Deep Crimson */
+  --color-brand-green: #1A7A2E;
+  /* Deep Green */
   --color-brand-cream: #C9CDCF;
   /* Light Gray */
   --color-brand-black: #222222;
@@ -23,9 +23,8 @@
 /* 
   Usage in Tailwind: 
   bg-brand-dark
-  text-brand-red
+  text-brand-green
   bg-brand-cream
-  font-sans (will use Outfit)
 */
 
 body {
@@ -35,6 +34,10 @@ body {
   /* Enable smooth scrolling with GPU acceleration */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-poppins), sans-serif;
 }
 
 /* Optimize animations for 60fps */

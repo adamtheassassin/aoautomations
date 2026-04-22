@@ -45,15 +45,17 @@ export default function FAQ() {
     };
 
     return (
-        <section id="questions" className="w-full py-24 px-6 bg-brand-cream relative overflow-hidden">
-            <div className="max-w-3xl mx-auto">
+        <section id="questions" className="w-full py-24 px-6 bg-white relative overflow-hidden">
+            {/* Background Gradient/Sheen */}
+            <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-brand-cream/50 to-transparent pointer-events-none"></div>
+            <div className="max-w-3xl mx-auto relative z-10">
                 {/* Header */}
                 <div className="mb-12 flex flex-col items-center text-center">
                     <div className="inline-block px-4 py-1.5 bg-brand-black/5 rounded-lg mb-6">
                         <span className="text-base font-medium text-brand-black">Questions</span>
                     </div>
                     <h2 className="text-4xl md:text-5xl font-medium text-brand-black tracking-tight leading-[1.1]">
-                        Frequently Asked <span className="font-serif italic font-semibold text-brand-red">Questions</span>
+                        Frequently Asked <span className="font-serif italic font-bold text-brand-green">Questions</span>
                     </h2>
                 </div>
 
@@ -68,7 +70,7 @@ export default function FAQ() {
                                 onClick={() => toggleFAQ(idx)}
                                 className="w-full flex items-center justify-between px-5 py-4 text-left group"
                             >
-                                <span className={`font-semibold text-base md:text-lg flex-1 pr-8 leading-tight transition-colors ${openIndex === idx ? 'text-brand-red' : 'text-brand-black group-hover:text-brand-red'}`}>
+                                <span className={`font-semibold text-base md:text-lg flex-1 pr-8 leading-tight transition-colors ${openIndex === idx ? 'text-brand-green' : 'text-brand-black group-hover:text-brand-green'}`}>
                                     {item.question}
                                 </span>
                                 <div className={`w-8 h-8 rounded-md bg-brand-black/5 flex items-center justify-center transition-transform duration-300 shrink-0 ${openIndex === idx ? 'rotate-45' : ''}`}>

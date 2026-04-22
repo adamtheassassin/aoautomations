@@ -75,15 +75,15 @@ export default function FreeAnalysisPage() {
                                 </div>
                                 <h1 className="text-5xl md:text-7xl font-bold text-brand-black tracking-tight leading-[1.0] mb-8">
                                     Get Your <br />
-                                    Profile <span className="font-serif italic font-medium text-brand-red">Analyzed</span>
+                                    Profile <span className="font-serif italic font-bold text-brand-green">Analyzed</span>
                                 </h1>
                                 <p className="text-xl text-brand-gray leading-relaxed max-w-lg mb-8">
                                     Fill out the form and we will record your personalized analysis with the exact things that need to happen so you can <strong className="text-brand-black">rank in the top 3 within your area</strong>.
                                 </p>
 
                                 <div className="flex items-center gap-4 mb-8 p-4 rounded-2xl bg-white/60 border border-brand-black/5 shadow-sm">
-                                    <div className="w-12 h-12 rounded-full bg-brand-red/10 flex items-center justify-center shrink-0">
-                                        <svg className="w-6 h-6 text-brand-red" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <div className="w-12 h-12 rounded-full bg-brand-green/10 flex items-center justify-center shrink-0">
+                                        <svg className="w-6 h-6 text-brand-green" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
                                         </svg>
                                     </div>
@@ -111,7 +111,7 @@ export default function FreeAnalysisPage() {
                                             type="text"
                                             id="fullName"
                                             required
-                                            className="w-full bg-white border border-brand-black/10 rounded-xl px-4 py-3 outline-none focus:border-brand-red/30 focus:ring-4 focus:ring-brand-red/5 transition-all text-base text-brand-black"
+                                            className="w-full bg-white border border-brand-black/10 rounded-xl px-4 py-3 outline-none focus:border-brand-green/30 focus:ring-4 focus:ring-brand-green/5 transition-all text-base text-brand-black"
                                             value={formData.fullName}
                                             onChange={(e) => setFormData({ ...formData, fullName: e.target.value })}
                                         />
@@ -122,7 +122,7 @@ export default function FreeAnalysisPage() {
                                             type="email"
                                             id="email"
                                             required
-                                            className="w-full bg-white border border-brand-black/10 rounded-xl px-4 py-3 outline-none focus:border-brand-red/30 focus:ring-4 focus:ring-brand-red/5 transition-all text-base text-brand-black"
+                                            className="w-full bg-white border border-brand-black/10 rounded-xl px-4 py-3 outline-none focus:border-brand-green/30 focus:ring-4 focus:ring-brand-green/5 transition-all text-base text-brand-black"
                                             value={formData.email}
                                             onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                                         />
@@ -137,7 +137,7 @@ export default function FreeAnalysisPage() {
                                             type="tel"
                                             id="phone"
                                             required
-                                            className="w-full bg-white border border-brand-black/10 rounded-xl px-4 py-3 outline-none focus:border-brand-red/30 focus:ring-4 focus:ring-brand-red/5 transition-all text-base text-brand-black"
+                                            className="w-full bg-white border border-brand-black/10 rounded-xl px-4 py-3 outline-none focus:border-brand-green/30 focus:ring-4 focus:ring-brand-green/5 transition-all text-base text-brand-black"
                                             value={formData.phone}
                                             onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                                         />
@@ -147,7 +147,7 @@ export default function FreeAnalysisPage() {
                                         <input
                                             type="text"
                                             id="website"
-                                            className="w-full bg-white border border-brand-black/10 rounded-xl px-4 py-3 outline-none focus:border-brand-red/30 focus:ring-4 focus:ring-brand-red/5 transition-all text-base text-brand-black"
+                                            className="w-full bg-white border border-brand-black/10 rounded-xl px-4 py-3 outline-none focus:border-brand-green/30 focus:ring-4 focus:ring-brand-green/5 transition-all text-base text-brand-black"
                                             value={formData.website}
                                             onChange={(e) => setFormData({ ...formData, website: e.target.value })}
                                         />
@@ -162,7 +162,7 @@ export default function FreeAnalysisPage() {
                                             type="text"
                                             id="companyName"
                                             required
-                                            className="w-full bg-white border border-brand-black/10 rounded-xl px-4 py-3 outline-none focus:border-brand-red/30 focus:ring-4 focus:ring-brand-red/5 transition-all text-base text-brand-black"
+                                            className="w-full bg-white border border-brand-black/10 rounded-xl px-4 py-3 outline-none focus:border-brand-green/30 focus:ring-4 focus:ring-brand-green/5 transition-all text-base text-brand-black"
                                             value={formData.companyName}
                                             onChange={(e) => setFormData({ ...formData, companyName: e.target.value })}
                                         />
@@ -177,7 +177,7 @@ export default function FreeAnalysisPage() {
                                             type="text"
                                             id="budget"
                                             required
-                                            className="w-full bg-white border border-brand-black/10 rounded-xl px-4 py-3 outline-none focus:border-brand-red/30 focus:ring-4 focus:ring-brand-red/5 transition-all text-base text-brand-black"
+                                            className="w-full bg-white border border-brand-black/10 rounded-xl px-4 py-3 outline-none focus:border-brand-green/30 focus:ring-4 focus:ring-brand-green/5 transition-all text-base text-brand-black"
                                             value={formData.budget}
                                             onChange={(e) => setFormData({ ...formData, budget: e.target.value })}
                                         />
@@ -209,7 +209,7 @@ export default function FreeAnalysisPage() {
 
                                 <div className="pt-2">
                                     <LiquidButton
-                                        className="w-full py-5 text-lg font-bold shadow-xl hover:shadow-2xl hover:shadow-brand-red/20 transition-all opacity-100 disabled:opacity-70 disabled:cursor-not-allowed"
+                                        className="w-full py-5 text-lg font-bold shadow-xl hover:shadow-2xl hover:shadow-brand-green/20 transition-all opacity-100 disabled:opacity-70 disabled:cursor-not-allowed"
                                         disabled={loading}
                                     >
                                         {loading ? "Submitting..." : "Submit Analysis Request"}

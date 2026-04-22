@@ -16,7 +16,7 @@ export default function ThankYouPage() {
                         <span className="text-sm font-bold uppercase tracking-widest text-brand-black/70">Analysis Requested</span>
                     </div>
                     <h1 className="text-5xl md:text-7xl font-bold text-brand-black tracking-tight leading-[1.0] mb-8">
-                        Thank <span className="font-serif italic font-medium text-brand-red">You!</span>
+                        Thank <span className="font-serif italic font-bold text-brand-green">You!</span>
                     </h1>
                     <p className="text-lg md:text-xl text-brand-gray leading-relaxed max-w-xl mx-auto mb-8">
                         Here&apos;s what happens next:
@@ -24,8 +24,8 @@ export default function ThankYouPage() {
 
                     <div className="bg-white/60 border border-brand-black/5 rounded-3xl p-6 mb-8 max-w-xl mx-auto text-left space-y-6 shadow-sm">
                         <div className="flex gap-4">
-                            <div className="w-10 h-10 rounded-full bg-brand-red/10 flex items-center justify-center shrink-0">
-                                <span className="font-bold text-brand-red">1</span>
+                            <div className="w-10 h-10 rounded-full bg-brand-green/10 flex items-center justify-center shrink-0">
+                                <span className="font-bold text-brand-green">1</span>
                             </div>
                             <div>
                                 <h3 className="font-bold text-brand-black text-base md:text-lg mb-1">Brief Clarification</h3>
@@ -34,8 +34,8 @@ export default function ThankYouPage() {
                         </div>
 
                         <div className="flex gap-4">
-                            <div className="w-10 h-10 rounded-full bg-brand-red/10 flex items-center justify-center shrink-0">
-                                <span className="font-bold text-brand-red">2</span>
+                            <div className="w-10 h-10 rounded-full bg-brand-green/10 flex items-center justify-center shrink-0">
+                                <span className="font-bold text-brand-green">2</span>
                             </div>
                             <div>
                                 <h3 className="font-bold text-brand-black text-base md:text-lg mb-1">Video Analysis</h3>

@@ -4,10 +4,12 @@ import LiquidButton from './LiquidButton';
 export default function HowItWorks() {
     return (
         <section id="the-process" className="w-full py-20 px-6 bg-white relative overflow-hidden">
-            <div className="max-w-7xl mx-auto">
+            {/* Background Gradient/Sheen */}
+            <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-brand-cream/50 to-transparent pointer-events-none"></div>
+            <div className="max-w-7xl mx-auto relative z-10">
                 <div className="text-center mb-16 space-y-4">
                     <h2 className="text-4xl md:text-5xl font-bold text-brand-black tracking-tight">
-                        How we get you <span className="text-brand-red italic font-serif">there</span>
+                        How we get you <span className="text-brand-green italic font-serif font-bold">there</span>
                     </h2>
                     <p className="text-xl text-brand-gray max-w-2xl mx-auto">
                         We take care of the tech and details, so you can focus on your work while your business brings in more happy customers every single day.
@@ -16,18 +18,18 @@ export default function HowItWorks() {
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 relative z-10">
                     {/* Feature 1: Google Business Profile */}
-                    <div className="group relative bg-brand-cream/30 p-8 rounded-3xl shadow-lg border border-brand-black/5 hover:border-brand-red/10 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl overflow-hidden text-center flex flex-col items-center gpu-accelerate">
-                        <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-brand-red/10 via-brand-red to-brand-red/10 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 gpu-accelerate"></div>
+                    <div className="group relative bg-brand-cream/30 p-8 rounded-3xl shadow-lg border border-brand-black/5 hover:border-brand-green/10 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl overflow-hidden text-center flex flex-col items-center gpu-accelerate">
+                        <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-brand-green/10 via-brand-green to-brand-green/10 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 gpu-accelerate"></div>
 
                         <div className="mb-12 relative w-48 h-48 flex items-center justify-center">
                             <img
-                                src="/icons_&_images/Client Logos/gbpoptimzered.webp"
+                                src="/icons_&_images/websiteoptimize green (2).png"
                                 alt="Google Business Profile Optimization"
-                                className="w-full h-full object-contain drop-shadow-[0_8px_16px_rgba(0,0,0,0.25)] scale-175 transition-transform duration-500 group-hover:scale-[1.8] brightness-60"
+                                className="w-full h-full object-contain drop-shadow-[0_8px_16px_rgba(0,0,0,0.25)] scale-175 transition-transform duration-500 group-hover:scale-[1.8]"
                             />
                         </div>
 
-                        <h3 className="text-2xl font-bold text-brand-black mb-4 transition-all duration-300 group-hover:text-brand-red">
+                        <h3 className="text-2xl font-bold text-brand-black mb-4 transition-all duration-300 group-hover:text-brand-green">
                             Complete Google Business
                             <br />Profile Optimization
                         </h3>
@@ -38,18 +40,18 @@ export default function HowItWorks() {
                     </div>
 
                     {/* Feature 2: Website Backend Fixes */}
-                    <div className="group relative bg-brand-cream/30 p-8 rounded-3xl shadow-lg border border-brand-black/5 hover:border-brand-red/10 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl overflow-hidden text-center flex flex-col items-center gpu-accelerate">
-                        <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-brand-red/10 via-brand-red to-brand-red/10 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 gpu-accelerate"></div>
+                    <div className="group relative bg-brand-cream/30 p-8 rounded-3xl shadow-lg border border-brand-black/5 hover:border-brand-green/10 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl overflow-hidden text-center flex flex-col items-center gpu-accelerate">
+                        <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-brand-green/10 via-brand-green to-brand-green/10 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 gpu-accelerate"></div>
 
                         <div className="mb-12 relative w-48 h-48 flex items-center justify-center">
                             <img
-                                src="/icons_&_images/Client Logos/websiteoptimizered.webp"
+                                src="/icons_&_images/websiteoptimize green.png"
                                 alt="Website Backend Fixes"
-                                className="w-full h-full object-contain drop-shadow-[0_8px_16px_rgba(0,0,0,0.25)] scale-175 transition-transform duration-500 group-hover:scale-[1.8] brightness-60"
+                                className="w-full h-full object-contain drop-shadow-[0_8px_16px_rgba(0,0,0,0.25)] scale-175 transition-transform duration-500 group-hover:scale-[1.8]"
                             />
                         </div>
 
-                        <h3 className="text-2xl font-bold text-brand-black mb-4 transition-all duration-300 group-hover:text-brand-red">
+                        <h3 className="text-2xl font-bold text-brand-black mb-4 transition-all duration-300 group-hover:text-brand-green">
                             Website Backend Fixes
                         </h3>
 
@@ -59,18 +61,18 @@ export default function HowItWorks() {
                     </div>
 
                     {/* Feature 3: Local Authority Building */}
-                    <div className="group relative bg-brand-cream/30 p-8 rounded-3xl shadow-lg border border-brand-black/5 hover:border-brand-red/10 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl overflow-hidden text-center flex flex-col items-center gpu-accelerate">
-                        <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-brand-red/10 via-brand-red to-brand-red/10 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 gpu-accelerate"></div>
+                    <div className="group relative bg-brand-cream/30 p-8 rounded-3xl shadow-lg border border-brand-black/5 hover:border-brand-green/10 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl overflow-hidden text-center flex flex-col items-center gpu-accelerate">
+                        <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-brand-green/10 via-brand-green to-brand-green/10 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 gpu-accelerate"></div>
 
                         <div className="mb-12 relative w-48 h-48 flex items-center justify-center">
                             <img
-                                src="/icons_&_images/Client Logos/localauthorityred.webp"
+                                src="/icons_&_images/localauthority green.png"
                                 alt="Local Authority Building"
-                                className="w-full h-full object-contain drop-shadow-[0_8px_16px_rgba(0,0,0,0.25)] scale-175 transition-transform duration-500 group-hover:scale-[1.8] brightness-60"
+                                className="w-full h-full object-contain drop-shadow-[0_8px_16px_rgba(0,0,0,0.25)] scale-175 transition-transform duration-500 group-hover:scale-[1.8]"
                             />
                         </div>
 
-                        <h3 className="text-2xl font-bold text-brand-black mb-4 transition-all duration-300 group-hover:text-brand-red">
+                        <h3 className="text-2xl font-bold text-brand-black mb-4 transition-all duration-300 group-hover:text-brand-green">
                             Local Authority Building
                         </h3>
 
@@ -90,7 +92,7 @@ export default function HowItWorks() {
             </div>
 
             {/* Background elements */}
-            <div className="absolute top-1/2 left-0 w-64 h-64 bg-brand-red/5 rounded-full blur-3xl -z-0 -translate-x-1/2 -translate-y-1/2 gpu-accelerate"></div>
+            <div className="absolute top-1/2 left-0 w-64 h-64 bg-brand-green/5 rounded-full blur-3xl -z-0 -translate-x-1/2 -translate-y-1/2 gpu-accelerate"></div>
             <div className="absolute bottom-0 right-0 w-96 h-96 bg-brand-dark/5 rounded-full blur-3xl -z-0 translate-x-1/3 translate-y-1/3 gpu-accelerate"></div>
         </section>
     );

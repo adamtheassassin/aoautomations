@@ -1,12 +1,13 @@
 import type { Metadata } from "next";
-import { Outfit } from "next/font/google";
+import { Poppins } from "next/font/google";
 import "./globals.css";
 import { CurrencyProvider } from "@/context/CurrencyContext";
 import Script from "next/script";
 
-const outfit = Outfit({
+const poppins = Poppins({
+  weight: ["400", "500", "600", "700", "800"],
   subsets: ["latin"],
-  variable: "--font-sans",
+  variable: "--font-poppins",
   display: "swap",
 });
 
@@ -16,11 +17,10 @@ export const metadata: Metadata = {
   description: "Dominate your local market. We help local businesses rank in the top 3 of Google Maps and grow their revenue.",
   icons: {
     icon: [
-      { url: '/icons_&_images/Client%20Logos/ao-icon.png' },
-      { url: '/icons_&_images/Client%20Logos/ao-icon.svg', type: 'image/svg+xml' },
+      { url: '/icons_&_images/ao-icon%20green.png' },
     ],
     apple: [
-      { url: '/icons_&_images/Client%20Logos/ao-icon.png' },
+      { url: '/icons_&_images/ao-icon%20green.png' },
     ],
   },
 };
@@ -47,7 +47,7 @@ export default function RootLayout({
         />
         {/* End Google Tag Manager */}
       </head>
-      <body className={`${outfit.variable} antialiased font-sans`}>
+      <body className={`${poppins.variable} antialiased font-sans`}>
         {/* Google Tag Manager (noscript) */}
         <noscript>
           <iframe
@@ -63,8 +63,8 @@ export default function RootLayout({
           className="fixed inset-0 z-[-1] pointer-events-none"
           style={{
             backgroundImage: `
-              radial-gradient(at 0% 0%, rgba(152, 4, 4, 0.03) 0px, transparent 50%),
-              radial-gradient(at 100% 100%, rgba(152, 4, 4, 0.03) 0px, transparent 50%)
+              radial-gradient(at 0% 0%, rgba(26, 122, 46, 0.03) 0px, transparent 50%),
+              radial-gradient(at 100% 100%, rgba(26, 122, 46, 0.03) 0px, transparent 50%)
             `
           }}
         />

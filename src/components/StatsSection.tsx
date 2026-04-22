@@ -62,11 +62,13 @@ export default function StatsSection() {
     }, []);
 
     return (
-        <section ref={sectionRef} className="w-full py-24 px-6 bg-brand-cream relative overflow-hidden">
-            <div className="max-w-7xl mx-auto">
+        <section ref={sectionRef} className="w-full py-24 px-6 bg-white relative overflow-hidden">
+            {/* Background Gradient/Sheen */}
+            <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-transparent to-brand-cream/50 pointer-events-none"></div>
+            <div className="max-w-7xl mx-auto relative z-10">
                 <div className="text-center mb-16 max-w-4xl mx-auto space-y-6">
                     <h2 className="text-4xl md:text-5xl font-bold text-brand-black tracking-tight leading-[1.1]">
-                        Why Is Being In The <span className="text-brand-red italic font-serif">Top 3</span> Even Important?
+                        Why Is Being In The <span className="text-brand-green italic font-serif font-bold">Top 3</span> Even Important?
                     </h2>
                     <div className="max-w-2xl mx-auto">
                         <p className="text-lg md:text-xl text-brand-gray font-medium">
@@ -80,7 +82,7 @@ export default function StatsSection() {
                     {/* Animated connecting line behind cards */}
                     <div className="absolute top-[52px] left-[16.67%] right-[16.67%] h-[2px] z-0">
                         <div
-                            className="h-full bg-gradient-to-r from-brand-red/0 via-brand-red/30 to-brand-red/0 rounded-full"
+                            className="h-full bg-gradient-to-r from-brand-green/0 via-brand-green/30 to-brand-green/0 rounded-full"
                             style={{
                                 transform: isVisible ? 'scaleX(1)' : 'scaleX(0)',
                                 transition: 'transform 1s cubic-bezier(0.22, 1, 0.36, 1) 0.3s',
@@ -94,7 +96,7 @@ export default function StatsSection() {
                         {[0, 1, 2].map((i) => (
                             <div
                                 key={i}
-                                className="w-3 h-3 rounded-full bg-brand-red/40 border-2 border-brand-cream"
+                                className="w-3 h-3 rounded-full bg-brand-green/40 border-2 border-brand-cream"
                                 style={{
                                     transform: isVisible ? 'scale(1)' : 'scale(0)',
                                     transition: `transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) ${0.5 + i * 0.25}s`,
@@ -113,15 +115,15 @@ export default function StatsSection() {
                                     transition: `opacity 0.6s ease-out ${index * 0.15}s, transform 0.6s ease-out ${index * 0.15}s`,
                                 }}
                             >
-                                <div className="group relative bg-white rounded-3xl p-7 shadow-md border border-brand-black/5 hover:border-brand-red/10 hover:-translate-y-1 hover:shadow-xl transition-all duration-700 ease-out overflow-hidden">
-                                    <div className="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-brand-red/0 via-brand-red/60 to-brand-red/0 rounded-t-3xl scale-x-0 group-hover:scale-x-100 transition-transform duration-700 ease-out" />
+                                <div className="group relative bg-white rounded-3xl p-7 shadow-md border border-brand-black/5 hover:border-brand-green/10 hover:-translate-y-1 hover:shadow-xl transition-all duration-700 ease-out overflow-hidden">
+                                    <div className="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-brand-green/0 via-brand-green/60 to-brand-green/0 rounded-t-3xl scale-x-0 group-hover:scale-x-100 transition-transform duration-700 ease-out" />
 
                                     <div className="flex items-center gap-4 mb-5">
-                                        <div className="w-12 h-12 rounded-2xl bg-brand-red/10 flex items-center justify-center text-brand-red transition-all duration-700 ease-out group-hover:scale-110 group-hover:shadow-md group-hover:shadow-brand-red/10">
+                                        <div className="w-12 h-12 rounded-2xl bg-brand-green/10 flex items-center justify-center text-brand-green transition-all duration-700 ease-out group-hover:scale-110 group-hover:shadow-md group-hover:shadow-brand-green/10">
                                             {card.icon}
                                         </div>
                                         <div className="flex flex-col">
-                                            <span className="text-2xl font-bold text-brand-black leading-none transition-colors duration-700 ease-out group-hover:text-brand-red">
+                                            <span className="text-2xl font-bold text-brand-black leading-none transition-colors duration-700 ease-out group-hover:text-brand-green">
                                                 {card.stat}
                                             </span>
                                             <span className="text-xs font-semibold text-brand-gray/60 uppercase tracking-wider mt-0.5">
@@ -134,7 +136,7 @@ export default function StatsSection() {
                                         {card.description}
                                     </p>
 
-                                    <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-3/4 h-16 bg-brand-red/5 rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none" />
+                                    <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-3/4 h-16 bg-brand-green/5 rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none" />
                                 </div>
                             </div>
                         ))}
@@ -149,7 +151,7 @@ export default function StatsSection() {
                                 {index > 0 && (
                                     <div className="flex flex-col items-center">
                                         <div
-                                            className="w-[2px] h-10 bg-gradient-to-b from-brand-red/20 to-brand-red/40 rounded-full"
+                                            className="w-[2px] h-10 bg-gradient-to-b from-brand-green/20 to-brand-green/40 rounded-full"
                                             style={{
                                                 transform: isVisible ? 'scaleY(1)' : 'scaleY(0)',
                                                 transition: `transform 0.5s ease-out ${0.3 + index * 0.2}s`,
@@ -157,13 +159,13 @@ export default function StatsSection() {
                                             }}
                                         />
                                         <div
-                                            className="w-2.5 h-2.5 rounded-full bg-brand-red/50 mb-1 relative"
+                                            className="w-2.5 h-2.5 rounded-full bg-brand-green/50 mb-1 relative"
                                             style={{
                                                 transform: isVisible ? 'scale(1)' : 'scale(0)',
                                                 transition: `transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1) ${0.5 + index * 0.2}s`,
                                             }}
                                         >
-                                            <span className="absolute inset-0 rounded-full bg-brand-red/30 animate-ping" style={{ animationDuration: '2s' }} />
+                                            <span className="absolute inset-0 rounded-full bg-brand-green/30 animate-ping" style={{ animationDuration: '2s' }} />
                                         </div>
                                     </div>
                                 )}
@@ -176,10 +178,10 @@ export default function StatsSection() {
                                         transition: `opacity 0.5s ease-out ${index * 0.2}s, transform 0.5s ease-out ${index * 0.2}s`,
                                     }}
                                 >
-                                    <div className="absolute left-0 top-4 bottom-4 w-[3px] bg-gradient-to-b from-brand-red/60 to-brand-red/10 rounded-r-full" />
+                                    <div className="absolute left-0 top-4 bottom-4 w-[3px] bg-gradient-to-b from-brand-green/60 to-brand-green/10 rounded-r-full" />
 
                                     <div className="flex items-center gap-4 mb-4 pl-3">
-                                        <div className="w-12 h-12 rounded-2xl bg-brand-red/10 flex items-center justify-center text-brand-red shrink-0 shadow-sm">
+                                        <div className="w-12 h-12 rounded-2xl bg-brand-green/10 flex items-center justify-center text-brand-green shrink-0 shadow-sm">
                                             {card.icon}
                                         </div>
                                         <div className="flex flex-col">

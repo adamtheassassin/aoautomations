@@ -86,7 +86,7 @@ export default function Navbar() {
                     {/* Logo */}
                     <Link href="/" className="flex items-center group cursor-pointer">
                         <img
-                            src="/icons_&_images/Client Logos/aoautomations.svg"
+                            src="/icons_&_images/aoautomations green.png"
                             alt="aoautomations"
                             className="h-8 md:h-10 w-auto object-contain drop-shadow-md group-hover:scale-105 transition-transform duration-300"
                         />
@@ -99,14 +99,14 @@ export default function Navbar() {
                                 key={link.label}
                                 href={link.href}
                                 onClick={(e) => handleNavClick(e as any, link.href)}
-                                className="text-sm font-medium text-brand-black/60 hover:text-brand-black transition-colors duration-300 relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[2px] after:bg-brand-red after:transition-all after:duration-300 hover:after:w-full"
+                                className="text-sm font-medium text-brand-black/60 hover:text-brand-black transition-colors duration-300 relative after:absolute after:bottom-[-4px] after:left-0 after:w-0 after:h-[2px] after:bg-brand-green after:transition-all after:duration-300 hover:after:w-full"
                             >
                                 {link.label}
                             </Link>
                         ))}
 
                         <Link href="/free-analysis">
-                            <LiquidButton className="px-6 py-2.5 text-sm font-semibold shadow-lg hover:shadow-brand-red/20 transition-all">
+                            <LiquidButton className="px-6 py-2.5 text-sm font-semibold shadow-lg hover:shadow-brand-green/20 transition-all">
                                 Get Your FREE Analysis
                             </LiquidButton>
                         </Link>
