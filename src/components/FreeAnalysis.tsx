@@ -1,54 +1,218 @@
 "use client";
 
-import Link from 'next/link';
-import LiquidButton from './LiquidButton';
+import { useState } from "react";
+import { useRouter } from "next/navigation";
+import LiquidButton from "./LiquidButton";
 
 export default function FreeAnalysis() {
+    const router = useRouter();
+    const [formData, setFormData] = useState({
+        fullName: "",
+        email: "",
+        phone: "",
+        website: "",
+        companyName: "",
+        budget: "",
+        urgency: "Today"
+    });
+
+    const [loading, setLoading] = useState(false);
+
+    const handleSubmit = async (e: React.FormEvent) => {
+        e.preventDefault();
+        setLoading(true);
+
+        try {
+            const response = await fetch('https://hook.eu1.make.com/p3uvqprbij5cj4ysbnbth89vrk5u60pa', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    type: 'free-analysis',
+                    ...formData
+                }),
+            });
+
+            if (response.ok) {
+                router.push("/thank-you");
+                setFormData({
+                    fullName: "",
+                    email: "",
+                    phone: "",
+                    website: "",
+                    companyName: "",
+                    budget: "",
+                    urgency: "Today"
+                });
+            } else {
+                alert("Something went wrong. Please try again.");
+            }
+        } catch (error) {
+            console.error("Error submitting form:", error);
+            alert("Something went wrong. Please try again.");
+        } finally {
+            setLoading(false);
+        }
+    };
+
     return (
-        <section className="w-full py-16 md:py-24 px-4 md:px-6 bg-white relative overflow-hidden">
-            <div className="max-w-4xl mx-auto">
-                <div className="relative bg-white rounded-2xl md:rounded-[2rem] p-6 md:p-16 text-center shadow-2xl overflow-hidden gpu-accelerate ring-1 ring-brand-black/5 group hover:-translate-y-1 transition-transform duration-500">
-                    {/* Background Gradient/Sheen */}
-                    <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-brand-cream/50 to-transparent pointer-events-none"></div>
-                    <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-brand-green/10 via-brand-green/40 to-brand-green/10 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 gpu-accelerate"></div>
+        <section className="py-16 md:py-24 px-6 bg-white relative overflow-hidden">
+            {/* Background Gradient/Sheen */}
+            <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-brand-cream/50 to-transparent pointer-events-none"></div>
+            
+            <div className="max-w-7xl mx-auto w-full relative z-10">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-center">
+                    
+                    {/* Left Side: Content */}
+                    <div className="space-y-6 lg:space-y-8">
+                        <div>
+                            <h2 className="text-4xl md:text-6xl font-bold text-brand-black tracking-tight leading-[1.1] mb-8">
+                                Get Your <br />
+                                Profile <span className="font-serif italic font-bold text-brand-green">Analyzed</span>
+                            </h2>
+                            <p className="text-xl text-brand-gray leading-relaxed max-w-lg mb-8">
+                                Fill out the form and we will record your personalized analysis with the exact things that need to happen so you can <strong className="text-brand-black">rank in the top 3 within your area</strong>.
+                            </p>
 
-                    {/* Icon Container */}
-                    <div className="relative z-10 mx-auto w-14 h-14 md:w-20 md:h-20 bg-black rounded-xl md:rounded-2xl flex items-center justify-center mb-6 md:mb-10 shadow-lg shadow-black/10 transform rotate-3 transition-transform duration-500 group-hover:rotate-6 group-hover:scale-105 gpu-accelerate">
-                        <img
-                            src="/icons_&_images/ao-icon green.png"
-                            alt="aoautomations"
-                            className="w-7 h-7 md:w-10 md:h-10 object-contain brightness-0 invert"
-                        />
+                            <div className="flex items-center gap-4 mb-8 p-4 rounded-2xl bg-white/60 border border-brand-black/5 shadow-sm">
+                                <div className="w-12 h-12 rounded-full bg-brand-green/10 flex items-center justify-center shrink-0">
+                                    <svg className="w-6 h-6 text-brand-green" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p className="text-brand-black font-bold text-sm">100% Positive ROI Track Record</p>
+                                    <p className="text-brand-gray text-sm mt-0.5">Every single client we&apos;ve ranked in the top 3 has seen a positive return on investment.</p>
+                                </div>
+                            </div>
+
+                            <p className="text-brand-gray/60 font-medium text-sm max-w-xs">
+                                No costs, no obligations, no annoying sales pitch. Guaranteed.
+                            </p>
+                        </div>
                     </div>
 
-                    {/* Pill Label */}
-                    <div className="relative z-10 inline-block px-4 py-1.5 bg-brand-black/5 rounded-lg mb-5 md:mb-8 backdrop-blur-sm">
-                        <span className="text-sm md:text-base font-medium text-brand-black">Free stuff</span>
+                    {/* Right Side: Form */}
+                    <div className="bg-white border border-brand-black/5 rounded-[2.5rem] p-8 md:p-10 shadow-xl w-full">
+                        <form onSubmit={handleSubmit} className="space-y-5">
+                            
+                            {/* Row 1: Name & Email */}
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+                                <div className="space-y-2">
+                                    <label htmlFor="fullName" className="text-sm font-bold text-brand-black/70 ml-1">Full Name *</label>
+                                    <input
+                                        type="text"
+                                        id="fullName"
+                                        required
+                                        className="w-full bg-white border border-brand-black/10 rounded-xl px-4 py-3 outline-none focus:border-brand-green/30 focus:ring-4 focus:ring-brand-green/5 transition-all text-base text-brand-black"
+                                        value={formData.fullName}
+                                        onChange={(e) => setFormData({ ...formData, fullName: e.target.value })}
+                                    />
+                                </div>
+                                <div className="space-y-2">
+                                    <label htmlFor="email" className="text-sm font-bold text-brand-black/70 ml-1">Email *</label>
+                                    <input
+                                        type="email"
+                                        id="email"
+                                        required
+                                        className="w-full bg-white border border-brand-black/10 rounded-xl px-4 py-3 outline-none focus:border-brand-green/30 focus:ring-4 focus:ring-brand-green/5 transition-all text-base text-brand-black"
+                                        value={formData.email}
+                                        onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                                    />
+                                </div>
+                            </div>
+
+                            {/* Row 2: Phone & Website */}
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+                                <div className="space-y-2">
+                                    <label htmlFor="phone" className="text-sm font-bold text-brand-black/70 ml-1">Phone Number *</label>
+                                    <input
+                                        type="tel"
+                                        id="phone"
+                                        required
+                                        className="w-full bg-white border border-brand-black/10 rounded-xl px-4 py-3 outline-none focus:border-brand-green/30 focus:ring-4 focus:ring-brand-green/5 transition-all text-base text-brand-black"
+                                        value={formData.phone}
+                                        onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                                    />
+                                </div>
+                                <div className="space-y-2">
+                                    <label htmlFor="website" className="text-sm font-bold text-brand-black/70 ml-1">Website</label>
+                                    <input
+                                        type="text"
+                                        id="website"
+                                        className="w-full bg-white border border-brand-black/10 rounded-xl px-4 py-3 outline-none focus:border-brand-green/30 focus:ring-4 focus:ring-brand-green/5 transition-all text-base text-brand-black"
+                                        value={formData.website}
+                                        onChange={(e) => setFormData({ ...formData, website: e.target.value })}
+                                    />
+                                </div>
+                            </div>
+
+                            {/* Row 3: Company */}
+                            <div className="grid grid-cols-1 gap-5">
+                                <div className="space-y-2">
+                                    <label htmlFor="companyName" className="text-sm font-bold text-brand-black/70 ml-1">Company Name *</label>
+                                    <input
+                                        type="text"
+                                        id="companyName"
+                                        required
+                                        className="w-full bg-white border border-brand-black/10 rounded-xl px-4 py-3 outline-none focus:border-brand-green/30 focus:ring-4 focus:ring-brand-green/5 transition-all text-base text-brand-black"
+                                        value={formData.companyName}
+                                        onChange={(e) => setFormData({ ...formData, companyName: e.target.value })}
+                                    />
+                                </div>
+                            </div>
+
+                            {/* Marketing Budget Input */}
+                            <div className="grid grid-cols-1 gap-5 pt-2">
+                                <div className="space-y-2">
+                                    <label htmlFor="budget" className="text-sm font-bold text-brand-black/70 ml-1">Current Monthly Marketing Budget *</label>
+                                    <input
+                                        type="text"
+                                        id="budget"
+                                        required
+                                        className="w-full bg-white border border-brand-black/10 rounded-xl px-4 py-3 outline-none focus:border-brand-green/30 focus:ring-4 focus:ring-brand-green/5 transition-all text-base text-brand-black"
+                                        value={formData.budget}
+                                        onChange={(e) => setFormData({ ...formData, budget: e.target.value })}
+                                    />
+                                </div>
+                            </div>
+
+                            {/* Urgency Radio Buttons */}
+                            <div className="pt-2">
+                                <label className="text-sm font-bold text-brand-black/70 ml-1 block">How soon are you looking to start the ranking process? *</label>
+                                <div className="flex flex-wrap gap-3 mt-8 mb-2">
+                                    {["Today", "Tomorrow", "A few weeks"].map((option) => (
+                                        <button
+                                            type="button"
+                                            key={option}
+                                            onClick={() => setFormData({ ...formData, urgency: option })}
+                                            className={`px-5 py-2.5 rounded-full text-sm font-medium transition-all duration-200 border ${formData.urgency === option
+                                                ? "bg-brand-black text-white border-brand-black"
+                                                : "bg-white text-brand-gray border-brand-black/10 hover:border-brand-black/30"
+                                                }`}
+                                        >
+                                            <div className="flex items-center gap-2">
+                                                <div className={`w-2 h-2 rounded-full ${formData.urgency === option ? "bg-white" : "bg-brand-gray/30"}`}></div>
+                                                {option}
+                                            </div>
+                                        </button>
+                                    ))}
+                                </div>
+                            </div>
+
+                            <div className="pt-2">
+                                <LiquidButton
+                                    className="w-full py-5 text-lg font-bold shadow-xl hover:shadow-2xl hover:shadow-brand-green/20 transition-all opacity-100 disabled:opacity-70 disabled:cursor-not-allowed"
+                                    disabled={loading}
+                                >
+                                    {loading ? "Submitting..." : "Submit Analysis Request"}
+                                </LiquidButton>
+                            </div>
+
+                        </form>
                     </div>
 
-                    {/* Headline */}
-                    <h2 className="relative z-10 text-3xl md:text-6xl font-bold text-brand-black tracking-tight mb-5 md:mb-8 leading-[1.1]">
-                        Get A <span className="font-serif italic font-bold text-brand-green drop-shadow-sm">Free Analysis</span><br />Right Here
-                    </h2>
-
-                    {/* Body Text */}
-                    <div className="relative z-10 max-w-2xl mx-auto mb-8 md:mb-10 space-y-4 md:space-y-6">
-                        <p className="text-base md:text-xl text-brand-gray leading-relaxed font-light">
-                            Click the button below to enter your business details. We will then go ahead and record a 5-min video going over how we&apos;ll get your business into the top 3 within 90 days.
-                        </p>
-                        <p className="text-brand-gray/60 text-sm md:text-base font-medium uppercase tracking-wider">
-                            The video doesn&apos;t cost you anything
-                        </p>
-                    </div>
-
-                    {/* CTA Button */}
-                    <div className="relative z-10">
-                        <Link href="/free-analysis">
-                            <LiquidButton className="px-8 md:px-12 py-4 md:py-5 text-base md:text-lg shadow-xl hover:shadow-2xl transition-all">
-                                Get The FREE Analysis
-                            </LiquidButton>
-                        </Link>
-                    </div>
                 </div>
             </div>
         </section>
