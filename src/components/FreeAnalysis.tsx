@@ -95,7 +95,12 @@ export default function FreeAnalysis() {
 
                     {/* Right Side: Form */}
                     <div className="bg-white border border-brand-black/5 rounded-[2.5rem] p-8 md:p-10 shadow-xl w-full">
-                        <form onSubmit={handleSubmit} className="space-y-5">
+                        <form 
+                            onSubmit={handleSubmit} 
+                            onFocusCapture={() => { if (typeof window !== 'undefined') (window as any).isFillingFreeAnalysis = true; }}
+                            onChangeCapture={() => { if (typeof window !== 'undefined') (window as any).isFillingFreeAnalysis = true; }}
+                            className="space-y-5"
+                        >
                             
                             {/* Row 1: Name & Email */}
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-5">

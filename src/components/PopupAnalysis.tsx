@@ -1,11 +1,12 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { useRouter } from "next/navigation";
+import { useRouter, usePathname } from "next/navigation";
 import LiquidButton from "@/components/LiquidButton";
 
 export default function PopupAnalysis() {
     const router = useRouter();
+    const pathname = usePathname();
     const [isOpen, setIsOpen] = useState(false);
     const [formData, setFormData] = useState({
         fullName: "",
@@ -21,11 +22,13 @@ export default function PopupAnalysis() {
     useEffect(() => {
         // Show popup after 20 seconds
         const timer = setTimeout(() => {
-            setIsOpen(true);
+            if (pathname !== '/free-analysis' && !(window as any).isFillingFreeAnalysis) {
+                setIsOpen(true);
+            }
         }, 20000);
 
         return () => clearTimeout(timer);
-    }, []);
+    }, [pathname]);
 
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
@@ -66,7 +69,7 @@ export default function PopupAnalysis() {
         }
     };
 
-    if (!isOpen) return null;
+    if (!isOpen || pathname === '/free-analysis') return null;
 
     return (
         <div className="fixed inset-0 z-[100] flex items-center justify-center bg-black/40 backdrop-blur-sm p-3 sm:p-6 overflow-hidden">
