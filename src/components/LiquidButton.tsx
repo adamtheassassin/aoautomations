@@ -5,13 +5,15 @@ import React from 'react';
 interface LiquidButtonProps {
     children: React.ReactNode;
     className?: string;
-    onClick?: () => void;
+    onClick?: (e: React.MouseEvent<HTMLButtonElement>) => void;
     disabled?: boolean;
+    type?: "button" | "submit" | "reset";
 }
 
-export default function LiquidButton({ children, className = "", onClick, disabled }: LiquidButtonProps) {
+export default function LiquidButton({ children, className = "", onClick, disabled, type }: LiquidButtonProps) {
     return (
         <button
+            type={type}
             onClick={onClick}
             disabled={disabled}
             className={`
