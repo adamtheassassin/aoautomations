@@ -26,7 +26,7 @@ export default function FreeAnalysisPage() {
         setLoading(true);
 
         try {
-            const response = await fetch('https://hook.eu1.make.com/p3uvqprbij5cj4ysbnbth89vrk5u60pa', {
+            const response = await fetch('https://hook.eu2.make.com/fgxu7pagp166o36qexkv9xnlqd9hcig3', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
