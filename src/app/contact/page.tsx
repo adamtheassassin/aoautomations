@@ -5,6 +5,7 @@ import Footer from "@/components/Footer";
 import LiquidButton from "@/components/LiquidButton";
 import SubmissionSuccessModal from "@/components/SubmissionSuccessModal";
 import { useState, useEffect } from "react";
+import { getFbCookie, getFbcFromUrl } from "@/utils/facebook";
 
 export default function ContactPage() {
     const [formData, setFormData] = useState({
@@ -51,6 +52,8 @@ export default function ContactPage() {
                 },
                 body: JSON.stringify({
                     type: 'contact-form',
+                    _fbp: getFbCookie('_fbp'),
+                    _fbc: getFbCookie('_fbc') || getFbcFromUrl(),
                     ...formData
                 }),
             });

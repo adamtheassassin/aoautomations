@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { useRouter, usePathname } from "next/navigation";
 import LiquidButton from "@/components/LiquidButton";
+import { getFbCookie, getFbcFromUrl } from "@/utils/facebook";
 
 export default function PopupAnalysis() {
     const router = useRouter();
@@ -46,6 +47,8 @@ export default function PopupAnalysis() {
                 },
                 body: JSON.stringify({
                     type: 'free-analysis-popup',
+                    _fbp: getFbCookie('_fbp'),
+                    _fbc: getFbCookie('_fbc') || getFbcFromUrl(),
                     ...formData
                 }),
             });

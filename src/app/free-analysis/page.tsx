@@ -6,6 +6,7 @@ import LiquidButton from "@/components/LiquidButton";
 import FAQ from "@/components/FAQ";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
+import { getFbCookie, getFbcFromUrl } from "@/utils/facebook";
 
 export default function FreeAnalysisPage() {
     const router = useRouter();
@@ -37,6 +38,8 @@ export default function FreeAnalysisPage() {
                 },
                 body: JSON.stringify({
                     type: 'free-analysis',
+                    _fbp: getFbCookie('_fbp'),
+                    _fbc: getFbCookie('_fbc') || getFbcFromUrl(),
                     ...formData
                 }),
             });
