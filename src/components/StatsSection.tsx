@@ -49,6 +49,7 @@ interface ClientResult {
     id: string;
     title: string;
     imagePath: string;
+    logoPath?: string;
 }
 
 const gbpResults: ClientResult[] = [
@@ -76,11 +77,13 @@ const gbpResults: ClientResult[] = [
         id: 'result-5',
         title: 'Over R414,000 Generated from R15,000 Ad Spend',
         imagePath: '/GBP Results/Naturelle Google Ads.png',
+        logoPath: '/icons_&_images/Client Logos/Naturelle-Logo.png',
     },
     {
         id: 'result-6',
         title: '100 Leads Generated',
         imagePath: '/GBP Results/Xternalshine Google Ads.png',
+        logoPath: '/icons_&_images/Client Logos/xternalshine-logo.png',
     },
 ];
 
@@ -204,6 +207,17 @@ export default function StatsSection() {
                                     onClick={() => setLightboxIndex(index)}
                                 />
 
+                                {/* Floating Brand Logo Overlay */}
+                                {item.logoPath && (
+                                    <div className="absolute top-4 right-4 z-10 bg-white/95 backdrop-blur-md px-4 py-2 rounded-xl border border-brand-black/5 shadow-md flex items-center justify-center h-10 transition-opacity duration-300 group-hover:opacity-90">
+                                        <img 
+                                            src={item.logoPath} 
+                                            alt="Brand logo" 
+                                            className="h-5 md:h-6 w-auto object-contain filter drop-shadow-sm" 
+                                        />
+                                    </div>
+                                )}
+
                                 {/* Fullscreen hover indicator */}
                                 <div
                                     onClick={() => setLightboxIndex(index)}
@@ -248,6 +262,17 @@ export default function StatsSection() {
                                         className="w-full relative overflow-hidden rounded-2xl bg-brand-cream/5 border border-brand-black/5 cursor-pointer shadow-sm"
                                     >
                                         <img src={item.imagePath} alt={item.title} className="w-full h-auto object-contain" />
+
+                                        {/* Floating Brand Logo Overlay */}
+                                        {item.logoPath && (
+                                            <div className="absolute top-3 right-3 z-10 bg-white/95 backdrop-blur-md px-3.5 py-1.5 rounded-xl border border-brand-black/5 shadow-md flex items-center justify-center h-9">
+                                                <img 
+                                                    src={item.logoPath} 
+                                                    alt="Brand logo" 
+                                                    className="h-4.5 w-auto object-contain" 
+                                                />
+                                            </div>
+                                        )}
 
                                         {/* Mobile Tap Zoom Badge */}
                                         <div className="absolute bottom-2.5 right-2.5 bg-brand-dark/80 backdrop-blur-sm text-white px-2.5 py-1 rounded-lg text-[9px] font-bold flex items-center gap-1.5">
@@ -419,13 +444,24 @@ export default function StatsSection() {
                 >
                     {/* Header Controls */}
                     <div className="flex items-center justify-between p-5 md:p-6 text-white bg-gradient-to-b from-brand-black to-transparent">
-                        <div className="flex flex-col">
-                            <span className="text-sm font-bold text-white/95">
-                                {gbpResults[lightboxIndex].title}
-                            </span>
-                            <span className="text-[10px] text-white/40 font-semibold mt-0.5">
-                                Result {lightboxIndex + 1} of {gbpResults.length}
-                            </span>
+                        <div className="flex items-center gap-3.5">
+                            {gbpResults[lightboxIndex].logoPath && (
+                                <div className="bg-white px-2.5 py-1 rounded-lg flex items-center justify-center h-7 shrink-0 shadow-md">
+                                    <img 
+                                        src={gbpResults[lightboxIndex].logoPath} 
+                                        alt="Brand logo" 
+                                        className="h-3.5 w-auto object-contain" 
+                                    />
+                                </div>
+                            )}
+                            <div className="flex flex-col">
+                                <span className="text-sm font-bold text-white/95 leading-none">
+                                    {gbpResults[lightboxIndex].title}
+                                </span>
+                                <span className="text-[10px] text-white/40 font-semibold mt-1">
+                                    Result {lightboxIndex + 1} of {gbpResults.length}
+                                </span>
+                            </div>
                         </div>
 
                         {/* Close button */}
