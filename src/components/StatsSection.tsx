@@ -238,11 +238,11 @@ export default function StatsSection() {
                 {/* ==========================================
                     MOBILE: NATIVE SWIPE CAROUSEL (SCROLL-SNAP)
                    ========================================== */}
-                <div className="md:hidden relative">
+                <div className="md:hidden relative w-full overflow-hidden">
                     <div
                         ref={carouselRef}
                         onScroll={handleCarouselScroll}
-                        className="flex gap-4 overflow-x-auto snap-x snap-mandatory scroll-smooth pb-4 scrollbar-none px-4 -mx-6"
+                        className="flex gap-4 overflow-x-auto snap-x snap-mandatory scroll-smooth pb-4 scrollbar-none px-6 -mx-6"
                         style={{ scrollbarWidth: 'none' }}
                     >
                         {gbpResults.map((item, index) => (
