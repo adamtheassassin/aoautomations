@@ -55,7 +55,7 @@ const gbpResults: ClientResult[] = [
     {
         id: 'result-1',
         title: 'Direct Customer Calls Generated',
-        imagePath: '/GBP Results/kebabish calls 1.png',
+        imagePath: '/GBP Results/kebabish calls.png',
     },
     {
         id: 'result-2',
