@@ -245,7 +245,9 @@ export default function PopupAnalysis() {
                             {/* Row 7: Budget */}
                             <div className="grid grid-cols-1 gap-2 sm:gap-5">
                                 <div className="space-y-0.5 sm:space-y-1.5">
-                                    <label htmlFor="popup-budget" className="text-xs sm:text-sm font-bold text-brand-black/70 ml-1">Current Monthly Marketing Budget *</label>
+                                    <label htmlFor="popup-budget" className="text-xs sm:text-sm font-bold text-brand-black/70 ml-1">
+                                        Current Marketing <span className="whitespace-nowrap">Budget *</span>
+                                    </label>
                                     <select
                                         id="popup-budget"
                                         required
@@ -260,14 +262,16 @@ export default function PopupAnalysis() {
                                         <option value="R10k–R25k">R10k–R25k</option>
                                         <option value="R25k+">R25k+</option>
                                     </select>
-                                    <p className="text-[10px] sm:text-xs text-brand-gray/70 ml-1 mt-0.5 font-medium">Our programs start at R4,250/month.</p>
+                                    <p className="text-[10px] sm:text-xs text-brand-gray/70 ml-1 mt-0.5 font-medium">Our programs start from R3,250/month.</p>
                                 </div>
                             </div>
 
                             {/* Row 8: Average Value of Job */}
                             <div className="grid grid-cols-1 gap-2 sm:gap-5">
                                 <div className="space-y-0.5 sm:space-y-1.5">
-                                    <label htmlFor="popup-avgJobValue" className="text-xs sm:text-sm font-bold text-brand-black/70 ml-1">Average value of one job/sale *</label>
+                                    <label htmlFor="popup-avgJobValue" className="text-xs sm:text-sm font-bold text-brand-black/70 ml-1">
+                                        Average value of one <span className="whitespace-nowrap">job/sale *</span>
+                                    </label>
                                     <select
                                         id="popup-avgJobValue"
                                         required

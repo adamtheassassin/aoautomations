@@ -243,7 +243,9 @@ export default function FreeAnalysisPage() {
                                         {/* Row 4: Budget & Average Job Value */}
                                         <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                                             <div className="space-y-2">
-                                                <label htmlFor="budget" className="text-sm font-bold text-brand-black/70 ml-1">Current Monthly Marketing Budget *</label>
+                                                <label htmlFor="budget" className="text-sm font-bold text-brand-black/70 ml-1">
+                                                    Current Marketing <span className="whitespace-nowrap">Budget *</span>
+                                                </label>
                                                 <select
                                                     id="budget"
                                                     required
@@ -258,10 +260,12 @@ export default function FreeAnalysisPage() {
                                                     <option value="R10k–R25k">R10k–R25k</option>
                                                     <option value="R25k+">R25k+</option>
                                                 </select>
-                                                <p className="text-xs text-brand-gray/70 ml-1 mt-1 font-medium">Our programs start at R4,250/month.</p>
+                                                <p className="text-xs text-brand-gray/70 ml-1 mt-1 font-medium">Our programs start from R3,250/month.</p>
                                             </div>
                                             <div className="space-y-2">
-                                                <label htmlFor="avgJobValue" className="text-sm font-bold text-brand-black/70 ml-1">Average value of one job/sale *</label>
+                                                <label htmlFor="avgJobValue" className="text-sm font-bold text-brand-black/70 ml-1">
+                                                    Average value of one <span className="whitespace-nowrap">job/sale *</span>
+                                                </label>
                                                 <select
                                                     id="avgJobValue"
                                                     required
