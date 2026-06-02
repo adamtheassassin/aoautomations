@@ -7,8 +7,39 @@ import FAQ from "@/components/FAQ";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { getFbCookie, getFbcFromUrl } from "@/utils/facebook";
+import { useCurrency } from "@/context/CurrencyContext";
 
 export default function FreeAnalysisPage() {
+    const { currency } = useCurrency();
+    const isZA = currency === 'ZAR';
+
+    const budgetOptions = isZA ? [
+        { value: "Under R3,000", label: "Under R3,000" },
+        { value: "R3k–R5k", label: "R3k–R5k" },
+        { value: "R5k–R10k", label: "R5k–R10k" },
+        { value: "R10k–R25k", label: "R10k–R25k" },
+        { value: "R25k+", label: "R25k+" }
+    ] : [
+        { value: "Under $500", label: "Under $500" },
+        { value: "$500–$1,000", label: "$500–$1,000" },
+        { value: "$1,000–$2,500", label: "$1,000–$2,500" },
+        { value: "$2,500+", label: "$2,500+" }
+    ];
+
+    const avgJobValueOptions = isZA ? [
+        { value: "Under R1k", label: "Under R1k" },
+        { value: "R1k–R3k", label: "R1k–R3k" },
+        { value: "R3k–R10k", label: "R3k–R10k" },
+        { value: "R10k–R30k", label: "R10k–R30k" },
+        { value: "R30k+", label: "R30k+" }
+    ] : [
+        { value: "Under $100", label: "Under $100" },
+        { value: "$100–$300", label: "$100–$300" },
+        { value: "$300–$1,000", label: "$300–$1,000" },
+        { value: "$1,000–$3,000", label: "$1,000–$3,000" },
+        { value: "$3,000+", label: "$3,000+" }
+    ];
+
     const router = useRouter();
     const [formData, setFormData] = useState({
         fullName: "",
@@ -257,13 +288,11 @@ export default function FreeAnalysisPage() {
                                                     onChange={(e) => setFormData({ ...formData, budget: e.target.value })}
                                                 >
                                                     <option value="" disabled>Select budget range...</option>
-                                                    <option value="Under R3,000">Under R3,000</option>
-                                                    <option value="R3k–R5k">R3k–R5k</option>
-                                                    <option value="R5k–R10k">R5k–R10k</option>
-                                                    <option value="R10k–R25k">R10k–R25k</option>
-                                                    <option value="R25k+">R25k+</option>
+                                                    {budgetOptions.map(opt => (
+                                                        <option key={opt.value} value={opt.value}>{opt.label}</option>
+                                                    ))}
                                                 </select>
-                                                <p className="text-xs text-brand-gray/70 ml-1 mt-1 font-medium">Our programs start from R3,250/month.</p>
+                                                <p className="text-xs text-brand-gray/70 ml-1 mt-1 font-medium">Our programs start from {isZA ? 'R3,250' : '$300'}/month.</p>
                                             </div>
                                             <div className="space-y-2">
                                                 <label htmlFor="avgJobValue" className="text-sm font-bold text-brand-black/70 ml-1">
@@ -277,11 +306,9 @@ export default function FreeAnalysisPage() {
                                                     onChange={(e) => setFormData({ ...formData, avgJobValue: e.target.value })}
                                                 >
                                                     <option value="" disabled>Select average value...</option>
-                                                    <option value="Under R1k">Under R1k</option>
-                                                    <option value="R1k–R3k">R1k–R3k</option>
-                                                    <option value="R3k–R10k">R3k–R10k</option>
-                                                    <option value="R10k–R30k">R10k–R30k</option>
-                                                    <option value="R30k+">R30k+</option>
+                                                    {avgJobValueOptions.map(opt => (
+                                                        <option key={opt.value} value={opt.value}>{opt.label}</option>
+                                                    ))}
                                                 </select>
                                             </div>
                                         </div>

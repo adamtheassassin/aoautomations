@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useEffect, useRef, useState } from 'react';
+import { useCurrency } from '@/context/CurrencyContext';
 
 // ==========================================
 // PRESERVED OLD SECTION METADATA (DEACTIVATED)
@@ -52,7 +53,7 @@ interface ClientResult {
     logoPath?: string;
 }
 
-const gbpResults: ClientResult[] = [
+const gbpResultsZA: ClientResult[] = [
     {
         id: 'result-1',
         title: 'Direct Customer Calls Generated',
@@ -87,7 +88,46 @@ const gbpResults: ClientResult[] = [
     },
 ];
 
+const gbpResultsNonZA: ClientResult[] = [
+    {
+        id: 'result-1',
+        title: 'Direct Customer Calls Generated',
+        imagePath: '/GBP Results/kebabish calls.png',
+    },
+    {
+        id: 'result-2',
+        title: 'Consistent Inbound Phone Inquiries',
+        imagePath: '/GBP Results/xternalshine calls.png',
+    },
+    {
+        id: 'result-3',
+        title: 'High-Volume Website Visits',
+        imagePath: '/GBP Results/xternalshine websiteclicks.png',
+    },
+    {
+        id: 'result-4',
+        title: 'Direct Customer Chat Messages',
+        imagePath: '/GBP Results/xternalshinewhatsapp msg.png',
+    },
+    {
+        id: 'result-5',
+        title: 'Top 3 Google Maps Rankings',
+        imagePath: '/GBP Results/EAR top 3.png',
+        logoPath: '/icons_&_images/Client Logos/ear logo menu bar.png',
+    },
+    {
+        id: 'result-6',
+        title: 'Top 3 Google Maps Rankings',
+        imagePath: '/GBP Results/xternalshine top 3.png',
+        logoPath: '/icons_&_images/Client Logos/xternalshine-logo.png',
+    },
+];
+
 export default function StatsSection() {
+    const { currency } = useCurrency();
+    const isZA = currency === 'ZAR';
+    const gbpResults = isZA ? gbpResultsZA : gbpResultsNonZA;
+
     const sectionRef = useRef<HTMLElement>(null);
     const carouselRef = useRef<HTMLDivElement>(null);
     const [isVisible, setIsVisible] = useState(false);
@@ -210,10 +250,10 @@ export default function StatsSection() {
                                 {/* Floating Brand Logo Overlay */}
                                 {item.logoPath && (
                                     <div className="absolute top-4 right-4 z-10 bg-white/95 backdrop-blur-md px-4 py-2 rounded-xl border border-brand-black/5 shadow-md flex items-center justify-center h-10 transition-opacity duration-300 group-hover:opacity-90">
-                                        <img 
-                                            src={item.logoPath} 
-                                            alt="Brand logo" 
-                                            className="h-5 md:h-6 w-auto object-contain filter drop-shadow-sm" 
+                                        <img
+                                            src={item.logoPath}
+                                            alt="Brand logo"
+                                            className="h-5 md:h-6 w-auto object-contain filter drop-shadow-sm"
                                         />
                                     </div>
                                 )}
@@ -266,10 +306,10 @@ export default function StatsSection() {
                                         {/* Floating Brand Logo Overlay */}
                                         {item.logoPath && (
                                             <div className="absolute top-3 right-3 z-10 bg-white/95 backdrop-blur-md px-3.5 py-1.5 rounded-xl border border-brand-black/5 shadow-md flex items-center justify-center h-9">
-                                                <img 
-                                                    src={item.logoPath} 
-                                                    alt="Brand logo" 
-                                                    className="h-4.5 w-auto object-contain" 
+                                                <img
+                                                    src={item.logoPath}
+                                                    alt="Brand logo"
+                                                    className="h-4.5 w-auto object-contain"
                                                 />
                                             </div>
                                         )}
@@ -447,10 +487,10 @@ export default function StatsSection() {
                         <div className="flex items-center gap-3.5">
                             {gbpResults[lightboxIndex].logoPath && (
                                 <div className="bg-white px-2.5 py-1 rounded-lg flex items-center justify-center h-7 shrink-0 shadow-md">
-                                    <img 
-                                        src={gbpResults[lightboxIndex].logoPath} 
-                                        alt="Brand logo" 
-                                        className="h-3.5 w-auto object-contain" 
+                                    <img
+                                        src={gbpResults[lightboxIndex].logoPath}
+                                        alt="Brand logo"
+                                        className="h-3.5 w-auto object-contain"
                                     />
                                 </div>
                             )}
