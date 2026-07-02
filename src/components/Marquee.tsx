@@ -23,13 +23,6 @@ const LOGOS = [
         className="h-full w-auto object-contain"
     />,
 
-    // Red Engage Logo
-    <img
-        key="red-engage"
-        src="/icons_&_images/Client Logos/red-engage-brand-logo.svg"
-        alt="Red Engage"
-        className="h-full w-auto object-contain scale-[1.6]"
-    />,
     // EHS Logo
     <img
         key="ehs"
@@ -58,6 +51,27 @@ const LOGOS = [
             className="h-full w-auto object-contain"
         />
     </a>,
+    // AAA Locksmith Logo
+    <a
+        key="aaa-locksmith"
+        href="https://aaalocksmiths.co.za"
+        rel="dofollow"
+        target="_blank"
+        className="h-[85%] w-auto flex items-center justify-center"
+    >
+        <img
+            src="/icons_&_images/Client Logos/AAA_Locksmith_Logo.png"
+            alt="AAA Locksmith"
+            className="h-full w-auto object-contain"
+        />
+    </a>,
+    // MaxFlex Logo
+    <img
+        key="maxflex"
+        src="/icons_&_images/Client Logos/maxflexlogo.png"
+        alt="MaxFlex Mobile Rubberising"
+        className="h-full w-auto object-contain"
+    />,
 ];
 
 export default function Marquee() {
@@ -76,7 +90,7 @@ export default function Marquee() {
                     {seamlessLogos.map((logo, idx) => (
                         <div
                             key={idx}
-                            className="h-20 w-48 flex items-center justify-center text-brand-black grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300 cursor-pointer gpu-accelerate brightness-0 opacity-80"
+                            className="h-20 w-48 flex items-center justify-center text-brand-black opacity-90 hover:opacity-100 transition-all duration-300 cursor-pointer gpu-accelerate"
                         >
                             {logo}
                         </div>
@@ -84,7 +98,7 @@ export default function Marquee() {
                     {seamlessLogos.map((logo, idx) => (
                         <div
                             key={`dup1-${idx}`}
-                            className="h-20 w-48 flex items-center justify-center text-brand-black grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300 cursor-pointer gpu-accelerate brightness-0 opacity-80"
+                            className="h-20 w-48 flex items-center justify-center text-brand-black opacity-90 hover:opacity-100 transition-all duration-300 cursor-pointer gpu-accelerate"
                         >
                             {logo}
                         </div>
@@ -94,7 +108,7 @@ export default function Marquee() {
                     {seamlessLogos.map((logo, idx) => (
                         <div
                             key={`dup2-${idx}`}
-                            className="h-20 w-48 flex items-center justify-center text-brand-black grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300 cursor-pointer gpu-accelerate brightness-0 opacity-80"
+                            className="h-20 w-48 flex items-center justify-center text-brand-black opacity-90 hover:opacity-100 transition-all duration-300 cursor-pointer gpu-accelerate"
                         >
                             {logo}
                         </div>
@@ -102,7 +116,7 @@ export default function Marquee() {
                     {seamlessLogos.map((logo, idx) => (
                         <div
                             key={`dup3-${idx}`}
-                            className="h-20 w-48 flex items-center justify-center text-brand-black grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300 cursor-pointer gpu-accelerate brightness-0 opacity-80"
+                            className="h-20 w-48 flex items-center justify-center text-brand-black opacity-90 hover:opacity-100 transition-all duration-300 cursor-pointer gpu-accelerate"
                         >
                             {logo}
                         </div>

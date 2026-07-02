@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(npm run dev)",
+      "Bash(grep -qiE 'Ready in|started server|Local:|Error' C:/Users/adam/AppData/Local/Temp/claude/c--Users-adam-Desktop-ao-Automations-Websites-Cursor-or-Antigravity-aoautomations/055d1c8b-5dcb-474e-a7ea-2007974b6c4d/tasks/bpqeiusqf.output)",
+      "Bash(sleep 0.5)",
+      "Bash(cat C:/Users/adam/AppData/Local/Temp/claude/c--Users-adam-Desktop-ao-Automations-Websites-Cursor-or-Antigravity-aoautomations/055d1c8b-5dcb-474e-a7ea-2007974b6c4d/tasks/bpqeiusqf.output)"
+    ]
+  }
+}
