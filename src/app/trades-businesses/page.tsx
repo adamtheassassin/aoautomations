@@ -82,12 +82,21 @@ export default function TradesBusinessesPage() {
                                         <span className="text-brand-green font-serif italic font-bold">trades business?</span>
                                     </h1>
                                     <p className="text-sm sm:text-base text-brand-gray max-w-md mx-auto leading-relaxed">
-                                        We specialize exclusively in helping trades & home service businesses dominate their local market.
+                                        We work exclusively with hands-on, contractor, and home service businesses such as:
                                     </p>
+
+                                    {/* Trade Examples Badges */}
+                                    <div className="flex flex-wrap justify-center gap-2 max-w-md mx-auto pt-1 pb-2">
+                                        {["Plumbing", "Electrical", "Roofing", "HVAC / AC", "Landscaping", "Builders", "Painters", "Home Services"].map((trade) => (
+                                            <span key={trade} className="px-3 py-1 bg-white border border-brand-black/10 rounded-full text-xs font-semibold text-brand-black/80 shadow-2xs">
+                                                {trade}
+                                            </span>
+                                        ))}
+                                    </div>
                                 </div>
 
                                 {/* Choices */}
-                                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+                                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-1">
                                     <button
                                         type="button"
                                         onClick={() => handleStep1Choice(true)}
@@ -101,7 +110,7 @@ export default function TradesBusinessesPage() {
                                                 Yes
                                             </span>
                                             <span className="text-xs text-brand-gray font-medium mt-1 block">
-                                                I own or manage a trades business
+                                                I own or manage a trades or home service business
                                             </span>
                                         </div>
                                     </button>
@@ -119,7 +128,7 @@ export default function TradesBusinessesPage() {
                                                 No
                                             </span>
                                             <span className="text-xs text-brand-gray font-medium mt-1 block">
-                                                I operate a different type of business
+                                                I run another type of business (e.g. e-commerce, consulting)
                                             </span>
                                         </div>
                                     </button>
