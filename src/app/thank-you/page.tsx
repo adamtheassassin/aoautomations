@@ -5,12 +5,26 @@ import Footer from "@/components/Footer";
 import LiquidButton from "@/components/LiquidButton";
 import Link from 'next/link';
 import { useSearchParams } from "next/navigation";
-import { Suspense } from "react";
+import { Suspense, useEffect } from "react";
+import { trackOaiq } from "@/utils/oaiq";
 
 function ThankYouContent() {
     const searchParams = useSearchParams();
     const isAfrikaans = searchParams.get("lang") === "af";
     const isDisqualified = searchParams.get("status") === "disqualified";
+
+    useEffect(() => {
+        if (!isDisqualified) {
+            trackOaiq("lead_created", {
+                type: "customer_action"
+            });
+            trackOaiq("registration_completed", {
+                type: "customer_action",
+                amount: 0,
+                currency: "USD"
+            });
+        }
+    }, [isDisqualified]);
 
     if (isAfrikaans) {
         if (isDisqualified) {
