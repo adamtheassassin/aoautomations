@@ -23,34 +23,34 @@ const LOGOS = [
         className="h-full w-auto object-contain"
     />,
 
-    // EHS Logo
+    // Get Keys Logo
     <img
-        key="ehs"
-        src="/icons_&_images/Client Logos/ehs_logo.svg"
-        alt="EHS"
-        className="h-full w-auto object-contain scale-[1.6]"
+        key="getkeys"
+        src="/icons_&_images/Client Logos/getkeys.png"
+        alt="Get Keys Auto Locksmith"
+        className="h-full w-auto object-contain"
     />,
-    // Baboo Logo
-    <img
-        key="baboo"
-        src="/icons_&_images/Client Logos/baboo_logo.svg"
-        alt="Baboo"
-        className="h-full w-auto object-contain scale-[1.6]"
-    />,
-    // Kebabish Logo
+    // Dr Piet Slabber Logo
     <a
-        key="kebabish"
-        href="https://kebabish.co.za/kebabish-branches-durban/durban-florida-road/"
+        key="dr-slabber"
+        href="https://somersetwestdentist.co.za"
         rel="dofollow"
         target="_blank"
-        className="h-[85%] w-auto flex items-center justify-center"
+        className="h-full w-auto flex items-center justify-center"
     >
         <img
-            src="/icons_&_images/Client Logos/Kebabish_Logo-removebg-preview.webp"
-            alt="Kebabish"
+            src="/icons_&_images/Client Logos/dr slabber.png"
+            alt="Dr. Piet Slabber Dentist Somerset West"
             className="h-full w-auto object-contain"
         />
     </a>,
+    // Kebabish Logo
+    <img
+        key="kebabish"
+        src="/icons_&_images/Client Logos/Kebabish_Logo-removebg-preview.webp"
+        alt="Kebabish"
+        className="h-full w-auto object-contain"
+    />,
     // AAA Locksmith Logo
     <a
         key="aaa-locksmith"
