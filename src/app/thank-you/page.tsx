@@ -65,23 +65,23 @@ function ThankYouContent() {
         return (
             <div className="max-w-3xl mx-auto text-center">
                 <div className="inline-block px-4 py-1.5 bg-brand-black/5 rounded-lg mb-6">
-                    <span className="text-sm font-bold uppercase tracking-widest text-brand-black/70">Analysis Aangevra</span>
+                    <span className="text-sm font-bold uppercase tracking-widest text-brand-black/70">Aanvraag Ontvang</span>
                 </div>
                 <h1 className="text-5xl md:text-7xl font-bold text-brand-black tracking-tight leading-[1.0] mb-8">
                     Baie <span className="font-serif italic font-bold text-brand-green">dankie!</span>
                 </h1>
                 <p className="text-lg md:text-xl text-brand-gray leading-relaxed max-w-xl mx-auto mb-8">
-                    Hier is wat volgende gebeur:
+                    Ons het jou besonderhede ontvang en ons span kyk reeds daarna.
                 </p>
 
-                <div className="bg-white/60 border border-brand-black/5 rounded-3xl p-6 mb-8 max-w-xl mx-auto text-left space-y-6 shadow-sm">
+                <div className="bg-white/60 border border-brand-black/5 rounded-3xl p-6 mb-8 max-w-xl mx-auto text-left space-y-5 shadow-sm">
                     <div className="flex gap-4">
                         <div className="w-10 h-10 rounded-full bg-brand-green/10 flex items-center justify-center shrink-0">
                             <span className="font-bold text-brand-green">1</span>
                         </div>
                         <div>
-                            <h3 className="font-bold text-brand-black text-base md:text-lg mb-1">Kort Clarification</h3>
-                            <p className="text-brand-gray leading-relaxed text-sm">Ons sal per email/WhatsApp uitreik om jou teiken-keywords te bevestig (indien nodig).</p>
+                            <h3 className="font-bold text-brand-black text-base md:text-lg mb-0.5">Ons kyk na jou inligting</h3>
+                            <p className="text-brand-gray leading-relaxed text-sm">Ons span hersien tans jou besonderhede en sal binnekort met jou in verbinding tree.</p>
                         </div>
                     </div>
 
@@ -90,16 +90,10 @@ function ThankYouContent() {
                             <span className="font-bold text-brand-green">2</span>
                         </div>
                         <div>
-                            <h3 className="font-bold text-brand-black text-base md:text-lg mb-1">Video Analysis</h3>
-                            <p className="text-brand-gray leading-relaxed text-sm">Jy sal 'n pasgemaakte 5-minuut video kry wat jou huidige rankings en die roadmap na die top 3 wys.</p>
+                            <h3 className="font-bold text-brand-black text-base md:text-lg mb-0.5">Wil jy vinniger gehelp word?</h3>
+                            <p className="text-brand-gray leading-relaxed text-sm">Stuur vir ons direk 'n boodskap op WhatsApp om vinniger terugvoer te kry.</p>
                         </div>
                     </div>
-                </div>
-
-                <div className="max-w-md mx-auto mb-5">
-                    <p className="font-semibold text-brand-black text-center text-sm">
-                        Het jy klaar target keywords in gedagte? Laat weet ons!
-                    </p>
                 </div>
 
                 <div className="flex justify-center">
@@ -130,16 +124,16 @@ function ThankYouContent() {
                     Application <span className="font-serif italic font-bold text-red-600">Saved</span>
                 </h1>
                 <p className="text-lg md:text-xl text-brand-gray leading-relaxed max-w-xl mx-auto mb-8">
-                    Since you&apos;re currently <strong className="text-brand-black">just exploring</strong>, we&apos;ve saved your details but won&apos;t be recording a custom video analysis for you just yet.
+                    Since you&apos;re currently <strong className="text-brand-black">just exploring</strong>, we&apos;ve saved your details.
                 </p>
 
                 <div className="bg-white/60 border border-brand-black/5 rounded-3xl p-6 mb-8 max-w-xl mx-auto text-left space-y-4 shadow-sm">
                     <h3 className="font-bold text-brand-black text-lg mb-2">What this means:</h3>
                     <p className="text-brand-gray leading-relaxed text-sm">
-                        To keep our analysis and programs premium, we prioritize recording custom teardowns for businesses that are ready to rank in the next few weeks.
+                        To keep our services and programs premium, we prioritize businesses that are ready to move forward soon.
                     </p>
                     <p className="text-brand-gray leading-relaxed text-sm">
-                        Don&apos;t worry – your details are saved! If you decide to start the ranking process, feel free to reach out to us directly or request an active analysis when you are ready.
+                        Don&apos;t worry – your details are safely stored! When you&apos;re ready to start, feel free to reach out to us directly on WhatsApp.
                     </p>
                 </div>
 
@@ -158,23 +152,23 @@ function ThankYouContent() {
     return (
         <div className="max-w-3xl mx-auto text-center">
             <div className="inline-block px-4 py-1.5 bg-brand-black/5 rounded-lg mb-6">
-                <span className="text-sm font-bold uppercase tracking-widest text-brand-black/70">Analysis Requested</span>
+                <span className="text-sm font-bold uppercase tracking-widest text-brand-black/70">Request Received</span>
             </div>
             <h1 className="text-5xl md:text-7xl font-bold text-brand-black tracking-tight leading-[1.0] mb-8">
                 Thank <span className="font-serif italic font-bold text-brand-green">You!</span>
             </h1>
             <p className="text-lg md:text-xl text-brand-gray leading-relaxed max-w-xl mx-auto mb-8">
-                Here&apos;s what happens next:
+                We&apos;ve received your details and our team is already reviewing them.
             </p>
 
-            <div className="bg-white/60 border border-brand-black/5 rounded-3xl p-6 mb-8 max-w-xl mx-auto text-left space-y-6 shadow-sm">
+            <div className="bg-white/60 border border-brand-black/5 rounded-3xl p-6 mb-8 max-w-xl mx-auto text-left space-y-5 shadow-sm">
                 <div className="flex gap-4">
                     <div className="w-10 h-10 rounded-full bg-brand-green/10 flex items-center justify-center shrink-0">
                         <span className="font-bold text-brand-green">1</span>
                     </div>
                     <div>
-                        <h3 className="font-bold text-brand-black text-base md:text-lg mb-1">Brief Clarification</h3>
-                        <p className="text-brand-gray leading-relaxed text-sm">We&apos;ll reach out via email/WhatsApp to confirm your target keywords (if needed).</p>
+                        <h3 className="font-bold text-brand-black text-base md:text-lg mb-0.5">We&apos;re reviewing your information</h3>
+                        <p className="text-brand-gray leading-relaxed text-sm">Our team is going over your submission and will get back to you shortly.</p>
                     </div>
                 </div>
 
@@ -183,21 +177,15 @@ function ThankYouContent() {
                         <span className="font-bold text-brand-green">2</span>
                     </div>
                     <div>
-                        <h3 className="font-bold text-brand-black text-base md:text-lg mb-1">Video Analysis</h3>
-                        <p className="text-brand-gray leading-relaxed text-sm">You&apos;ll receive a custom 5-min video showing your current rankings and the roadmap to top 3.</p>
+                        <h3 className="font-bold text-brand-black text-base md:text-lg mb-0.5">Want to fast-track your request?</h3>
+                        <p className="text-brand-gray leading-relaxed text-sm">Send us a message directly on WhatsApp to connect with us immediately.</p>
                     </div>
                 </div>
             </div>
 
-            <div className="max-w-md mx-auto mb-5">
-                <p className="font-semibold text-brand-black text-center text-sm">
-                    Got target keywords in mind? Let us know!
-                </p>
-            </div>
-
             <div className="flex justify-center">
                 <a
-                    href="https://wa.me/27645353773" // Add your WhatsApp link here
+                    href="https://wa.me/27645353773"
                     className="bg-gradient-to-b from-[#22c55e] via-[#16a34a] to-[#15803d] border-[2px] border-[#4ade80] text-white shadow-[0_0_15px_rgba(34,197,94,0.4),0_8px_15px_rgba(0,0,0,0.2)] px-8 py-4 rounded-xl text-lg font-bold transition-all duration-300 hover:scale-[1.02] flex items-center justify-center gap-3 relative overflow-hidden group"
                 >
                     <div className="absolute inset-x-2 top-0 h-[50%] bg-gradient-to-b from-white/30 to-transparent rounded-t-xl pointer-events-none opacity-80"></div>
