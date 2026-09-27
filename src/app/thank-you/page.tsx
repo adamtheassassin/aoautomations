@@ -98,7 +98,9 @@ function ThankYouContent() {
 
                 <div className="flex justify-center">
                     <a
-                        href="https://wa.me/27645353773"
+                        href="https://wa.me/447936818258"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         className="bg-gradient-to-b from-[#22c55e] via-[#16a34a] to-[#15803d] border-[2px] border-[#4ade80] text-white shadow-[0_0_15px_rgba(34,197,94,0.4),0_8px_15px_rgba(0,0,0,0.2)] px-8 py-4 rounded-xl text-lg font-bold transition-all duration-300 hover:scale-[1.02] flex items-center justify-center gap-3 relative overflow-hidden group"
                     >
                         <div className="absolute inset-x-2 top-0 h-[50%] bg-gradient-to-b from-white/30 to-transparent rounded-t-xl pointer-events-none opacity-80"></div>
@@ -185,7 +187,9 @@ function ThankYouContent() {
 
             <div className="flex justify-center">
                 <a
-                    href="https://wa.me/27645353773"
+                    href="https://wa.me/447936818258"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="bg-gradient-to-b from-[#22c55e] via-[#16a34a] to-[#15803d] border-[2px] border-[#4ade80] text-white shadow-[0_0_15px_rgba(34,197,94,0.4),0_8px_15px_rgba(0,0,0,0.2)] px-8 py-4 rounded-xl text-lg font-bold transition-all duration-300 hover:scale-[1.02] flex items-center justify-center gap-3 relative overflow-hidden group"
                 >
                     <div className="absolute inset-x-2 top-0 h-[50%] bg-gradient-to-b from-white/30 to-transparent rounded-t-xl pointer-events-none opacity-80"></div>
