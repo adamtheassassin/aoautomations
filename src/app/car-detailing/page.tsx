@@ -1,7 +1,5 @@
 "use client";
 
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 import LiquidButton from "@/components/LiquidButton";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
@@ -235,10 +233,8 @@ export default function CarDetailingQuizPage() {
     };
 
     return (
-        <main className="min-h-screen bg-[#f5f4ef] flex flex-col justify-between">
-            <Navbar />
-
-            <section className="pt-24 pb-12 px-4 sm:px-6 md:pt-32 md:pb-16 flex-1 flex flex-col items-center justify-center">
+        <main className="min-h-screen bg-[#f5f4ef] flex flex-col items-center justify-center py-12 sm:py-16 md:py-20 px-4 sm:px-6">
+            <section className="w-full max-w-4xl mx-auto flex flex-col items-center justify-center">
                 {/* Header text above card */}
                 <div className="text-center max-w-4xl mx-auto mb-8 sm:mb-10 px-2">
                     <h1 className="text-3xl sm:text-5xl md:text-6xl font-black italic tracking-tight text-neutral-900 leading-[1.15]">
@@ -694,8 +690,6 @@ export default function CarDetailingQuizPage() {
                     </div>
                 </div>
             </section>
-
-            <Footer />
         </main>
     );
 }
