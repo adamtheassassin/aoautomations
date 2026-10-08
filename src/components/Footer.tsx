@@ -72,9 +72,20 @@ export default function Footer() {
                     </div>
                 </div>
 
-                <div className="pt-8 border-t border-brand-black/5 flex flex-col md:flex-row items-center justify-between gap-4">
+                <div className="pt-8 border-t border-brand-black/5 flex flex-col sm:flex-row items-center justify-between gap-4">
                     <p className="text-brand-gray/60 text-xs font-medium">
                         © 2026 aoautomations. All rights reserved.
+                    </p>
+                    <p className="text-xs text-brand-gray/50">
+                        Proud supporter of{" "}
+                        <a
+                            href="https://gracefellowshipstb.com/"
+                            target="_blank"
+                            rel="noopener"
+                            className="text-brand-gray/70 hover:text-brand-green underline decoration-brand-gray/30 transition-colors"
+                        >
+                            Grace Fellowship
+                        </a>
                     </p>
                 </div>
             </div>
