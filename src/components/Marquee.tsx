@@ -45,12 +45,19 @@ const LOGOS = [
         />
     </a>,
     // Kebabish Logo
-    <img
+    <a
         key="kebabish"
-        src="/icons_&_images/Client Logos/Kebabish_Logo-removebg-preview.webp"
-        alt="Kebabish"
-        className="h-full w-auto object-contain"
-    />,
+        href="https://kebabish.co.za/"
+        rel="dofollow"
+        target="_blank"
+        className="h-full w-auto flex items-center justify-center"
+    >
+        <img
+            src="/icons_&_images/Client Logos/Kebabish_Logo-removebg-preview.webp"
+            alt="Kebabish"
+            className="h-full w-auto object-contain"
+        />
+    </a>,
     // AAA Locksmith Logo
     <a
         key="aaa-locksmith"
