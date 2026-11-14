@@ -312,7 +312,7 @@ export default function CarpetCleaningQuizPage() {
             });
 
             if (response.ok) {
-                router.push("/thank-you");
+                router.push("/carpet-cleaning/thank-you");
                 return;
             }
             setSubmitError("Something went wrong. Please try again.");
