@@ -13,5 +13,12 @@ export default function CarpetCleaningLayout({
 }: {
     children: React.ReactNode;
 }) {
-    return children;
+    return (
+        <>
+            {/* Match the page colour behind the content and stop the iOS pull-down bounce
+                from revealing the site's grey body background above the page. */}
+            <style>{`html, body { background-color: #f5f4ef; overscroll-behavior-y: none; }`}</style>
+            {children}
+        </>
+    );
 }
