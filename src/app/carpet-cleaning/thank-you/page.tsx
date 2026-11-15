@@ -2,6 +2,7 @@
 
 import { useEffect } from "react";
 import { trackOaiq } from "@/utils/oaiq";
+import { trackFbq } from "@/utils/fbq";
 
 type IconProps = { className?: string };
 
@@ -62,6 +63,12 @@ const STEPS = [
 
 export default function CarpetCleaningThankYouPage() {
     useEffect(() => {
+        let leadEventId: string | undefined;
+        try {
+            leadEventId = sessionStorage.getItem("cc_lead_event_id") || undefined;
+        } catch {}
+        trackFbq("Lead", { content_name: "carpet-cleaning-quiz" }, leadEventId);
+
         trackOaiq("lead_created", {
             type: "customer_action"
         });

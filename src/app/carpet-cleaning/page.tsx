@@ -5,6 +5,7 @@ import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import { getFbCookie, getFbcFromUrl } from "@/utils/facebook";
+import { createEventId } from "@/utils/fbq";
 import { getUkPhoneErrorMessage } from "@/utils/ukPhone";
 
 type StepType =
@@ -293,6 +294,8 @@ export default function CarpetCleaningQuizPage() {
         setSubmitError(null);
         setLoading(true);
 
+        const leadEventId = createEventId();
+
         try {
             const response = await fetch("https://hook.eu2.make.com/fgxu7pagp166o36qexkv9xnlqd9hcig3", {
                 method: "POST",
@@ -307,11 +310,15 @@ export default function CarpetCleaningQuizPage() {
                     firstName: firstName.trim(),
                     phone: phone.trim(),
                     _fbp: getFbCookie("_fbp"),
-                    _fbc: getFbCookie("_fbc") || getFbcFromUrl()
+                    _fbc: getFbCookie("_fbc") || getFbcFromUrl(),
+                    eventId: leadEventId
                 })
             });
 
             if (response.ok) {
+                try {
+                    sessionStorage.setItem("cc_lead_event_id", leadEventId);
+                } catch {}
                 router.push("/carpet-cleaning/thank-you");
                 return;
             }
